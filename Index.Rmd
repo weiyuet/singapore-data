@@ -1,16 +1,21 @@
 ---
 title: "Singapore Data Project"
-output: 
-  html_document
+author: "Wei Yuet Wong"
+date: "5/23/2022"
+output:
+  html_document:
     toc: true
     toc_float: true
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 # A project to visualise publicly available data in Singapore
 
 # Libraries
 
-```{r, error=FALSE}
+```{r, include=FALSE}
 library(tidyverse)
 library(simplevis)
 ```
@@ -33,4 +38,3 @@ crude_birth_rate %>%
           theme = theme_bw())
 
 ```
-
