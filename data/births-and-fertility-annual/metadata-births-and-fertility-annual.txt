@@ -1,0 +1,214 @@
+# Metadata for Births and Fertility, Annual
+---
+Identifier: '010e61e1-b2fd-4df3-af72-01fc951e9ee6'
+Name: 'births-and-fertility-annual'
+Title: 'Births and Fertility, Annual'
+Description: 'A summary of key indicators measuring births and fertility in Singapore.'
+Topics:
+  - 'Society'
+Keywords:
+  - 'Birth rate'
+  - 'fertility rate'
+  - 'live-births'
+  - 'reproduction rate'
+Publisher:
+  Name: 'Ministry of Trade and Industry - Department of Statistics'
+  Admin 1:
+    Name: 'SingStat Info'
+    Department: 'Statistics Information Services'
+    Email: 'info@singstat.gov.sg'
+Sources:
+  - 'Ministry of Trade and Industry - Department of Statistics'
+Source Url: 'http://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=3733&exportType=csv'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '1960-01-01 to 2018-12-31'
+Last Updated: '2020-07-18T03:50:22.433643'
+Resources:
+  -
+    Identifier: '55f8c651-6c18-4017-b1f4-f4c4b65785e2'
+    Title: 'Live-Births'
+    Url: 'https://storage.data.gov.sg/births-and-fertility-annual/resources/live-births-2019-07-17T09-42-44Z.csv'
+    Format: 'CSV'
+    Coverage: '1960-01-01 to 2018-12-31'
+    Description:
+      - 'Refers to live-births occurring within Singapore and its territorial waters
+        as registered under the Registration of Births and Deaths Act (Chapter 267).
+        Data are compiled based on date of occurrence.'
+      - ''
+      - 'Resident Live-Births- Refers to births with at least one parent who is a
+        Singapore citizen or permanent resident. Data for 1980-1985 are estimated.'
+    Last Updated: '2019-07-17T09:42:44.509770'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Live-Births'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Number'
+  -
+    Identifier: '2ba37efc-5411-4f1f-aecf-ea2455c9236d'
+    Title: 'Crude Birth Rate'
+    Url: 'https://storage.data.gov.sg/births-and-fertility-annual/resources/crude-birth-rate-2019-07-22T17-22-37Z.csv'
+    Format: 'CSV'
+    Coverage: '1960-01-01 to 2018-12-31'
+    Description:
+      - 'Refers to the number of live births in a given year, per thousand mid-year
+        population.'
+      - ''
+      - 'Data prior to 1980 pertain to total population.'
+      - 'Data from 1980 onwards pertain to resident population (i.e. Singapore citizens
+        and permanent residents).'
+    Last Updated: '2019-07-22T17:22:37.324121'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Crude Birth Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per Thousand Population'
+  -
+    Identifier: 'f63d5535-f094-42d0-b7ff-dbcbccb97928'
+    Title: 'Total Fertility Rate and Reproduction Rate'
+    Url: 'https://storage.data.gov.sg/births-and-fertility-annual/resources/total-fertility-rate-and-reproduction-rate-2019-07-22T17-24-04Z.csv'
+    Format: 'CSV'
+    Coverage: '1960-01-01 to 2018-12-31'
+    Description:
+      - 'Total Fertility Rate refers to the average number of live-births each female
+        would have during her reproductive years if she were to experience the age-specific
+        fertility rates prevailing during the period. It is derived by aggregating
+        the age-specific fertility rates of females in each of the reproductive ages
+        for a specific year.'
+      - ''
+      - 'Gross Reproduction Rate refers to the average number of daughters each female
+        would have during her reproductive years if she were to experience the age-specific
+        fertility rates prevailing during the period.'
+      - ''
+      - 'Net Reproduction Rate refers to the average number of daughters each female
+        would have during her reproductive years if she were to experience the age-specific
+        fertility and mortality rates prevailing during the period. It is a refinement
+        of the gross reproduction rate, and is also the measure of replacement of
+        population.'
+      - ''
+      - 'Data prior to 1980 pertain to total population.'
+      - 'Data from 1980 onwards pertain to resident population (i.e. Singapore citizens
+        and permanent residents).'
+    Last Updated: '2019-07-22T17:24:04.106898'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Reproduction/ Fertility Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per Female'
+  -
+    Identifier: '9482aa71-a495-4770-8d10-d7ac80f9b898'
+    Title: 'Age-Specific Fertility Rate'
+    Url: 'https://storage.data.gov.sg/births-and-fertility-annual/resources/age-specific-fertility-rate-2019-07-22T17-25-30Z.csv'
+    Format: 'CSV'
+    Coverage: '1960-01-01 to 2018-12-31'
+    Description:
+      - 'Refers to the number of live-births to females in a particular age group,
+        per thousand females in that age group during the period.'
+      - ''
+      - 'Data prior to 1980 pertain to total population.'
+      - 'Data from 1980 onwards pertain to resident population (i.e. Singapore citizens
+        and permanent residents).'
+    Last Updated: '2019-07-22T17:25:30.606029'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Fertility Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'level_2'
+        Title: 'Age Group'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per Thousand Females'
+        Description: '"na" : Data not available or not applicable'
+  -
+    Identifier: 'fd66384c-10d8-4e08-ae11-adeba09834ba'
+    Title: 'Total Fertility Rate by Ethnic Group'
+    Url: 'https://storage.data.gov.sg/births-and-fertility-annual/resources/total-fertility-rate-by-ethnic-group-2019-07-22T17-26-55Z.csv'
+    Format: 'CSV'
+    Coverage: '1960-01-01 to 2018-12-31'
+    Description:
+      - 'Total Fertility Rate refers to the average number of live-births each female
+        would have during her reproductive years if she were to experience the age-specific
+        fertility rates prevailing during the period. It is derived by aggregating
+        the age-specific fertility rates of females in each of the reproductive ages
+        for a specific year.'
+      - ''
+      - 'Data prior to 1980 pertain to total population.'
+      - 'Data from 1980 onwards pertain to resident population (i.e. Singapore citizens
+        and permanent residents).'
+    Last Updated: '2019-07-22T17:26:55.886305'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Fertility Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'level_2'
+        Title: 'Ethnic Group'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per Female'

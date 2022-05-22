@@ -1,0 +1,36 @@
+---
+title: "Singapore Data Project"
+output: 
+  html_document
+    toc: true
+    toc_float: true
+---
+
+# A project to visualise publicly available data in Singapore
+
+# Libraries
+
+```{r, error=FALSE}
+library(tidyverse)
+library(simplevis)
+```
+
+# Crude Birth Rate Data
+
+```{r}
+crude_birth_rate <- read_csv("data/births-and-fertility-annual/crude-birth-rate.csv")
+
+```
+
+# Plot Crude Birth Rate
+
+```{r}
+crude_birth_rate %>% 
+  gg_line(x_var = year,
+          y_var = value,
+          title = "Crude Birth Rate",
+          caption = "Source: data.gov.sg",
+          theme = theme_bw())
+
+```
+
