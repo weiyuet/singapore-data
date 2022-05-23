@@ -7,8 +7,8 @@ output:
     theme: yeti
     fig_width: 10
     fig_height: 8
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_float: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -35,7 +35,7 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
 ![](https://cdn.pixabay.com/photo/2018/09/27/11/43/singapore-3706832_960_720.jpg)
 
 # Births and Fertility
- - Singapore has one of the lowest fertility rates globally 
+ - Singapore has one of the lowest fertility rates globally (World Bank, WHO)
  
 ## Crude Birth Rate Data
 
@@ -46,11 +46,13 @@ crude_birth_rate <- read_csv("data/births-and-fertility-annual/crude-birth-rate.
 
 ### Plot Crude Birth Rate
 
+#### The crude birth rate is the annual number of live births per 1,000 population (WHO). But the calcuation used by Singapore is the number of live births in a given year, per thousand mid-year population.
+
 ```{r, warning=FALSE}
 crude_birth_rate %>% 
   gg_line(x_var = year,
           y_var = value,
-          title = "Crude Birth Rate",
+          title = "Crude Birth Rate (per 1,000 popultaion)",
           caption = "Source: data.gov.sg",
           theme = theme_bw())
 
@@ -78,4 +80,24 @@ live_births %>%
           theme = theme_bw())
 ```
 
+## Total Fertility Rate by Ethnic Groups
+
+```{r, warning=FALSE}
+total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annual/total-fertility-rate-by-ethnic-group.csv")
+```
+
+### Plot Total Fertility Rate by Ethnic Groups
+
+```{r, warning=FALSE}
+total_fertility_rate_by_ethnic_group %>% 
+  gg_line_col(x_var = year,
+              y_var = value,
+              col_var = level_2,
+              title = "Total Fertility Rate by Ethnic Groups",
+              y_title = "",
+              col_title = "",
+              caption = "Source: data.gov.sg",
+              theme = theme_bw())
+
+```
 
