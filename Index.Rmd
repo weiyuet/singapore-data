@@ -53,7 +53,7 @@ crude_birth_rate %>%
   gg_line(x_var = year,
           y_var = value,
           title = "Crude Birth Rate (per 1,000 popultaion)",
-          caption = "Source: data.gov.sg",
+          caption = "Graphic: @wyuet Source: data.gov.sg",
           theme = theme_bw())
 
 ```
@@ -76,7 +76,7 @@ live_births %>%
           y_var = value,
           title = "Number of live births",
           y_title = "",
-          caption = "Source: data.gov.sg",
+          caption = "Graphic: @wyuet Source: data.gov.sg",
           theme = theme_bw())
 ```
 
@@ -88,6 +88,8 @@ total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annu
 
 ### Plot Total Fertility Rate by Ethnic Groups
 
+#### The Total Fertility Rate refers to the average number of live-births each female would have during her reproductive years if she were to experience the age-specific fertility rates prevailing during the period. It is derived by aggregating the age-specific fertility rates of females in each of the reproductive ages for a specific year.
+
 ```{r, warning=FALSE}
 total_fertility_rate_by_ethnic_group %>% 
   gg_line_col(x_var = year,
@@ -96,7 +98,7 @@ total_fertility_rate_by_ethnic_group %>%
               title = "Total Fertility Rate by Ethnic Groups",
               y_title = "",
               col_title = "",
-              caption = "Source: data.gov.sg",
+              caption = "Graphic: @wyuet Source: data.gov.sg",
               theme = theme_bw())
 
 ```
