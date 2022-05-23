@@ -4,32 +4,49 @@ author: "Wei Yuet Wong"
 date: "5/23/2022"
 output:
   html_document:
+    theme: yeti
+    fig_width: 10
+    fig_height: 8
     toc: true
     toc_float: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-# A project to visualise publicly available data in Singapore
 
-# Libraries
-
-```{r, include=FALSE}
+#Libraries
 library(tidyverse)
 library(simplevis)
 ```
+# A project to visualise publicly available data published by the government in Singapore
 
-# Crude Birth Rate Data
+Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available datasets from 70 public agencies.
+  
+  - a personal project
+  
+  - find insights from making visualizations
+  
+  - Singapore is a small country facing unique challenges
+  
+  - all data from data.gov.sg, available under the Singapore Open Data License
+  
+  - The Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses
+
+![](https://cdn.pixabay.com/photo/2018/09/27/11/43/singapore-3706832_960_720.jpg)
+
+# Births and Fertility
+ - Singapore has one of the lowest fertility rates globally 
+ 
+## Crude Birth Rate Data
 
 ```{r}
 crude_birth_rate <- read_csv("data/births-and-fertility-annual/crude-birth-rate.csv")
 
 ```
 
-# Plot Crude Birth Rate
+### Plot Crude Birth Rate
 
-```{r}
+```{r, warning=FALSE}
 crude_birth_rate %>% 
   gg_line(x_var = year,
           y_var = value,
@@ -38,3 +55,27 @@ crude_birth_rate %>%
           theme = theme_bw())
 
 ```
+
+## Number of Live Births
+
+```{r, warning=FALSE}
+live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
+
+#Convert value from chr to dbl
+live_births$value <- as.double(as.character(live_births$value))
+```
+
+### Plot Number of Live Births
+
+```{r, warning=FALSE}
+live_births %>% 
+  filter(level_1 == "Total Live-births") %>% 
+  gg_line(x_var = year,
+          y_var = value,
+          title = "Number of live births",
+          y_title = "",
+          caption = "Source: data.gov.sg",
+          theme = theme_bw())
+```
+
+
