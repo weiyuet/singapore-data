@@ -4,6 +4,7 @@ author: "Wei Yuet Wong"
 date: "5/23/2022"
 output:
   html_document:
+    code_folding: hide
     theme: yeti
     fig_width: 12
     fig_height: 10
