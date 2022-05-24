@@ -5,8 +5,8 @@ date: "5/23/2022"
 output:
   html_document:
     theme: yeti
-    fig_width: 10
-    fig_height: 8
+    fig_width: 12
+    fig_height: 10
     toc: yes
     toc_float: yes
 ---
@@ -20,7 +20,7 @@ library(simplevis)
 ```
 # A project to visualise publicly available data published by the government in Singapore
 
-Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available datasets from 70 public agencies.
+Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available data sets from 70 public agencies.
   
   - a personal project
   
@@ -35,7 +35,9 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
 ![](https://cdn.pixabay.com/photo/2018/09/27/11/43/singapore-3706832_960_720.jpg)
 
 # Births and Fertility
- - Singapore has one of the lowest fertility rates globally (World Bank, WHO)
+ - Singapore has one of the lowest fertility rates globally (World Bank, WHO).
+ 
+ - This despite many initiatives from the government to encourage more people to start families.
  
 ## Crude Birth Rate Data
 
@@ -70,6 +72,9 @@ live_births$value <- as.double(as.character(live_births$value))
 
 ### Plot Number of Live Births
 
+#### Live-births are defined as occurring within Singapore and its territorial waters as registered under the Registration of Births and Deaths Act (Chapter 267). Data are compiled based on date of occurrence.
+
+
 ```{r, warning=FALSE}
 live_births %>% 
   filter(level_1 == "Total Live-births") %>% 
@@ -103,4 +108,36 @@ total_fertility_rate_by_ethnic_group %>%
               theme = theme_bw())
 
 ```
+
+## Total Fertility Rate by Age Groups
+
+```{r, warning=FALSE}
+age_specific_fertility_rate <- read_csv("data/births-and-fertility-annual/age-specific-fertility-rate.csv")
+
+#Convert value from chr to dbl
+age_specific_fertility_rate$value <- as.double(as.character(age_specific_fertility_rate$value))
+```
+
+### Plot Total Fertility Rate by Age Groups
+
+####  Total Fertility Rate by Age Groups refer to the number of live-births to females in a particular age group, per thousand females in that age group during the period.
+
+  - Data prior to 1980 pertain to total population.
+      
+  - Data from 1980 onwards pertain to resident population (i.e. Singapore citizens and permanent residents).
+
+```{r, warning=FALSE}
+
+age_specific_fertility_rate %>% 
+  gg_line_col(x_var = year,
+              y_var = value,
+              col_var = level_2,
+              title = "Total Fertility Rate by Age Groups",
+              y_title = "",
+              col_title = "",
+              caption = "Graphic: @wyuet Source: data.gov.sg",
+              theme = theme_bw())
+
+```
+
 
