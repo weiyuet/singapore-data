@@ -3,9 +3,9 @@ title: "Singapore Data Project"
 author: "Wei Yuet Wong"
 date: "5/23/2022"
 output:
-  html_document:
+  html_document: 
     code_folding: hide
-    theme: yeti
+    theme: readable
     fig_width: 12
     fig_height: 10
     toc: yes
