@@ -1,0 +1,187 @@
+---
+title: "Singapore Data Project"
+author: "Wei Yuet Wong"
+date: "5/23/2022"
+output:
+  html_document: 
+    code_folding: hide
+    theme: paper
+    fig_width: 12
+    fig_height: 10
+    toc: yes
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#Libraries
+library(tidyverse)
+library(simplevis)
+```
+#Visualising publicly available data published by the government in Singapore
+
+Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available data sets from 70 public agencies.
+  
+  - a personal project
+  
+  - find insights from making visualizations
+  
+  - Singapore is a small country facing unique challenges
+  
+  - all data from data.gov.sg, available under the Singapore Open Data License
+  
+  - The Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses
+
+![](https://cdn.pixabay.com/photo/2018/09/27/11/43/singapore-3706832_960_720.jpg)
+
+# Births and Fertility
+ - Singapore has one of the lowest fertility rates globally (World Bank, WHO).
+ 
+ - This despite many initiatives from the government to encourage more people to start families.
+ 
+## Crude Birth Rate
+
+```{r}
+crude_birth_rate <- read_csv("data/births-and-fertility-annual/crude-birth-rate.csv")
+
+```
+
+#### The crude birth rate is the annual number of live births per 1,000 population (WHO). But the calcuation used by Singapore is the number of live births in a given year, per thousand mid-year population.
+
+```{r, warning=FALSE}
+crude_birth_rate %>% 
+  gg_line(x_var = year,
+          y_var = value,
+          title = "Crude Birth Rate (per 1,000 popultaion)",
+          y_title = "",
+          caption = "Graphic: @wyuet Source: data.gov.sg",
+          theme = theme_bw())
+
+```
+
+## Number of Live Births
+
+```{r, warning=FALSE}
+live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
+
+#Convert value from chr to dbl
+live_births$value <- as.double(as.character(live_births$value))
+```
+
+#### Live-births are defined as occurring within Singapore and its territorial waters as registered under the Registration of Births and Deaths Act (Chapter 267). Data are compiled based on date of occurrence.
+
+
+```{r, warning=FALSE}
+live_births %>% 
+  filter(level_1 == "Total Live-births") %>% 
+  gg_line(x_var = year,
+          y_var = value,
+          title = "Number of live births",
+          y_title = "",
+          caption = "Graphic: @wyuet Source: data.gov.sg",
+          theme = theme_bw())
+```
+
+## Total Fertility Rate by Ethnic Groups
+
+```{r, warning=FALSE}
+total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annual/total-fertility-rate-by-ethnic-group.csv")
+```
+
+#### The Total Fertility Rate refers to the average number of live-births each female would have during her reproductive years if she were to experience the age-specific fertility rates prevailing during the period. It is derived by aggregating the age-specific fertility rates of females in each of the reproductive ages for a specific year.
+
+```{r, warning=FALSE}
+total_fertility_rate_by_ethnic_group %>% 
+  gg_line_col(x_var = year,
+              y_var = value,
+              col_var = level_2,
+              title = "Total Fertility Rate by Ethnic Groups",
+              y_title = "",
+              col_title = "",
+              caption = "Graphic: @wyuet Source: data.gov.sg",
+              theme = theme_bw())
+
+```
+
+## Total Fertility Rate by Age Groups
+
+```{r, warning=FALSE}
+age_specific_fertility_rate <- read_csv("data/births-and-fertility-annual/age-specific-fertility-rate.csv")
+
+#Convert value from chr to dbl
+age_specific_fertility_rate$value <- as.double(as.character(age_specific_fertility_rate$value))
+```
+
+####  Total Fertility Rate by Age Groups refer to the number of live-births to females in a particular age group, per thousand females in that age group during the period.
+
+  - Data prior to 1980 pertain to total population.
+      
+  - Data from 1980 onwards pertain to resident population (i.e. Singapore citizens and permanent residents).
+
+```{r, warning=FALSE}
+
+age_specific_fertility_rate %>% 
+  gg_line_col(x_var = year,
+              y_var = value,
+              col_var = level_2,
+              title = "Total Fertility Rate by Age Groups",
+              y_title = "",
+              col_title = "",
+              caption = "Graphic: @wyuet Source: data.gov.sg",
+              theme = theme_bw())
+
+```
+
+# Housing
+
+  - Being an island state, land is not a plentiful resource, and thus housing is a perennial issue.
+
+  - The majority of people live in public housing, and the term evokes a different image compared to other countries.
+  
+  - A small proportion of people live in private landed properties.
+
+## Flats Constructed By Housing And Development Board, Annual
+
+```{r, warning=FALSE}
+
+flats_constructed_by_housing_and_development_board_annual <- read_csv("data/flats-constructed/flats-constructed-by-housing-and-development-board-annual.csv")
+```
+
+```{r}
+flats_constructed_by_housing_and_development_board_annual %>% 
+  gg_line(x_var = year,
+          y_var = flats_constructed,
+          title = "Flats Constructed by Housing and Development Board (Annual)",
+          y_title = "",
+          caption = "Graphic: @wyuet Source: data.gov.sg",
+          theme = theme_bw())
+
+```
+
+## Resale Flat Prices
+
+#### Resale flat prices based on registration date from Jan-2017 onwards
+
+```{r, warning=FALSE}
+resale_flat_prices_based_on_registration_date_from_jan_2017_onwards <- read_csv("data/resale-flat-prices/resale-flat-prices-based-on-registration-date-from-jan-2017-onwards.csv")
+
+#Convert value from chr to dbl
+#resale_flat_prices_based_on_registration_date_from_jan_2017_onwards$month <- as.double(as.character(resale_flat_prices_based_on_registration_date_from_jan_2017_onwards$month))
+
+```
+
+```{r, warning=FALSE}
+#resale_flat_prices_based_on_registration_date_from_jan_2017_onwards %>% 
+  #gg_smooth_col(x_var = month,
+  #              y_var = resale_price,
+  #              col_var = flat_type,
+  #              title = "Resale Flat Prices from Jan 2017",
+  #              y_title = "",
+  #              caption = "Graphic: @wyuet Source: data.gov.sg",
+  #              theme = theme_bw())
+
+
+```
+
+
