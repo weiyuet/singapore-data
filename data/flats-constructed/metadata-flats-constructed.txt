@@ -1,0 +1,53 @@
+# Metadata for Flats Constructed
+---
+Identifier: 'ba1478b2-9da8-4565-9ace-ce303f36397e'
+Name: 'flats-constructed'
+Title: 'Flats Constructed'
+Description: 'Prior to 1982, include units sold by JTC, but exclude those by HUDC.  Include
+  middle housing units completed by URA in 1985 and 1986. In 1992, exclude 96 units
+  due to reclassification.'
+Topics:
+  - 'Infrastructure'
+Keywords:
+  - 'HDB'
+  - 'Housing'
+  - 'Property'
+  - 'Public Housing'
+Publisher:
+  Name: 'Housing and Development Board'
+  Admin 1:
+    Name: 'Lim Hui Ying'
+    Department: 'HDB'
+    Email: 'LIM_Hui_Ying@hdb.gov.sg'
+  Admin 2:
+    Name: 'Toh Xue Qin'
+    Department: 'HDB'
+    Email: 'toh_xue_qin@hdb.gov.sg'
+Sources:
+  - 'Housing and Development Board'
+Source Url: 'http://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=1759'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '1977-01-01 to 2017-12-31'
+Last Updated: '2021-08-19T04:42:05.230399'
+Resources:
+  -
+    Identifier: '4af42bbf-1ac0-46bf-9318-6efa6aa475a7'
+    Title: 'Flats Constructed By Housing And Development Board, Annual'
+    Url: 'https://storage.data.gov.sg/flats-constructed/resources/flats-constructed-by-housing-and-development-board-annual-2019-01-30T07-37-58Z.csv'
+    Format: 'CSV'
+    Coverage: '1977-01-01 to 2017-12-31'
+    Last Updated: '2019-01-30T07:37:58.270019'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'flats_constructed'
+        Title: 'Flats Constructed'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'No. of Flats'
