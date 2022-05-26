@@ -10,6 +10,7 @@ output:
     fig_height: 10
     toc: yes
     toc_float: yes
+    number_sections: true
 ---
 
 ```{r setup, include=FALSE}
@@ -19,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(simplevis)
 ```
-#Visualising publicly available data published by the government in Singapore
+# Visualising publicly available data published by the government in Singapore
 
 Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available data sets from 70 public agencies.
   
