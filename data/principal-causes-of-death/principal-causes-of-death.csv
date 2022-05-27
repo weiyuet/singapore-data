@@ -1,0 +1,153 @@
+year,rank,icd,classification,disease_condition,percentage_deaths
+2006,1,ICD9,140-208,Cancer,28.5
+2006,2,ICD9,410-414,Ischaemic Heart Disease,18.5
+2006,3,ICD9,480-486,Pneumonia,13.7
+2006,4,ICD9,430-438,Cerebrovascular Disease (including stroke),8.9
+2006,5,ICD9,E800-E999,"Accidents, Poisoning & Violence",6.3
+2006,6,ICD9,"393-398, 402, 415-429",Other Heart Diseases,4.3
+2006,7,ICD9,250,Diabetes Mellitus,3.3
+2006,8,ICD9,"490-493, 496",Chronic Obstructive Lung Disease,3.3
+2006,9,ICD9,599,Urinary Tract Infection,2
+2006,10,ICD9,580-589,"Nephritis, Nephrotic Syndrome & Nephrosis",1.7
+2007,1,ICD9,140-208,Cancer,27.7
+2007,2,ICD9,410-414,Ischaemic Heart Disease,19.8
+2007,3,ICD9,480-486,Pneumonia,13.9
+2007,4,ICD9,430-438,Cerebrovascular Disease (including stroke),8.7
+2007,5,ICD9,E800-E999,"Accidents, Poisoning & Violence",6
+2007,6,ICD9,"393-398, 402, 415-429",Other Heart Diseases,4.3
+2007,7,ICD9,250,Diabetes Mellitus,3.6
+2007,8,ICD9,"490-493, 496",Chronic Obstructive Lung Disease,2.6
+2007,9,ICD9,599,Urinary Tract Infection,2.2
+2007,10,ICD9,580-589,"Nephritis, Nephrotic Syndrome & Nephrosis",2
+2008,1,ICD9,140-208,Cancer,29.3
+2008,2,ICD9,410-414,Ischaemic Heart Disease,20.1
+2008,3,ICD9,480-486,Pneumonia,13.9
+2008,4,ICD9,430-438,Cerebrovascular Disease (including stroke),8.3
+2008,5,ICD9,E800-E999,"Accidents, Poisoning & Violence",5.8
+2008,6,ICD9,"393-398, 402, 415-429",Other Heart Diseases,4
+2008,7,ICD9,250,Diabetes Mellitus,2.7
+2008,8,ICD9,"490-493, 496",Chronic Obstructive Lung Disease,2.5
+2008,9,ICD9,580-589,"Nephritis, Nephrotic Syndrome & Nephrosis",2.1
+2008,10,ICD9,599,Urinary Tract Infection,2.1
+2009,1,ICD9,140-208,Cancer,29.3
+2009,2,ICD9,410-414,Ischaemic Heart Disease,19.2
+2009,3,ICD9,480-486,Pneumonia,15.3
+2009,4,ICD9,430-438,Cerebrovascular Disease (including stroke),8
+2009,5,ICD9,E800-E999,"Accidents, Poisoning & Violence",5.7
+2009,6,ICD9,"393-398, 402, 415-429",Other Heart Diseases,4.4
+2009,7,ICD9,599,Urinary Tract Infection,2.5
+2009,8,ICD9,"490-493, 496",Chronic Obstructive Lung Disease,2.4
+2009,9,ICD9,580-589,"Nephritis, Nephrotic Syndrome & Nephrosis",2.3
+2009,10,ICD9,250,Diabetes Mellitus,1.7
+2010,1,ICD9,140-208,Cancer,28.5
+2010,2,ICD9,410-414,Ischaemic Heart Disease,18.7
+2010,3,ICD9,480-486,Pneumonia,15.7
+2010,4,ICD9,430-438,Cerebrovascular Disease (including stroke),8.4
+2010,5,ICD9,E800-E999,"Accidents, Poisoning & Violence",5.5
+2010,6,ICD9,"393-398, 402, 415-429",Other Heart Diseases,4.8
+2010,7,ICD9,"490-493, 496",Chronic Obstructive Lung Disease,2.5
+2010,8,ICD9,599,Urinary Tract Infection,2.5
+2010,9,ICD9,580-589,"Nephritis, Nephrotic Syndrome & Nephrosis",2.2
+2010,10,ICD9,250,Diabetes Mellitus,1
+2011,1,ICD9,140-208,Cancer,30
+2011,2,ICD9,410-414,Ischaemic Heart Disease,16.4
+2011,3,ICD9,480-486,Pneumonia,16
+2011,4,ICD9,430-438,Cerebrovascular Disease (including stroke),9
+2011,5,ICD9,E800-E999,"Accidents, Poisoning & Violence",5.5
+2011,6,ICD9,"393-398, 402, 415-429",Other Heart Diseases,5
+2011,7,ICD9,599,Urinary Tract Infection,2.5
+2011,8,ICD9,"490-493, 496",Chronic Obstructive Lung Disease,2.2
+2011,9,ICD9,580-589,"Nephritis, Nephrotic Syndrome & Nephrosis",2
+2011,10,ICD9,250,Diabetes Mellitus,1.7
+2012,1,ICD10,C00-C97,Cancer,30.1
+2012,2,ICD10,J12-J18,Pneumonia,16.8
+2012,3,ICD10,I20-I25,Ischaemic heart diseases,16.1
+2012,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),9.3
+2012,5,ICD10,V01-Y89,External causes of morbidity and mortality,5.6
+2012,6,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),2.8
+2012,7,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",2.4
+2012,8,ICD10,N39.0,Urinary tract infection,2.4
+2012,9,ICD10,J40-J44,Chronic obstructive lung disease,2.1
+2012,10,ICD10,"I00-I09, I26-I51",Other heart diseases,1.9
+2013,1,ICD10,C00-C97,Cancer,30.5
+2013,2,ICD10,J12-J18,Pneumonia,18.5
+2013,3,ICD10,I20-I25,Ischaemic heart diseases,15.5
+2013,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),8.9
+2013,5,ICD10,V01-Y89,External causes of morbidity and mortality,4.9
+2013,6,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),3.1
+2013,7,ICD10,N39.0,Urinary tract infection,2.6
+2013,8,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",2.4
+2013,9,ICD10,"I00-I09, I26-I51",Other heart diseases,2
+2013,10,ICD10,J40-J44,Chronic obstructive lung disease,1.6
+2014,1,ICD10,C00-C97,Cancer,29.4
+2014,2,ICD10,J12-J18,Pneumonia,19
+2014,3,ICD10,I20-I25,Ischaemic heart diseases,16
+2014,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),8.4
+2014,5,ICD10,V01-Y89,External causes of morbidity and mortality,4.7
+2014,6,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),3.6
+2014,7,ICD10,N39.0,Urinary tract infection,2.6
+2014,8,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",2
+2014,9,ICD10,"I00-I09, I26-I51",Other heart diseases,1.9
+2014,10,ICD10,J40-J44,Chronic obstructive lung disease,1.8
+2015,1,ICD10,C00-C97,Cancer,29.7
+2015,2,ICD10,J12-J18,Pneumonia,19.4
+2015,3,ICD10,I20-I25,Ischaemic heart diseases,16.7
+2015,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),6.8
+2015,5,ICD10,V01-Y89,External causes of morbidity and mortality,4.5
+2015,6,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),3.9
+2015,7,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",2.3
+2015,8,ICD10,"I00-I09, I26-I51",Other heart diseases,2.2
+2015,9,ICD10,N39.0,Urinary tract infection,2.2
+2015,10,ICD10,J40-J44,Chronic obstructive lung disease,1.8
+2016,1,ICD10,C00-C97,Cancer,29.6
+2016,2,ICD10,J12-J18,Pneumonia,19.3
+2016,3,ICD10,I20-I25,Ischaemic heart diseases,17
+2016,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),6.6
+2016,5,ICD10,V01-Y89,External causes of morbidity and mortality,4.4
+2016,6,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),4
+2016,9,ICD10,N39.0,Urinary tract infection,2.3
+2016,7,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",1.9
+2016,8,ICD10,"I00-I09, I26-I51",Other heart diseases,1.9
+2016,10,ICD10,E10-E14,Diabetes Mellitus,1.7
+2017,1,ICD10,C00-C97,Cancer,29.1
+2017,2,ICD10,J12-J18,Pneumonia,20.1
+2017,3,ICD10,I20-I25,Ischaemic heart diseases,18.5
+2017,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),6.3
+2017,5,ICD10,V01-Y89,External causes of morbidity and mortality,4
+2017,6,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),3.4
+2017,7,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",2.4
+2017,8,ICD10,N39.0,Urinary tract infection,1.9
+2017,9,ICD10,"I00-I09, I26-I51",Other heart diseases,1.9
+2017,10,ICD10,E10-E14,Diabetes Mellitus,1.5
+2017,10,ICD10,J40-J44,Chronic obstructive lung disease,1.5
+2018,1,ICD10,C00-C97,Cancer,28.8
+2018,2,ICD10,J12-J18,Pneumonia,20.6
+2018,3,ICD10,I20-I25,Ischaemic heart diseases,18.1
+2018,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),6
+2018,5,ICD10,V01-Y89,External causes of morbidity and mortality,4.3
+2018,6,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),3
+2018,6,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",3
+2018,7,ICD10,"I00-I09, I26-I51",Other heart diseases,2.1
+2018,8,ICD10,N39.0,Urinary tract infection,2
+2018,9,ICD10,J40-J44,Chronic obstructive lung disease,1.3
+2018,10,ICD10,E10-E14,Diabetes Mellitus,1.3
+2019,1,ICD10,C00-C97,Cancer,28.4
+2019,2,ICD10,J12-J18,Pneumonia,20.7
+2019,3,ICD10,I20-I25,Ischaemic heart diseases,18.8
+2019,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),5.8
+2019,5,ICD10,V01-Y89,External causes of morbidity and mortality,4
+2019,6,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",3.1
+2019,7,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),2.6
+2019,8,ICD10,N39.0,Urinary tract infection,2.3
+2019,9,ICD10,"I00-I09, I26-I51",Other heart diseases,2
+2019,10,ICD10,J40-J44,Chronic obstructive lung disease,1.4
+2020,1,ICD10,C00-C97,Cancer,28.6
+2020,2,ICD10,I20-I25,Ischaemic heart diseases,20.5
+2020,3,ICD10,J12-J18,Pneumonia,18.5
+2020,4,ICD10,I60-I69,Cerebrovascular diseases (including stroke),6
+2020,5,ICD10,V01-Y89,External causes of morbidity and mortality,3.7
+2020,6,ICD10,"N00-N07, N17-N19, N25-N27","Nephritis, nephrotic syndrome & nephrosis",3.1
+2020,7,ICD10,I10-I15,Hypertensive diseases (including hypertensive heart disease),2.9
+2020,8,ICD10,"I00-I09, I26-I51",Other heart diseases,2.1
+2020,9,ICD10,N39.0,Urinary tract infection,2.1
+2020,10,ICD10,JE10-E14,Diabetes Mellitus,1.2

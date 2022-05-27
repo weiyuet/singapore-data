@@ -1,0 +1,111 @@
+# Metadata for Number of Deaths and Top 10 Principal Causes
+---
+Identifier: 'ce247b32-4f26-41b5-a6ae-4a6defd5a621'
+Name: 'principal-causes-of-death'
+Title: 'Number of Deaths and Top 10 Principal Causes'
+Description:
+  - 'Total number of deaths and principal causes of death'
+  - ''
+  - 'Death figures referred to the number of deaths registered during the year.'
+  - ''
+  - 'The Mortality Tabulation List of the International Classification of Diseases
+    - Tenth Revision has replaced the Ninth Revision as the adopted code set for the
+    derivation of causes of death w.e.f Year 2012.'
+  - ''
+  - 'Refers to the top 10 principal causes of death only.'
+Topics:
+  - 'Health'
+Keywords:
+  - 'Deaths'
+  - 'Diseases'
+  - 'Mortality'
+Publisher:
+  Name: 'Ministry of Health'
+  Admin 1:
+    Name: 'Erica Ong'
+    Department: 'Data Analytics Division'
+    Email: 'Erica_ONG@moh.gov.sg'
+  Admin 2:
+    Name: 'Tan Le Yi'
+    Department: 'Data Analytics Division'
+    Email: 'TAN_Le_Yi@moh.gov.sg'
+Sources:
+  - 'Ministry of Health'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2006-01-01 to 2020-12-31'
+Last Updated: '2022-04-22T02:02:24.555178'
+Resources:
+  -
+    Identifier: '39693204-7875-47e1-ac6a-e4bd8c2e5a7a'
+    Title: 'Total Number of Deaths'
+    Url: 'https://storage.data.gov.sg/principal-causes-of-death/resources/total-number-of-deaths-2022-04-22T02-01-45Z.csv'
+    Format: 'CSV'
+    Coverage: '2006-01-01 to 2020-12-31'
+    Description: 'Total number of deaths'
+    Last Updated: '2022-04-22T02:01:45.958122'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'no_of_deaths'
+        Title: 'No. of Deaths'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'No. of Deaths'
+  -
+    Identifier: '98d62914-67a3-47c8-bd7a-310fb3b07a0f'
+    Title: 'Principal Causes of Death'
+    Url: 'https://storage.data.gov.sg/principal-causes-of-death/resources/principal-causes-of-death-2022-04-22T02-02-23Z.csv'
+    Format: 'CSV'
+    Coverage: '2006-01-01 to 2020-12-31'
+    Description:
+      - 'Top 10 principal causes of death'
+      - ''
+      - 'The Mortality Tabulation List of the International Classification of Diseases
+        - Tenth Revision has replaced the Ninth Revision as the adopted code set for
+        the derivation of causes of death w.e.f Year 2012.'
+      - ''
+      - 'Refers to the top 10 principal causes of death only.'
+    Last Updated: '2022-04-22T02:02:23.760560'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'rank'
+        Title: 'Rank'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'icd'
+        Title: 'ICD'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'classification'
+        Title: 'Classification'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: 'ICD codes classified under the disease or condition'
+      -
+        Name: 'disease_condition'
+        Title: 'Disease or Condition'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'percentage_deaths'
+        Title: 'Percentage of Deaths'
+        Type: 'numeric'
+        Sub Type: 'percentage'
+        Description:
+          - 'Percentage of total deaths'
+          - 'Percentages are expressed as a value over 100, i.e. "100" represents
+            100%'

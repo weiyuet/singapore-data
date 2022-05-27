@@ -1,11 +1,10 @@
 ---
 title: "Singapore Data Project"
-author: "Wei Yuet Wong"
-date: "5/23/2022"
 output:
   html_document: 
     code_folding: hide
     theme: paper
+    highlight: tango
     fig_width: 12
     fig_height: 10
     toc: yes
@@ -30,18 +29,18 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
   
   - Singapore is a small country facing unique challenges
   
-  - all data from data.gov.sg, available under the Singapore Open Data License
+  - all data from data.gov.sg, available under the Singapore Open Data License: https://data.gov.sg/open-data-licence
   
   - The Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses
 
 ![](https://cdn.pixabay.com/photo/2018/09/27/11/43/singapore-3706832_960_720.jpg)
-
-# Births and Fertility
+# Society
+## Births and Fertility
  - Singapore has one of the lowest fertility rates globally (World Bank, WHO).
  
  - This despite many initiatives from the government to encourage more people to start families.
  
-## Crude Birth Rate
+### Crude Birth Rate
 
 ```{r}
 crude_birth_rate <- read_csv("data/births-and-fertility-annual/crude-birth-rate.csv")
@@ -56,6 +55,7 @@ crude_birth_rate %>%
           y_var = value,
           title = "Crude Birth Rate (per 1,000 popultaion)",
           y_title = "",
+          x_title = "",
           caption = "Graphic: @wyuet Source: data.gov.sg",
           theme = theme_bw())
 
@@ -80,6 +80,7 @@ live_births %>%
           y_var = value,
           title = "Number of live births",
           y_title = "",
+          x_title = "",
           caption = "Graphic: @wyuet Source: data.gov.sg",
           theme = theme_bw())
 ```
@@ -99,6 +100,7 @@ total_fertility_rate_by_ethnic_group %>%
               col_var = level_2,
               title = "Total Fertility Rate by Ethnic Groups",
               y_title = "",
+              x_title = "",
               col_title = "",
               caption = "Graphic: @wyuet Source: data.gov.sg",
               theme = theme_bw())
@@ -128,13 +130,42 @@ age_specific_fertility_rate %>%
               col_var = level_2,
               title = "Total Fertility Rate by Age Groups",
               y_title = "",
+              x_title = ,
               col_title = "",
               caption = "Graphic: @wyuet Source: data.gov.sg",
               theme = theme_bw())
 
 ```
 
-# Housing
+# Environment
+
+## CO2 Emissions from Fossil Fuels
+
+```{r, warning=FALSE}
+
+carbon_dioxide_emissions_from_combustion_of_fossil_fuels <- read_csv("data/climate-change-and-energy-carbon-dioxide-emissions-from-combustion-of-fossil-fuels/carbon-dioxide-emissions-from-combustion-of-fossil-fuels.csv")
+
+```
+
+```{r, warning=FALSE}
+
+carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>% 
+  gg_line(x_var = year,
+          y_var = co2_emissions,
+          title = "Carbon Dioxide Emissions (From Combustion of Fossil Fuels)",
+          x_title = "",
+          y_title = "",
+          caption = "Graphic: @wyuet Source: data.gov.sg",
+              theme = theme_bw())
+```
+
+
+# Health
+
+## Principal Causes of Death
+
+#Infrastruture
+## Housing
 
   - Being an island state, land is not a plentiful resource, and thus housing is a perennial issue.
 
@@ -142,7 +173,7 @@ age_specific_fertility_rate %>%
   
   - A small proportion of people live in private landed properties.
 
-## Flats Constructed By Housing And Development Board, Annual
+### Flats Constructed By Housing And Development Board, Annual
 
 ```{r, warning=FALSE}
 
@@ -155,12 +186,13 @@ flats_constructed_by_housing_and_development_board_annual %>%
           y_var = flats_constructed,
           title = "Flats Constructed by Housing and Development Board (Annual)",
           y_title = "",
+          x_title = "",
           caption = "Graphic: @wyuet Source: data.gov.sg",
           theme = theme_bw())
 
 ```
 
-## Resale Flat Prices
+### Resale Flat Prices
 
 #### Resale flat prices based on registration date from Jan-2017 onwards
 
