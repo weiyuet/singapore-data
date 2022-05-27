@@ -1,5 +1,6 @@
 ---
 title: "Singapore Data Project"
+subtitle: "Visualising publicly available data published by the government in Singapore"
 output:
   html_document: 
     code_folding: hide
@@ -19,7 +20,6 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(simplevis)
 ```
-# Visualising publicly available data published by the government in Singapore
 
 Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available data sets from 70 public agencies.
   
@@ -34,7 +34,9 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
   - The Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses
 
 ![](https://cdn.pixabay.com/photo/2018/09/27/11/43/singapore-3706832_960_720.jpg)
+
 # Society
+
 ## Births and Fertility
  - Singapore has one of the lowest fertility rates globally (World Bank, WHO).
  
