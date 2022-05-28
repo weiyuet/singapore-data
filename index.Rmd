@@ -58,7 +58,7 @@ crude_birth_rate %>%
           title = "Crude Birth Rate (per 1,000 popultaion)",
           y_title = "",
           x_title = "",
-          caption = "Graphic: @wyuet Source: data.gov.sg",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
           theme = theme_bw())
 
 ```
@@ -83,7 +83,7 @@ live_births %>%
           title = "Number of live births",
           y_title = "",
           x_title = "",
-          caption = "Graphic: @wyuet Source: data.gov.sg",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
           theme = theme_bw())
 ```
 
@@ -104,7 +104,7 @@ total_fertility_rate_by_ethnic_group %>%
               y_title = "",
               x_title = "",
               col_title = "",
-              caption = "Graphic: @wyuet Source: data.gov.sg",
+              caption = "Graphic: @wyuet. Source: data.gov.sg",
               theme = theme_bw())
 
 ```
@@ -134,7 +134,7 @@ age_specific_fertility_rate %>%
               y_title = "",
               x_title = ,
               col_title = "",
-              caption = "Graphic: @wyuet Source: data.gov.sg",
+              caption = "Graphic: @wyuet. Source: data.gov.sg",
               theme = theme_bw())
 
 ```
@@ -157,14 +157,39 @@ carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>%
           title = "Carbon Dioxide Emissions (From Combustion of Fossil Fuels)",
           x_title = "",
           y_title = "",
-          caption = "Graphic: @wyuet Source: data.gov.sg",
-              theme = theme_bw())
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_bw())
 ```
-
 
 # Health
 
+## Total Number of Deaths
+
+```{r, warning=FALSE}
+total_number_of_deaths <- read_csv("data/principal-causes-of-death/total-number-of-deaths.csv")
+
+```
+
+```{r, warning=FALSE}
+total_number_of_deaths %>% 
+  gg_line(x_var = year,
+          y_var = no_of_deaths,
+          title = "Total Number of Deaths (Annual)",
+          x_title = "",
+          y_title = "",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_bw())
+
+```
+
+
 ## Principal Causes of Death
+
+```{r, warning=FALSE}
+principal_causes_of_death <- read_csv("data/principal-causes-of-death/principal-causes-of-death.csv")
+
+```
+
 
 #Infrastruture
 ## Housing
@@ -189,7 +214,7 @@ flats_constructed_by_housing_and_development_board_annual %>%
           title = "Flats Constructed by Housing and Development Board (Annual)",
           y_title = "",
           x_title = "",
-          caption = "Graphic: @wyuet Source: data.gov.sg",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
           theme = theme_bw())
 
 ```
@@ -219,4 +244,7 @@ resale_flat_prices_based_on_registration_date_from_jan_2017_onwards <- read_csv(
 
 ```
 
-
+# Contact
+  - Fun project
+  
+  - weiyuet@gmail.com
