@@ -165,7 +165,6 @@ life_expectancy_at_birth_and_age_65_years %>%
 
 ```
 
-
 ### Life Expectancy by Gender
 
 ```{r, warning=FALSE}
@@ -205,7 +204,6 @@ total_number_of_deaths %>%
 
 ```
 
-
 ## Principal Causes of Death
 
 ```{r, warning=FALSE}
@@ -213,8 +211,12 @@ principal_causes_of_death <- read_csv("data/principal-causes-of-death/principal-
 
 ```
 
+```{r, warning=FALSE}
 
-#Infrastruture
+
+```
+
+# Infrastruture
 
 ## Housing
 
@@ -227,11 +229,10 @@ principal_causes_of_death <- read_csv("data/principal-causes-of-death/principal-
 ### Flats Constructed By Housing And Development Board, Annual
 
 ```{r, warning=FALSE}
-
 flats_constructed_by_housing_and_development_board_annual <- read_csv("data/flats-constructed/flats-constructed-by-housing-and-development-board-annual.csv")
 ```
 
-```{r}
+```{r, warning=FALSE}
 flats_constructed_by_housing_and_development_board_annual %>% 
   gg_line(x_var = year,
           y_var = flats_constructed,
@@ -290,6 +291,5 @@ carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>%
           theme = theme_bw())
 ```
 
-
 # Contact
-  - weiyuet@gmail.com
+weiyuet@gmail.com
