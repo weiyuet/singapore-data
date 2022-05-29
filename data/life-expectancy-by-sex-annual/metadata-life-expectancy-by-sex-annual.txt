@@ -1,0 +1,82 @@
+# Metadata for Life Expectancy By Sex, Annual
+---
+Identifier: 'bdbddacc-4907-4359-8a1a-2680e9e781f3'
+Name: 'life-expectancy-by-sex-annual'
+Title: 'Life Expectancy By Sex, Annual'
+Description: 'Refer to Singapore residents (citizens and permanent residents) from
+  1980.  Prior to 1980, figures refer to total population.  Data for the latest available
+  year is preliminary.'
+Topics:
+  - 'Society'
+Keywords:
+  - 'life expectancy'
+  - 'residents'
+Publisher:
+  Name: 'Ministry of Trade and Industry - Department of Statistics'
+  Admin 1:
+    Name: 'SingStat Info'
+    Department: 'Statistics Information Services'
+    Email: 'info@singstat.gov.sg'
+Sources:
+  - 'Ministry of Trade and Industry - Department of Statistics'
+Source Url: 'http://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=3612&exportType=csv'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '1960-01-01 to 2018-12-31'
+Last Updated: '2020-05-23T00:00:33.218327'
+Resources:
+  -
+    Identifier: 'a75832e1-630f-42fc-a1cf-e5c8a0724227'
+    Title: 'Life Expectancy at Birth and Age 65 years'
+    Url: 'https://storage.data.gov.sg/life-expectancy-by-sex-annual/resources/life-expectancy-at-birth-and-age-65-years-2020-05-22T23-59-51Z.csv'
+    Format: 'CSV'
+    Coverage: '1960-01-01 to 2018-12-31'
+    Last Updated: '2020-05-22T23:59:51.105321'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Life Expectancy'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Years'
+  -
+    Identifier: '0ddb96ad-dd14-4969-a615-132b8eed77cd'
+    Title: 'Life Expectancy at Birth and Age 65 years by Sex'
+    Url: 'https://storage.data.gov.sg/life-expectancy-by-sex-annual/resources/life-expectancy-at-birth-and-age-65-years-by-sex-2020-05-23T00-00-32Z.csv'
+    Format: 'CSV'
+    Coverage: '1960-01-01 to 2018-12-31'
+    Last Updated: '2020-05-23T00:00:32.165397'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Life Expectancy'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'level_2'
+        Title: 'Sex'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Years'

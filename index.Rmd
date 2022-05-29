@@ -139,29 +139,52 @@ age_specific_fertility_rate %>%
 
 ```
 
-# Environment
-
-## CO2 Emissions from Fossil Fuels
-
-```{r, warning=FALSE}
-
-carbon_dioxide_emissions_from_combustion_of_fossil_fuels <- read_csv("data/climate-change-and-energy-carbon-dioxide-emissions-from-combustion-of-fossil-fuels/carbon-dioxide-emissions-from-combustion-of-fossil-fuels.csv")
-
-```
-
-```{r, warning=FALSE}
-
-carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>% 
-  gg_line(x_var = year,
-          y_var = co2_emissions,
-          title = "Carbon Dioxide Emissions (From Combustion of Fossil Fuels)",
-          x_title = "",
-          y_title = "",
-          caption = "Graphic: @wyuet. Source: data.gov.sg",
-          theme = theme_bw())
-```
 
 # Health
+
+## Life Expectancy
+
+### Life Expectancy at Birth
+
+```{r, warning=FALSE}
+life_expectancy_at_birth_and_age_65_years <- read_csv("data/life-expectancy-by-sex-annual/life-expectancy-at-birth-and-age-65-years.csv")
+
+```
+
+```{r, warning=FALSE}
+life_expectancy_at_birth_and_age_65_years %>% 
+  gg_line_col(x_var = year,
+              y_var = value,
+              col_var = level_1,
+              x_title = "",
+              y_title = "",
+              col_title = "",
+              title = "Life Expectancy at Birth",
+              caption = "Graphic: @wyuet. Source: data.gov.sg",
+              theme = theme_bw())
+
+```
+
+
+### Life Expectancy by Gender
+
+```{r, warning=FALSE}
+life_expectancy_at_birth_and_age_65_years_by_sex <- read_csv("data/life-expectancy-by-sex-annual/life-expectancy-at-birth-and-age-65-years-by-sex.csv")
+```
+
+```{r, warning=FALSE}
+life_expectancy_at_birth_and_age_65_years_by_sex %>% 
+  gg_line_col(x_var = year,
+              y_var = value,
+              col_var = level_2,
+              x_title = "",
+              y_title = "",
+              col_title = "",
+              title = "Life Expectancy by Gender",
+              caption = "Graphic: @wyuet. Source: data.gov.sg",
+              theme = theme_bw())
+
+```
 
 ## Total Number of Deaths
 
@@ -192,6 +215,7 @@ principal_causes_of_death <- read_csv("data/principal-causes-of-death/principal-
 
 
 #Infrastruture
+
 ## Housing
 
   - Being an island state, land is not a plentiful resource, and thus housing is a perennial issue.
@@ -244,7 +268,28 @@ resale_flat_prices_based_on_registration_date_from_jan_2017_onwards <- read_csv(
 
 ```
 
+# Environment
+
+## CO2 Emissions from Fossil Fuels
+
+```{r, warning=FALSE}
+
+carbon_dioxide_emissions_from_combustion_of_fossil_fuels <- read_csv("data/climate-change-and-energy-carbon-dioxide-emissions-from-combustion-of-fossil-fuels/carbon-dioxide-emissions-from-combustion-of-fossil-fuels.csv")
+
+```
+
+```{r, warning=FALSE}
+
+carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>% 
+  gg_line(x_var = year,
+          y_var = co2_emissions,
+          title = "Carbon Dioxide Emissions (From Combustion of Fossil Fuels)",
+          x_title = "",
+          y_title = "",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_bw())
+```
+
+
 # Contact
-  - Fun project
-  
   - weiyuet@gmail.com
