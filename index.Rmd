@@ -19,6 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #Libraries
 library(tidyverse)
 library(simplevis)
+library(reshape2)
 ```
 
 Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available data sets from 70 public agencies.
@@ -38,7 +39,7 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
 # Society
 
 ## Births and Fertility
- - Singapore has one of the lowest fertility rates globally (World Bank, WHO).
+ - Singapore has one of the lowest fertility rates globally [World Bank](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?locations=SG).
  
  - This despite many initiatives from the government to encourage more people to start families.
  
@@ -138,7 +139,6 @@ age_specific_fertility_rate %>%
               theme = theme_bw())
 
 ```
-
 
 # Health
 
@@ -266,7 +266,6 @@ resale_flat_prices_based_on_registration_date_from_jan_2017_onwards <- read_csv(
   #              caption = "Graphic: @wyuet Source: data.gov.sg",
   #              theme = theme_bw())
 
-
 ```
 
 # Environment
@@ -289,6 +288,29 @@ carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>%
           y_title = "",
           caption = "Graphic: @wyuet. Source: data.gov.sg",
           theme = theme_bw())
+```
+
+## Waste Disposed Of And Recycled (Annual)
+
+```{r, warning=FALSE}
+waste_disposed_of_and_recycled_annual <- read_csv("data/waste-disposed-of-and-recycled-annual/waste-disposed-of-and-recycled-annual.csv")
+
+#change data to long format
+waste_disposed_of_and_recycled_annual_long <- melt(waste_disposed_of_and_recycled_annual, id = "year")
+```
+
+```{r, warning=FALSE}
+waste_disposed_of_and_recycled_annual_long %>% 
+  gg_hbar_col(x_var = value,
+              y_var = year,
+              col_var = variable,
+              y_rev = TRUE,
+              x_title = "",
+              y_title = "",
+              title = "Waste Disposed Of And Recycled (Annual)",
+              col_title = "",
+              caption = "Graphic: @wyuet. Source: data.gov.sg",
+              theme = theme_light())
 ```
 
 # Contact
