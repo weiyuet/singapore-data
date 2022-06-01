@@ -264,6 +264,30 @@ resale_flat_prices_based_on_registration_date_from_jan_2017_onwards <- read_csv(
 
 ```
 
+# Food Production
+
+## Total Value of Annual Food Prodcution (million SDG)
+
+```{r, warning=FALSE}
+value_of_local_food_production_in_singapore <- read_csv("data/value-of-local-food-production/value-of-local-food-production-in-singapore.csv")
+
+#convert data to long format
+value_of_local_food_production_in_singapore_long <- melt(value_of_local_food_production_in_singapore, id = "year")
+```
+
+```{r, warning=FALSE}
+value_of_local_food_production_in_singapore_long %>% 
+  gg_hbar_col(x_var = value,
+              y_var = year,
+              col_var = variable,
+              x_title = "",
+              y_title = "",
+              col_title = "",
+              title = "Value of Local Food Production (million SGD)",
+              caption = "Graphic: @wyuet. Source: data.gov.sg",
+              theme = theme_light())
+```
+
 # Environment
 
 ## CO2 Emissions from Fossil Fuels
