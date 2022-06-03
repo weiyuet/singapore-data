@@ -24,13 +24,13 @@ library(reshape2)
 
 Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available data sets from 70 public agencies.
   
-  - a personal project
+  - A personal project
   
-  - find insights from making visualizations
+  - Find insights from making visualizations
   
   - Singapore is a small country facing unique challenges
   
-  - all data from data.gov.sg, available under the Singapore Open Data License: https://data.gov.sg/open-data-licence
+  - All data from data.gov.sg, available under the Singapore Open Data License: https://data.gov.sg/open-data-licence
   
   - The Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses
 
@@ -331,6 +331,27 @@ waste_disposed_of_and_recycled_annual_long %>%
               col_title = "",
               caption = "Graphic: @wyuet. Source: data.gov.sg",
               theme = theme_light())
+```
+
+# Economy
+
+## Container Throughput Monthly (Total)
+
+```{r, warning=FALSE}
+container_throughput_monthly <- read_csv("data/container-throughput-monthly-total/container-throughput-monthly.csv")
+
+```
+
+```{r, warning=FALSE}
+container_throughput_monthly %>% 
+  gg_bar(x_var = month,
+         y_var = container_throughput,
+         x_breaks_n = 30,
+         x_title = "",
+         y_title = "",
+         title = "Container Throughput, Monthly (in twenty-foot equivalent)",
+         caption = "Graphic: @wyuet. Source: data.gov.sg",
+         theme = theme_light())
 ```
 
 # Contact
