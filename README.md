@@ -1,5 +1,5 @@
-# Visualising the publicly available data in Singapore.
+# Visualising the publicly available data in Singapore
 
-All data from data.gov.sg, available under the [Singapore Open Data License.](https://data.gov.sg/open-data-licence)
+Data from [data.gov.sg](https://data.gov.sg/open-data-licence) and [Department of Statistics Singapore.](https://www.singstat.gov.sg/)
   
 The Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses.

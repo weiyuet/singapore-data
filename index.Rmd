@@ -1,6 +1,6 @@
 ---
 title: "Singapore Data Project"
-subtitle: "Visualising publicly available data published by the government in Singapore"
+subtitle: "Visualising publicly available data published by the government"
 output:
   html_document: 
     code_folding: hide
@@ -30,7 +30,7 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
   
   - Singapore is a small country facing unique challenges
   
-  - All data from data.gov.sg, available under the [Singapore Open Data License](https://data.gov.sg/open-data-licence)
+  - Data from [data.gov.sg](https://data.gov.sg/open-data-licence) and [Department of Statistics Singapore.](https://www.singstat.gov.sg/)
   
   - The Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses
 
