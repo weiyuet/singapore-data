@@ -1,0 +1,60 @@
+# Metadata for Waste Disposed Of And Recycled, Annual
+---
+Identifier: '62461950-a650-4495-b5f5-8b8f6f46e0b0'
+Name: 'waste-disposed-of-and-recycled-annual'
+Title: 'Waste Disposed Of And Recycled, Annual'
+Description:
+  - 'SOURCE: MINISTRY OF THE ENVIRONMENT AND WATER RESOURCES, NATIONAL ENVIRONMENT
+    AGENCY'
+  - ''
+  - 'Data exclude metals recovered from incineration bottom ash in a new metal recovery
+    facility commissioned in 2015.'
+Topics:
+  - 'Environment'
+Keywords:
+  - 'NEA'
+  - 'Waste Recycling'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Irene Tan'
+    Department: 'NEA'
+    Email: 'irene_tan@nea.gov.sg'
+  Admin 2:
+    Name: 'Woon Jing Shing'
+    Department: 'NEA'
+    Email: 'woon_jing_shing@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+Source Url: 'http://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=1891'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2000-01-01 to 2014-12-31'
+Last Updated: '2017-04-17T12:09:41.133874'
+Resources:
+  -
+    Identifier: '7918b229-0e79-4d74-b725-e34183a56c01'
+    Title: 'Waste Disposed Of And Recycled, Annual'
+    Url: 'https://storage.data.gov.sg/waste-disposed-of-and-recycled-annual/resources/waste-disposed-of-and-recycled-annual-2016-02-16T03-21-26Z.csv'
+    Format: 'CSV'
+    Coverage: '2000-01-01 to 2014-12-31'
+    Last Updated: '2016-02-16T03:21:26.377327'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'waste_disposed_of'
+        Title: 'Waste Disposed Of'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Million Tons'
+      -
+        Name: 'waste_recycled'
+        Title: 'Waste Recycled'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Million Tons'

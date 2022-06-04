@@ -1,0 +1,45 @@
+# Metadata for Container Throughput, Monthly
+---
+Identifier: '35fbcb71-98c8-4269-897f-d1a66f1bb36b'
+Name: 'container-throughput-monthly-total'
+Title: 'Container Throughput, Monthly'
+Description: 'Dataset shows the monthly container throughput in twenty-foot equivalent
+  units.(Latest month figures are preliminary estimates.)'
+Topics:
+  - 'Economy'
+Keywords:
+  - 'Shipping'
+Publisher:
+  Name: 'Maritime and Port Authority of Singapore'
+  Admin 1:
+    Name: 'Ho Jian Ming'
+    Department: 'HS'
+    Email: 'ho_jian_ming@mpa.gov.sg'
+Sources:
+  - 'Maritime and Port Authority of Singapore'
+Source Url: 'https://www.mpa.gov.sg/web/portal/home/maritime-singapore/port-statistics'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Monthly'
+Coverage: '1995-01-01 to 2022-04-30'
+Last Updated: '2022-05-17T07:21:25.480585'
+Resources:
+  -
+    Identifier: 'cd119524-9f43-44df-a5f9-f6f6b207a72b'
+    Title: 'Container Throughput, Monthly'
+    Url: 'https://storage.data.gov.sg/container-throughput-monthly-total/resources/container-throughput-monthly-2022-05-17T07-21-25Z.csv'
+    Format: 'CSV'
+    Coverage: '1995-01-01 to 2022-04-30'
+    Last Updated: '2022-05-17T07:21:25.066532'
+    Schema:
+      -
+        Name: 'month'
+        Title: 'Month'
+        Type: 'datetime'
+        Sub Type: 'month'
+        Format: 'YYYY-MM'
+      -
+        Name: 'container_throughput'
+        Title: 'Container Throughput'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: '''000 Twenty-Foot Equivalent Units'

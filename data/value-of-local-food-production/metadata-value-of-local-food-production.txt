@@ -1,0 +1,73 @@
+# Metadata for Value of Local Food Production
+---
+Identifier: '1c12564c-fca2-4c9b-800c-9f743f591615'
+Name: 'value-of-local-food-production'
+Title: 'Value of Local Food Production'
+Description: 'Value of Local Food Production in Singapore'
+Topics:
+  - 'Economy'
+Keywords:
+  - 'agriculture'
+  - 'aquaculture'
+  - 'food farm'
+Publisher:
+  Name: 'Singapore Food Agency'
+  Admin 1:
+    Name: 'Yeo Hui YI'
+    Department: 'Singapore Food Agency'
+    Email: 'yeo_hui_yi@sfa.gov.sg'
+  Admin 2:
+    Name: 'Elizabeth Soh'
+    Department: 'Singapore Food Agency'
+    Email: 'elizabeth_soh@sfa.gov.sg'
+Sources:
+  - 'Singapore Food Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2012-01-01 to 2020-12-31'
+Last Updated: '2021-10-28T08:22:21.971278'
+Resources:
+  -
+    Identifier: '3acd2a5a-6b11-4ec2-915d-54348b941aa6'
+    Title: 'Value of Local Food Production in Singapore'
+    Url: 'https://storage.data.gov.sg/value-of-local-food-production/resources/value-of-local-food-production-in-singapore-2021-10-28T08-20-26Z.csv'
+    Format: 'CSV'
+    Coverage: '2012-01-01 to 2020-12-31'
+    Description: 'Value of Local Food Production in Singapore'
+    Last Updated: '2021-10-28T08:20:26.017919'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+        Description: 'year'
+      -
+        Name: 'vegetables'
+        Title: 'Vegetables'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'million dollar'
+        Description: 'local farm production of vegetables'
+      -
+        Name: 'seafood'
+        Title: 'Seafood'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'million dollar'
+        Description: 'local farm production of fish, molluscs, crustaceans'
+      -
+        Name: 'hen_shell_eggs'
+        Title: 'Hen shell eggs'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'million dollar'
+        Description: 'local farm production of hen shell eggs'
+      -
+        Name: 'local_landings'
+        Title: 'Local landings'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'million dollar'
+        Description: 'seafood catch from local waters'
