@@ -1,0 +1,107 @@
+# Metadata for Singapore Residents By Age Group, Ethnic Group And Gender, End June, Annual
+---
+Identifier: 'd1778088-f56a-4353-891f-21f803b2dad5'
+Name: 'resident-population-by-ethnicity-gender-and-age-group'
+Title: 'Singapore Residents By Age Group, Ethnic Group And Gender, End June, Annual'
+Description:
+  - 'Data for 1970 and from 1980 onwards refer to Singapore residents (citizens and
+    permanent residents).'
+  - ''
+  - 'Data prior to 1980 (except 1970) refer to total population.'
+  - ''
+  - 'Data for 1970 and 1980 refer to all residents present in Singapore on Census
+    day.'
+  - ''
+  - 'Data from 2000 onwards are based on the register-based approach.'
+  - ''
+  - 'Data from 2003 onwards exclude residents who are overseas for a continuous period
+    of 12 months or longer as at the reference period.'
+Topics:
+  - 'Society'
+Keywords:
+  - 'demographics'
+  - 'demography'
+  - 'ethnic group'
+  - 'gender'
+  - 'population'
+Publisher:
+  Name: 'Ministry of Trade and Industry - Department of Statistics'
+  Admin 1:
+    Name: 'SingStat Info'
+    Department: 'Statistics Information Services'
+    Email: 'info@singstat.gov.sg'
+Sources:
+  - 'Ministry of Trade and Industry - Department of Statistics'
+Source Url: 'http://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=315&exportType=csv'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '1957-01-01 to 2019-12-31'
+Last Updated: '2020-07-18T03:02:25.419051'
+Resources:
+  -
+    Identifier: 'f9dbfc75-a2dc-42af-9f50-425e4107ae84'
+    Title: 'Singapore Residents by Ethnic Group and Sex, End June, Annual'
+    Url: 'https://storage.data.gov.sg/resident-population-by-ethnicity-gender-and-age-group/resources/singapore-residents-by-ethnic-group-and-sex-end-june-annual-2020-07-17T01-33-11Z.csv'
+    Format: 'CSV'
+    Coverage: '1957-01-01 to 2019-12-31'
+    Description: 'From 1970, Indians include Sri Lankans (Ceylonese) who were previously
+      classified under ''Others''.'
+    Last Updated: '2020-07-17T01:33:11.313570'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Ethnic Group/Gender'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: 'Ethnic Group and Gender'
+      -
+        Name: 'level_2'
+        Title: 'Level 2'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Number'
+        Description: '"na" : Data not available or not applicable'
+  -
+    Identifier: 'd5d35678-cd15-4f43-b347-d671d1870655'
+    Title: 'Singapore Residents by Age Group, Ethnic Group and Sex, End June, Annual'
+    Url: 'https://storage.data.gov.sg/resident-population-by-ethnicity-gender-and-age-group/resources/singapore-residents-by-age-group-ethnic-group-and-sex-end-june-annual-2020-07-17T01-36-35Z.csv'
+    Format: 'CSV'
+    Coverage: '1957-01-01 to 2019-12-31'
+    Description: 'From 1970, Indians include Sri Lankans (Ceylonese) who were previously
+      classified under ''Others''.'
+    Last Updated: '2020-07-17T01:36:35.874229'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Ethnic Group/ Gender'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'level_2'
+        Title: 'Age Group'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Number'
+        Description: '"na" : Data not available or not applicable'
