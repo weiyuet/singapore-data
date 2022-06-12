@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #Libraries
 library(tidyverse)
-library(simplevis)
+library(ggblanket)
 library(reshape2)
 ```
 
@@ -38,6 +38,30 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
 
 # Society
 
+## Demographics Resident Population
+
+```{r Resident population data, warning=FALSE}
+singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual <- read_csv("data/resident-population-by-ethnicity-gender-and-age-group/singapore-residents-by-age-group-ethnic-group-and-sex-end-june-annual.csv")
+
+#Convert from chr to dbl
+singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual$value <- as.double(as.character(singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual$value))
+```
+
+```{r Resident population plot, warning=FALSE}
+singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual %>% 
+  filter(year == "2019" | level_1 == "Total Residents") %>% 
+  gg_col(x = level_2,
+         y = value,
+         col = level_2,
+         title = "Resident Population by Age-group, 2019",
+         x_title = "",
+         y_title = "",
+         col_legend_place = "",
+         col_title = "",
+         caption = "Graphic: @wyuet. Source: data.gov.sg",
+         theme = theme_light())
+```
+
 ## Births and Fertility
 
 Singapore has one of the lowest fertility rates globally [World Bank](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?locations=SG).
@@ -52,13 +76,14 @@ crude_birth_rate <- read_csv("data/births-and-fertility-annual/crude-birth-rate.
 
 ```{r Crude birth rate plot, warning=FALSE}
 crude_birth_rate %>% 
-  gg_line(x_var = year,
-          y_var = value,
+  gg_line(x = year,
+          y = value,
           title = "Crude Birth Rate (per 1,000 popultaion)",
           y_title = "",
           x_title = "",
           caption = "Graphic: @wyuet. Source: data.gov.sg",
-          theme = theme_light())
+          theme = theme_light()) +
+  geom_point()
 ```
 
 ## Number of Live Births
@@ -68,20 +93,21 @@ Live-births are defined as occurring within Singapore and its territorial waters
 ```{r Live births data, warning=FALSE}
 live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
 
-#Convert value from chr to dbl
+#Convert from chr to dbl
 live_births$value <- as.double(as.character(live_births$value))
 ```
 
 ```{r Live births plot, warning=FALSE}
 live_births %>% 
   filter(level_1 == "Total Live-births") %>% 
-  gg_line(x_var = year,
-          y_var = value,
+  gg_line(x = year,
+          y = value,
           title = "Number of live births",
           y_title = "",
           x_title = "",
           caption = "Graphic: @wyuet. Source: data.gov.sg",
-          theme = theme_light())
+          theme = theme_light()) +
+  geom_point()
 ```
 
 ## Total Fertility Rate by Ethnic Groups
@@ -94,15 +120,17 @@ total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annu
 
 ```{r Fertility rate ethnic group plot, warning=FALSE}
 total_fertility_rate_by_ethnic_group %>% 
-  gg_line_col(x_var = year,
-              y_var = value,
-              col_var = level_2,
-              title = "Total Fertility Rate by Ethnic Groups",
-              y_title = "",
-              x_title = "",
-              col_title = "",
-              caption = "Graphic: @wyuet. Source: data.gov.sg",
-              theme = theme_light())
+  gg_line(x = year,
+          y = value,
+          col = level_2,
+          title = "Total Fertility Rate by Ethnic Groups",
+          y_title = "",
+          x_title = "",
+          col_legend_place = "r",
+          col_title = "",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_light()) +
+  geom_point()
 ```
 
 ## Total Fertility Rate by Age Groups
@@ -123,15 +151,17 @@ age_specific_fertility_rate$value <- as.double(as.character(age_specific_fertili
 ```{r Fertility rate age group plot, warning=FALSE}
 
 age_specific_fertility_rate %>% 
-  gg_line_col(x_var = year,
-              y_var = value,
-              col_var = level_2,
-              title = "Total Fertility Rate by Age Groups",
-              y_title = "",
-              x_title = ,
-              col_title = "",
-              caption = "Graphic: @wyuet. Source: data.gov.sg",
-              theme = theme_light())
+  gg_line(x = year,
+          y = value,
+          col = level_2,
+          title = "Total Fertility Rate by Age Groups",
+          y_title = "",
+          x_title = "",
+          col_legend_place = "r",
+          col_title = "",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_light()) +
+  geom_point()
 ```
 
 # Health
@@ -146,15 +176,17 @@ life_expectancy_at_birth_and_age_65_years <- read_csv("data/life-expectancy-by-s
 
 ```{r Life expectancy at birth plot, warning=FALSE}
 life_expectancy_at_birth_and_age_65_years %>% 
-  gg_line_col(x_var = year,
-              y_var = value,
-              col_var = level_1,
-              x_title = "",
-              y_title = "",
-              col_title = "",
-              title = "Life Expectancy at Birth",
-              caption = "Graphic: @wyuet. Source: data.gov.sg",
-              theme = theme_light())
+  gg_line(x = year,
+          y = value,
+          col = level_1,
+          title = "Life Expectancy at Birth",
+          x_title = "",
+          y_title = "",
+          col_legend_place = "b",
+          col_title = "",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_light()) +
+  geom_point()
 ```
 
 ### Life Expectancy by Gender
@@ -165,15 +197,17 @@ life_expectancy_at_birth_and_age_65_years_by_sex <- read_csv("data/life-expectan
 
 ```{r Life expectancy by gender plot, warning=FALSE}
 life_expectancy_at_birth_and_age_65_years_by_sex %>% 
-  gg_line_col(x_var = year,
-              y_var = value,
-              col_var = level_2,
-              x_title = "",
-              y_title = "",
-              col_title = "",
-              title = "Life Expectancy by Gender",
-              caption = "Graphic: @wyuet. Source: data.gov.sg",
-              theme = theme_light())
+  gg_line(x = year,
+          y = value,
+          col = level_2,
+          title = "Life Expectancy by Gender",
+          x_title = "",
+          y_title = "",
+          col_legend_place = "b",
+          col_title = "",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_light()) +
+  geom_point()
 ```
 
 ## Total Number of Deaths
@@ -184,13 +218,14 @@ total_number_of_deaths <- read_csv("data/principal-causes-of-death/total-number-
 
 ```{r Total number of deaths plot, warning=FALSE}
 total_number_of_deaths %>% 
-  gg_line(x_var = year,
-          y_var = no_of_deaths,
+  gg_line(x = year,
+          y = no_of_deaths,
+          title = "Total Number of Deaths (Annual)",
           x_title = "",
           y_title = "",
-          title = "Total Number of Deaths (Annual)",
           caption = "Graphic: @wyuet. Source: data.gov.sg",
-          theme = theme_light())
+          theme = theme_light()) +
+  geom_point()
 ```
 
 ## Principal Causes of Death
@@ -201,28 +236,25 @@ principal_causes_of_death <- read_csv("data/principal-causes-of-death/principal-
 
 ```{r Principal causes of death plot, warning=FALSE}
 principal_causes_of_death %>%
-  filter(year == "2006" | year == "2012" | year == "2020") %>% 
-  gg_bar_col(x_var = disease_condition,
-             y_var = percentage_deaths,
-             col_var = year,
-             x_title = "",
-             col_title = "",
-             col_legend_none = TRUE,
-             title = "Principal Causes of Death",
-             caption = "Graphic: @wyuet. Source: data.gov.sg",
-             theme = theme_light())
-
+  filter(year == "2020") %>% 
+  gg_line(x = disease_condition,
+          y = percentage_deaths,
+          title = "Principal Causes of Death",
+          x_title = "",
+          col_title = "",
+          col_legend_place = "r",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_light()) +
+  geom_boxplot()
 ```
 
-# Infrastruture
+# Infrastructure
 
 ## Housing
 
   - Being an island state, land is limited, and thus housing is a perennial issue.
 
   - The majority of people live in public housing, and the term evokes a different image compared to other countries.
-  
-  - A small proportion of people live in private landed properties.
 
 ### Flats Constructed By Housing And Development Board, Annual
 
@@ -232,13 +264,14 @@ flats_constructed_by_housing_and_development_board_annual <- read_csv("data/flat
 
 ```{r Flats constructed by hdb plot, warning=FALSE}
 flats_constructed_by_housing_and_development_board_annual %>% 
-  gg_line(x_var = year,
-          y_var = flats_constructed,
+  gg_line(x = year,
+          y = flats_constructed,
           title = "Flats Constructed by Housing and Development Board (Annual)",
           y_title = "",
           x_title = "",
           caption = "Graphic: @wyuet. Source: data.gov.sg",
-          theme = theme_light())
+          theme = theme_light()) +
+  geom_point()
 
 ```
 
@@ -279,15 +312,16 @@ value_of_local_food_production_in_singapore_long <- melt(value_of_local_food_pro
 
 ```{r Value of local food production plot, warning=FALSE}
 value_of_local_food_production_in_singapore_long %>% 
-  gg_hbar_col(x_var = value,
-              y_var = year,
-              col_var = variable,
-              x_title = "",
-              y_title = "",
-              col_title = "",
-              title = "Value of Local Food Production (million SGD)",
-              caption = "Graphic: @wyuet. Source: data.gov.sg",
-              theme = theme_light())
+  gg_col(x = year,
+         y = value,
+         col = variable,
+         title = "Value of Local Food Production (million SGD)",
+         x_title = "",
+         y_title = "",
+         col_legend_place = "r",
+         col_title = "",
+         caption = "Graphic: @wyuet. Source: data.gov.sg",
+         theme = theme_light())
 ```
 
 # Environment
@@ -300,13 +334,14 @@ carbon_dioxide_emissions_from_combustion_of_fossil_fuels <- read_csv("data/clima
 
 ```{r CO2 emissions plot, warning=FALSE}
 carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>% 
-  gg_line(x_var = year,
-          y_var = co2_emissions,
+  gg_line(x = year,
+          y = co2_emissions,
           title = "Carbon Dioxide Emissions (From Combustion of Fossil Fuels)",
           x_title = "",
           y_title = "",
           caption = "Graphic: @wyuet. Source: data.gov.sg",
-          theme = theme_light())
+          theme = theme_light()) +
+  geom_point()
 ```
 
 ## Waste Disposed Of And Recycled (Annual)
@@ -320,16 +355,16 @@ waste_disposed_of_and_recycled_annual_long <- melt(waste_disposed_of_and_recycle
 
 ```{r Waste disposed and recycled plot, warning=FALSE}
 waste_disposed_of_and_recycled_annual_long %>% 
-  gg_hbar_col(x_var = value,
-              y_var = year,
-              col_var = variable,
-              y_rev = TRUE,
-              x_title = "",
-              y_title = "",
-              title = "Waste Disposed Of And Recycled (Annual)",
-              col_title = "",
-              caption = "Graphic: @wyuet. Source: data.gov.sg",
-              theme = theme_light())
+  gg_col(x = year,
+         y = value,
+         col = variable,
+         title = "Waste Disposed Of And Recycled (Annual)",
+         x_title = "",
+         y_title = "",
+         col_legend_place = "r",
+         col_title = "",
+         caption = "Graphic: @wyuet. Source: data.gov.sg",
+         theme = theme_light())
 ```
 
 # Economy
@@ -345,14 +380,14 @@ container_throughput_monthly <- read_csv("data/container-throughput-monthly-tota
 
 ```{r Container throughput monthly plot, warning=FALSE}
 container_throughput_monthly %>% 
-  gg_bar(x_var = month,
-         y_var = container_throughput,
-         x_breaks_n = 0.5,
-         x_title = "",
-         y_title = "",
-         title = "Container Throughput, Monthly (in twenty-foot equivalent)",
-         caption = "Graphic: @wyuet. Source: data.gov.sg",
-         theme = theme_light())
+  gg_line(x = month,
+          y = container_throughput,
+          title = "Container Throughput, Monthly (in twenty-foot equivalent)",
+          x_title = "",
+          y_title = "",
+          caption = "Graphic: @wyuet. Source: data.gov.sg",
+          theme = theme_light()) +
+  geom_point()
 ```
 
 # Contact
