@@ -53,6 +53,7 @@ singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual$value <- a
 ```{r Resident population plot, warning=FALSE}
 singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual %>% 
   filter(year == "2019" | level_1 == "Total Residents") %>% 
+  drop_na() %>% 
   gg_col(x = level_2,
          y = value,
          col = level_2,
@@ -87,7 +88,8 @@ crude_birth_rate %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(1960, 2022, 5))
 ```
 
 ## Number of Live Births
@@ -112,7 +114,8 @@ live_births %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(1960, 2022, 5))
 ```
 
 ## Total Fertility Rate by Ethnic Groups
@@ -136,7 +139,8 @@ total_fertility_rate_by_ethnic_group %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(1960, 2022, 5))
 ```
 
 ## Total Fertility Rate by Age Groups
@@ -168,7 +172,8 @@ age_specific_fertility_rate %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(1960, 2022, 5))
 ```
 
 # Health
@@ -194,7 +199,8 @@ life_expectancy_at_birth_and_age_65_years %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(1960, 2022, 5))
 ```
 
 ### Life Expectancy by Gender
@@ -216,7 +222,8 @@ life_expectancy_at_birth_and_age_65_years_by_sex %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(1960, 2022, 5))
 ```
 
 ## Total Number of Deaths
@@ -235,7 +242,8 @@ total_number_of_deaths %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(decimal.mark = "", big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(2005, 2022, 1))
 ```
 
 ## Principal Causes of Death
@@ -282,7 +290,8 @@ flats_constructed_by_housing_and_development_board_annual %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(1975, 2022, 5))
 ```
 
 ### Resale Flat Prices
@@ -328,11 +337,12 @@ value_of_local_food_production_in_singapore_long %>%
          title = "Value of Local Food Production (million SGD)",
          x_title = "",
          y_title = "",
-         col_legend_place = "r",
+         col_legend_place = "b",
          col_title = "",
          caption = "Source: data.gov.sg\nGraphic: @wyuet",
          theme = theme_light()) +
-  scale_x_continuous(labels = label_number(decimal.mark = "", big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(2012, 2022, 1))
 ```
 
 # Environment
@@ -353,7 +363,8 @@ carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>%
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
   geom_point() +
-  scale_x_continuous(labels = label_number(decimal.mark = "", big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(2005, 2022, 1))
 ```
 
 ## Waste Disposed Of And Recycled (Annual)
@@ -373,11 +384,12 @@ waste_disposed_of_and_recycled_annual_long %>%
          title = "Waste Disposed Of And Recycled (Annual)",
          x_title = "",
          y_title = "",
-         col_legend_place = "r",
+         col_legend_place = "b",
          col_title = "",
          caption = "Source: data.gov.sg\nGraphic: @wyuet",
          theme = theme_light()) +
-  scale_x_continuous(labels = label_number(decimal.mark = "", big.mark = ""))
+  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
+                     breaks = seq(2000, 2022, 1))
 ```
 
 # Economy
@@ -400,9 +412,7 @@ container_throughput_monthly %>%
           y_title = "",
           caption = "Source: data.gov.sg\nGraphic: @wyuet",
           theme = theme_light()) +
-  geom_point()
+  geom_point() +
+  scale_x_discrete()
 ```
 
-# Contact
-
-[Wei Yuet Wong](weiyuet@gmail.com)
