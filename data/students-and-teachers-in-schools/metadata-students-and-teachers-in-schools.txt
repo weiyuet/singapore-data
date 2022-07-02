@@ -1,0 +1,145 @@
+# Metadata for Students and Teachers In Schools
+---
+Identifier: '6091ef96-f3c9-4501-88dc-30c243363ca1'
+Name: 'students-and-teachers-in-schools'
+Title: 'Students and Teachers In Schools'
+Description:
+  - 'Number of students and education officers.'
+  - ''
+  - 'Note:'
+  - ''
+  - '1.  From 2008,  Autonomous schools (Auto) have been grouped under Government
+    and Government-Aided schools.'
+  - ''
+  - '2. Pre-University includes Junior Colleges, Centralised Institutes and Pre-U
+    Centres.'
+  - ''
+  - '3. Pre-U Auto and Specialised Independent teachers'' data are included under
+    Secondary Level.'
+Topics:
+  - 'Education'
+Keywords:
+  - 'Enrolment'
+  - 'Pre-University'
+  - 'Primary Education'
+  - 'Schools'
+  - 'Secondary Education'
+  - 'Students'
+  - 'Teachers'
+  - 'Tertiary Education'
+Publisher:
+  Name: 'Ministry of Education'
+  Admin 1:
+    Name: 'Chng Lung Huang'
+    Department: 'Research & Management Information Division'
+    Email: 'moe_management_information@moe.gov.sg'
+Sources:
+  - 'Ministry of Education'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '1980-01-01 to 2020-12-31'
+Last Updated: '2021-10-26T02:57:04.421317'
+Resources:
+  -
+    Identifier: '22600569-848a-40af-af4c-b6f60c35c711'
+    Title: 'Students and Teachers - Primary Schools'
+    Url: 'https://storage.data.gov.sg/students-and-teachers-in-schools/resources/students-and-teachers-primary-schools-2021-10-15T08-36-29Z.csv'
+    Format: 'CSV'
+    Coverage: '1980-01-01 to 2020-12-31'
+    Last Updated: '2021-10-15T08:36:29.109137'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'sex'
+        Title: 'Sex'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'school_type'
+        Title: 'School Type'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'students_pri'
+        Title: 'Students'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'teachers_pri'
+        Title: 'Teachers'
+        Type: 'text'
+        Sub Type: 'general'
+  -
+    Identifier: '932c3180-d791-4f98-8b94-25405533ec0e'
+    Title: 'Students and Teachers - Secondary Schools'
+    Url: 'https://storage.data.gov.sg/students-and-teachers-in-schools/resources/students-and-teachers-secondary-schools-2021-10-15T08-38-52Z.csv'
+    Format: 'CSV'
+    Coverage: '1981-01-01 to 2020-12-31'
+    Last Updated: '2021-10-15T08:38:52.045762'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'sex'
+        Title: 'Sex'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'school_type'
+        Title: 'School Type'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'student_sec'
+        Title: 'Students'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'teacher_sec'
+        Title: 'Teachers'
+        Type: 'text'
+        Sub Type: 'general'
+  -
+    Identifier: '089779cd-3041-4ec4-8c0a-57f5380fca40'
+    Title: 'Students and Teachers - Pre-University'
+    Url: 'https://storage.data.gov.sg/students-and-teachers-in-schools/resources/students-and-teachers-pre-university-2021-10-15T07-56-37Z.csv'
+    Format: 'CSV'
+    Coverage: '1981-01-01 to 2020-12-31'
+    Last Updated: '2021-10-15T07:56:37.932900'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'sex'
+        Title: 'Sex'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'school_type'
+        Title: 'School Type'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'students_preu'
+        Title: 'Students'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'teachers_preu'
+        Title: 'Teachers Preu'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"-" : Data is negligible or not significant'

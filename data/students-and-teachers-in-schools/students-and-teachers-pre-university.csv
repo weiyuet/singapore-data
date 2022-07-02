@@ -1,0 +1,395 @@
+year,sex,school_type,students_preu,teachers_preu
+1981,MF,Aided,7249,405
+1981,F,Aided,4084,243
+1981,MF,Auto,_,_
+1981,F,Auto,_,_
+1981,MF,Govt,10904,175
+1981,F,Govt,6504,91
+1981,MF,Indep,_,_
+1981,F,Indep,_,_
+1981,MF,Specialised Indep,_,_
+1981,F,Specialised Indep,_,_
+1982,MF,Aided,6916,399
+1982,F,Aided,3592,231
+1982,MF,Auto,_,_
+1982,F,Auto,_,_
+1982,MF,Govt,11723,282
+1982,F,Govt,6763,155
+1982,MF,Indep,_,_
+1982,F,Indep,_,_
+1982,MF,Specialised Indep,_,_
+1982,F,Specialised Indep,_,_
+1983,MF,Aided,7115,433
+1983,F,Aided,3656,254
+1983,MF,Auto,_,_
+1983,F,Auto,_,_
+1983,MF,Govt,12090,331
+1983,F,Govt,7015,196
+1983,MF,Indep,_,_
+1983,F,Indep,_,_
+1983,MF,Specialised Indep,_,_
+1983,F,Specialised Indep,_,_
+1984,MF,Aided,7514,436
+1984,F,Aided,3875,264
+1984,MF,Auto,_,_
+1984,F,Auto,_,_
+1984,MF,Govt,13957,441
+1984,F,Govt,7977,281
+1984,MF,Indep,_,_
+1984,F,Indep,_,_
+1984,MF,Specialised Indep,_,_
+1984,F,Specialised Indep,_,_
+1985,MF,Aided,8151,446
+1985,F,Aided,4225,279
+1985,MF,Auto,_,_
+1985,F,Auto,_,_
+1985,MF,Govt,16548,548
+1985,F,Govt,9505,350
+1985,MF,Indep,_,_
+1985,F,Indep,_,_
+1985,MF,Specialised Indep,_,_
+1985,F,Specialised Indep,_,_
+1986,MF,Aided,8746,458
+1986,F,Aided,4496,283
+1986,MF,Auto,_,_
+1986,F,Auto,_,_
+1986,MF,Govt,18852,641
+1986,F,Govt,10672,407
+1986,MF,Indep,_,_
+1986,F,Indep,_,_
+1986,MF,Specialised Indep,_,_
+1986,F,Specialised Indep,_,_
+1987,MF,Aided,8723,506
+1987,F,Aided,4448,318
+1987,MF,Auto,_,_
+1987,F,Auto,_,_
+1987,MF,Govt,20785,862
+1987,F,Govt,11755,549
+1987,MF,Indep,_,_
+1987,F,Indep,_,_
+1987,MF,Specialised Indep,_,_
+1987,F,Specialised Indep,_,_
+1988,MF,Aided,9188,483
+1988,F,Aided,4796,309
+1988,MF,Auto,_,_
+1988,F,Auto,_,_
+1988,MF,Govt,22894,889
+1988,F,Govt,12959,570
+1988,MF,Indep,_,_
+1988,F,Indep,_,_
+1988,MF,Specialised Indep,_,_
+1988,F,Specialised Indep,_,_
+1989,MF,Aided,9003,516
+1989,F,Aided,4769,335
+1989,MF,Auto,_,_
+1989,F,Auto,_,_
+1989,MF,Govt,22726,991
+1989,F,Govt,12874,633
+1989,MF,Indep,_,_
+1989,F,Indep,_,_
+1989,MF,Specialised Indep,_,_
+1989,F,Specialised Indep,_,_
+1990,MF,Aided,8107,502
+1990,F,Aided,4268,323
+1990,MF,Auto,_,_
+1990,F,Auto,_,_
+1990,MF,Govt,21107,1038
+1990,F,Govt,12110,661
+1990,MF,Indep,_,_
+1990,F,Indep,_,_
+1990,MF,Specialised Indep,_,_
+1990,F,Specialised Indep,_,_
+1991,MF,Aided,7347,506
+1991,F,Aided,3881,329
+1991,MF,Auto,_,_
+1991,F,Auto,_,_
+1991,MF,Govt,19877,1095
+1991,F,Govt,11448,705
+1991,MF,Indep,_,_
+1991,F,Indep,_,_
+1991,MF,Specialised Indep,_,_
+1991,F,Specialised Indep,_,_
+1992,MF,Aided,6875,496
+1992,F,Aided,3585,321
+1992,MF,Auto,_,_
+1992,F,Auto,_,_
+1992,MF,Govt,17788,1129
+1992,F,Govt,10256,715
+1992,MF,Indep,_,_
+1992,F,Indep,_,_
+1992,MF,Specialised Indep,_,_
+1992,F,Specialised Indep,_,_
+1993,MF,Aided,7162,495
+1993,F,Aided,3752,312
+1993,MF,Auto,_,_
+1993,F,Auto,_,_
+1993,MF,Govt,16796,1118
+1993,F,Govt,9648,691
+1993,MF,Indep,_,_
+1993,F,Indep,_,_
+1993,MF,Specialised Indep,_,_
+1993,F,Specialised Indep,_,_
+1994,MF,Aided,7263,514
+1994,F,Aided,3784,320
+1994,MF,Auto,_,_
+1994,F,Auto,_,_
+1994,MF,Govt,15594,1115
+1994,F,Govt,8892,692
+1994,MF,Indep,_,_
+1994,F,Indep,_,_
+1994,MF,Specialised Indep,_,_
+1994,F,Specialised Indep,_,_
+1995,MF,Aided,7137,506
+1995,F,Aided,3671,310
+1995,MF,Auto,_,_
+1995,F,Auto,_,_
+1995,MF,Govt,14553,1096
+1995,F,Govt,8151,673
+1995,MF,Indep,_,_
+1995,F,Indep,_,_
+1995,MF,Specialised Indep,_,_
+1995,F,Specialised Indep,_,_
+1996,MF,Aided,7361,486
+1996,F,Aided,3763,292
+1996,MF,Auto,_,_
+1996,F,Auto,_,_
+1996,MF,Govt,14497,1050
+1996,F,Govt,7955,639
+1996,MF,Indep,_,_
+1996,F,Indep,_,_
+1996,MF,Specialised Indep,_,_
+1996,F,Specialised Indep,_,_
+1997,MF,Aided,7672,476
+1997,F,Aided,3997,289
+1997,MF,Auto,_,_
+1997,F,Auto,_,_
+1997,MF,Govt,14639,1055
+1997,F,Govt,8066,640
+1997,MF,Indep,_,_
+1997,F,Indep,_,_
+1997,MF,Specialised Indep,_,_
+1997,F,Specialised Indep,_,_
+1998,MF,Aided,8263,531
+1998,F,Aided,4357,388
+1998,MF,Auto,_,_
+1998,F,Auto,_,_
+1998,MF,Govt,15267,1108
+1998,F,Govt,8522,797
+1998,MF,Indep,_,_
+1998,F,Indep,_,_
+1998,MF,Specialised Indep,_,_
+1998,F,Specialised Indep,_,_
+1999,MF,Aided,8683,616
+1999,F,Aided,4564,369
+1999,MF,Auto,_,_
+1999,F,Auto,_,_
+1999,MF,Govt,16151,1222
+1999,F,Govt,9030,737
+1999,MF,Indep,_,_
+1999,F,Indep,_,_
+1999,MF,Specialised Indep,_,_
+1999,F,Specialised Indep,_,_
+2000,MF,Aided,8352,640
+2000,F,Aided,4365,376
+2000,MF,Auto,_,_
+2000,F,Auto,_,_
+2000,MF,Govt,16452,1245
+2000,F,Govt,9141,730
+2000,MF,Indep,_,_
+2000,F,Indep,_,_
+2000,MF,Specialised Indep,_,_
+2000,F,Specialised Indep,_,_
+2001,MF,Aided,7944,629
+2001,F,Aided,4140,366
+2001,MF,Auto,_,_
+2001,F,Auto,_,_
+2001,MF,Govt,16432,1261
+2001,F,Govt,9030,714
+2001,MF,Indep,_,_
+2001,F,Indep,_,_
+2001,MF,Specialised Indep,_,_
+2001,F,Specialised Indep,_,_
+2002,MF,Aided,8190,646
+2002,F,Aided,4289,382
+2002,MF,Auto,_,_
+2002,F,Auto,_,_
+2002,MF,Govt,17186,1370
+2002,F,Govt,9451,773
+2002,MF,Indep,_,_
+2002,F,Indep,_,_
+2002,MF,Specialised Indep,_,_
+2002,F,Specialised Indep,_,_
+2003,MF,Aided,7738,645
+2003,F,Aided,4055,382
+2003,MF,Auto,_,_
+2003,F,Auto,_,_
+2003,MF,Govt,16821,1414
+2003,F,Govt,9151,798
+2003,MF,Indep,_,_
+2003,F,Indep,_,_
+2003,MF,Specialised Indep,_,_
+2003,F,Specialised Indep,_,_
+2004,MF,Aided,5929,535
+2004,F,Aided,3143,329
+2004,MF,Auto,_,_
+2004,F,Auto,_,_
+2004,MF,Govt,17040,1602
+2004,F,Govt,9110,923
+2004,MF,Indep,1712,130
+2004,F,Indep,917,77
+2004,MF,Specialised Indep,_,_
+2004,F,Specialised Indep,_,_
+2005,MF,Aided,6883,581
+2005,F,Aided,3706,344
+2005,MF,Auto,_,_
+2005,F,Auto,_,_
+2005,MF,Govt,18160,1644
+2005,F,Govt,9872,947
+2005,MF,Indep,3858,319
+2005,F,Indep,1964,178
+2005,MF,Specialised Indep,_,_
+2005,F,Specialised Indep,_,_
+2006,MF,Aided,7067,586
+2006,F,Aided,3794,349
+2006,MF,Auto,_,_
+2006,F,Auto,_,_
+2006,MF,Govt,18933,1597
+2006,F,Govt,10428,926
+2006,MF,Indep,4726,352
+2006,F,Indep,2312,202
+2006,MF,Specialised Indep,_,_
+2006,F,Specialised Indep,_,_
+2007,MF,Aided,6949,576
+2007,F,Aided,3888,349
+2007,MF,Auto,128,_
+2007,F,Auto,93,_
+2007,MF,Govt,19095,1665
+2007,F,Govt,10608,963
+2007,MF,Indep,5455,475
+2007,F,Indep,2557,248
+2007,MF,Specialised Indep,_,_
+2007,F,Specialised Indep,_,_
+2008,MF,Aided,6947,564
+2008,F,Aided,3864,330
+2008,MF,Auto,_,_
+2008,F,Auto,_,_
+2008,MF,Govt,19845,1658
+2008,F,Govt,11162,962
+2008,MF,Indep,5611,506
+2008,F,Indep,2639,272
+2008,MF,Specialised Indep,176,_
+2008,F,Specialised Indep,84,_
+2009,MF,Aided,6712,570
+2009,F,Aided,3653,331
+2009,MF,Auto,_,_
+2009,F,Auto,_,_
+2009,MF,Govt,19478,1707
+2009,F,Govt,11152,1002
+2009,MF,Indep,5657,520
+2009,F,Indep,2668,286
+2009,MF,Specialised Indep,263,_
+2009,F,Specialised Indep,96,_
+2010,MF,Aided,6877,600
+2010,F,Aided,3816,348
+2010,MF,Auto,_,_
+2010,F,Auto,_,_
+2010,MF,Govt,19440,1714
+2010,F,Govt,11100,995
+2010,MF,Indep,5717,523
+2010,F,Indep,2717,284
+2010,MF,Specialised Indep,386,_
+2010,F,Specialised Indep,136,_
+2011,MF,Aided,6821,616
+2011,F,Aided,3742,355
+2011,MF,Auto,_,_
+2011,F,Auto,_,_
+2011,MF,Govt,19138,1730
+2011,F,Govt,10802,1005
+2011,MF,Indep,5824,523
+2011,F,Indep,2782,288
+2011,MF,Specialised Indep,513,_
+2011,F,Specialised Indep,239,_
+2012,MF,Aided,6618,618
+2012,F,Aided,3536,359
+2012,MF,Auto,_,_
+2012,F,Auto,_,_
+2012,MF,Govt,19035,1756
+2012,F,Govt,10834,1033
+2012,MF,Indep,5811,534
+2012,F,Indep,2809,300
+2012,MF,Specialised Indep,623,_
+2012,F,Specialised Indep,332,_
+2013,MF,Aided,6545,638
+2013,F,Aided,3456,368
+2013,MF,Auto,_,_
+2013,F,Auto,_,_
+2013,MF,Govt,19109,1813
+2013,F,Govt,10797,1074
+2013,MF,Indep,5881,547
+2013,F,Indep,2874,290
+2013,MF,Specialised Indep,630,_
+2013,F,Specialised Indep,328,_
+2014,MF,Aided,6278,633
+2014,F,Aided,3330,370
+2014,MF,Auto,_,_
+2014,F,Auto,_,_
+2014,MF,Govt,18755,1840
+2014,F,Govt,10474,1085
+2014,MF,Indep,5908,534
+2014,F,Indep,2870,284
+2014,MF,Specialised Indep,672,_
+2014,F,Specialised Indep,361,_
+2015,MF,Aided,5659,613
+2015,F,Aided,3085,353
+2015,MF,Auto,_,_
+2015,F,Auto,_,_
+2015,MF,Govt,17476,1814
+2015,F,Govt,9722,1053
+2015,MF,Indep,5717,557
+2015,F,Indep,2775,294
+2015,MF,Specialised Indep,707,_
+2015,F,Specialised Indep,385,_
+2016,MF,Aided,5308,574
+2016,F,Aided,2893,338
+2016,MF,Auto,_,_
+2016,F,Auto,_,_
+2016,MF,Govt,16763,1820
+2016,F,Govt,9329,1052
+2016,MF,Indep,5669,531
+2016,F,Indep,2766,282
+2016,MF,Specialised Indep,702,_
+2016,F,Specialised Indep,381,_
+2017,MF,Aided,5410,558
+2017,F,Aided,2892,327
+2017,MF,Auto,_,_
+2017,F,Auto,_,_
+2017,MF,Govt,17269,1763
+2017,F,Govt,9656,1027
+2017,MF,Indep,5862,527
+2017,F,Indep,2836,281
+2017,MF,Specialised Indep,711,_
+2017,F,Specialised Indep,375,_
+2018,MF,Aided,6203,555
+2018,F,Aided,3323,324
+2018,MF,Govt,15908,1571
+2018,F,Govt,8791,899
+2018,MF,Indep,6197,526
+2018,F,Indep,3012,282
+2018,MF,Specialised Indep,704,-
+2018,F,Specialised Indep,377,-
+2019,MF,Aided,6443,564
+2019,F,Aided,3459,329
+2019,MF,Govt,14122,1425
+2019,F,Govt,7796,813
+2019,MF,Indep,6272,531
+2019,F,Indep,3075,293
+2019,MF,Specialised Indep,695,-
+2019,F,Specialised Indep,381,-
+2020,MF,Aided,5942,559
+2020,F,Aided,3138,322
+2020,MF,Govt,13295,1364
+2020,F,Govt,7347,772
+2020,MF,Indep,6036,518
+2020,F,Indep,2923,283
+2020,MF,Specialised Indep,732,-
+2020,F,Specialised Indep,375,-

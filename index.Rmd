@@ -7,7 +7,7 @@ output:
     code_folding: hide
     theme: paper
     highlight: tango
-    fig_width: 9
+    fig_width: 8
     fig_height: 6
     toc: yes
     toc_depth: 2
@@ -62,7 +62,7 @@ singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual %>%
          y_title = "",
          col_legend_place = "",
          col_title = "",
-         caption = "Source: data.gov.sg\nGraphic: @wyuet",
+         caption = "Source: data.gov.sg\nGraphic: @weiyuet",
          theme = theme_light())
 ```
 
@@ -85,7 +85,7 @@ crude_birth_rate %>%
           title = "Crude Birth Rate (per 1,000 popultaion)",
           y_title = "",
           x_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -111,7 +111,7 @@ live_births %>%
           title = "Number of live births",
           y_title = "",
           x_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -136,7 +136,7 @@ total_fertility_rate_by_ethnic_group %>%
           x_title = "",
           col_legend_place = "r",
           col_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -159,7 +159,6 @@ age_specific_fertility_rate$value <- as.double(as.character(age_specific_fertili
 ```
 
 ```{r Fertility rate age group plot, warning=FALSE}
-
 age_specific_fertility_rate %>% 
   gg_line(x = year,
           y = value,
@@ -169,7 +168,7 @@ age_specific_fertility_rate %>%
           x_title = "",
           col_legend_place = "r",
           col_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -196,7 +195,7 @@ life_expectancy_at_birth_and_age_65_years %>%
           y_title = "",
           col_legend_place = "b",
           col_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -219,7 +218,7 @@ life_expectancy_at_birth_and_age_65_years_by_sex %>%
           y_title = "",
           col_legend_place = "b",
           col_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -239,7 +238,7 @@ total_number_of_deaths %>%
           title = "Total Number of Deaths (Annual)",
           x_title = "",
           y_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -261,7 +260,7 @@ principal_causes_of_death %>%
           x_title = "",
           col_title = "",
           col_legend_place = "r",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_boxplot()
 ```
@@ -287,7 +286,7 @@ flats_constructed_by_housing_and_development_board_annual %>%
           title = "Flats Constructed by Housing and Development Board (Annual)",
           y_title = "",
           x_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -313,7 +312,7 @@ resale_flat_prices_based_on_registration_date_from_jan_2017_onwards <- read_csv(
   #              col_var = flat_type,
   #              title = "Resale Flat Prices from Jan 2017",
   #              y_title = "",
-  #              caption = "Graphic: @wyuet Source: data.gov.sg",
+  #              caption = "Graphic: @weiyuet Source: data.gov.sg",
   #              theme = theme_light())
 
 ```
@@ -339,7 +338,7 @@ value_of_local_food_production_in_singapore_long %>%
          y_title = "",
          col_legend_place = "b",
          col_title = "",
-         caption = "Source: data.gov.sg\nGraphic: @wyuet",
+         caption = "Source: data.gov.sg\nGraphic: @weiyuet",
          theme = theme_light()) +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
                      breaks = seq(2012, 2022, 1))
@@ -360,7 +359,7 @@ carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>%
           title = "Carbon Dioxide Emissions (From Combustion of Fossil Fuels)",
           x_title = "",
           y_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
@@ -386,7 +385,7 @@ waste_disposed_of_and_recycled_annual_long %>%
          y_title = "",
          col_legend_place = "b",
          col_title = "",
-         caption = "Source: data.gov.sg\nGraphic: @wyuet",
+         caption = "Source: data.gov.sg\nGraphic: @weiyuet",
          theme = theme_light()) +
   scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
                      breaks = seq(2000, 2022, 1))
@@ -410,7 +409,7 @@ container_throughput_monthly %>%
           title = "Container Throughput, Monthly (in twenty-foot equivalent)",
           x_title = "",
           y_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @wyuet",
+          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
           theme = theme_light()) +
   geom_point() +
   scale_x_discrete()

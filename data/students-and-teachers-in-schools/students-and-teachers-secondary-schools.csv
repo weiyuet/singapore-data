@@ -1,0 +1,475 @@
+year,sex,school_type,student_sec,teacher_sec
+1981,MF,Govt,117223,5480
+1981,F,Govt,58475,2841
+1981,MF,Aided,40084,2148
+1981,F,Aided,20623,1392
+1981,MF,Auto,0,0
+1981,F,Auto,0,0
+1981,MF,Independent,0,0
+1981,F,Independent,0,0
+1981,MF,Specialised Independant,0,0
+1981,F,Specialised Independant,0,0
+1981,MF,Specialised,0,0
+1981,F,Specialised,0,0
+1982,MF,Govt,117063,5412
+1982,F,Govt,58495,2824
+1982,MF,Aided,39350,2185
+1982,F,Aided,20105,1441
+1982,MF,Auto,0,0
+1982,F,Auto,0,0
+1982,MF,Independent,0,0
+1982,F,Independent,0,0
+1982,MF,Specialised Independant,0,0
+1982,F,Specialised Independant,0,0
+1982,MF,Specialised,0,0
+1982,F,Specialised,0,0
+1983,MF,Govt,121749,5615
+1983,F,Govt,60311,3004
+1983,MF,Aided,39514,2192
+1983,F,Aided,20147,1455
+1983,MF,Auto,0,0
+1983,F,Auto,0,0
+1983,MF,Independent,0,0
+1983,F,Independent,0,0
+1983,MF,Specialised Independant,0,0
+1983,F,Specialised Independant,0,0
+1983,MF,Specialised,0,0
+1983,F,Specialised,0,0
+1984,MF,Govt,123443,5565
+1984,F,Govt,61207,3043
+1984,MF,Aided,40931,1714
+1984,F,Aided,20717,1100
+1984,MF,Auto,0,0
+1984,F,Auto,0,0
+1984,MF,Independent,0,0
+1984,F,Independent,0,0
+1984,MF,Specialised Independant,0,0
+1984,F,Specialised Independant,0,0
+1984,MF,Specialised,0,0
+1984,F,Specialised,0,0
+1985,MF,Govt,120978,5713
+1985,F,Govt,59732,3159
+1985,MF,Aided,42612,1781
+1985,F,Aided,21805,1155
+1985,MF,Auto,0,0
+1985,F,Auto,0,0
+1985,MF,Independent,0,0
+1985,F,Independent,0,0
+1985,MF,Specialised Independant,0,0
+1985,F,Specialised Independant,0,0
+1985,MF,Specialised,0,0
+1985,F,Specialised,0,0
+1986,MF,Govt,130444,5820
+1986,F,Govt,63777,3266
+1986,MF,Aided,43094,1701
+1986,F,Aided,22159,1122
+1986,MF,Auto,0,0
+1986,F,Auto,0,0
+1986,MF,Independent,0,0
+1986,F,Independent,0,0
+1986,MF,Specialised Independant,0,0
+1986,F,Specialised Independant,0,0
+1986,MF,Specialised,0,0
+1986,F,Specialised,0,0
+1987,MF,Govt,127455,6098
+1987,F,Govt,61573,3582
+1987,MF,Aided,44162,1835
+1987,F,Aided,22807,1255
+1987,MF,Auto,0,0
+1987,F,Auto,0,0
+1987,MF,Independent,0,0
+1987,F,Independent,0,0
+1987,MF,Specialised Independant,0,0
+1987,F,Specialised Independant,0,0
+1987,MF,Specialised,0,0
+1987,F,Specialised,0,0
+1988,MF,Govt,124702,5917
+1988,F,Govt,60031,3485
+1988,MF,Aided,37919,1577
+1988,F,Aided,22404,1099
+1988,MF,Auto,0,0
+1988,F,Auto,0,0
+1988,MF,Independent,5482,101
+1988,F,Independent,0,57
+1988,MF,Specialised Independant,0,0
+1988,F,Specialised Independant,0,0
+1988,MF,Specialised,0,0
+1988,F,Specialised,0,0
+1989,MF,Govt,122861,5843
+1989,F,Govt,58876,3507
+1989,MF,Aided,36089,1533
+1989,F,Aided,20481,1057
+1989,MF,Auto,0,0
+1989,F,Auto,0,0
+1989,MF,Independent,6879,289
+1989,F,Independent,1676,200
+1989,MF,Specialised Independant,0,0
+1989,F,Specialised Independant,0,0
+1989,MF,Specialised,0,0
+1989,F,Specialised,0,0
+1990,MF,Govt,116693,5660
+1990,F,Govt,56741,3395
+1990,MF,Aided,35589,1533
+1990,F,Aided,20036,1047
+1990,MF,Auto,0,0
+1990,F,Auto,0,0
+1990,MF,Independent,8260,393
+1990,F,Independent,1654,269
+1990,MF,Specialised Independant,0,0
+1990,F,Specialised Independant,0,0
+1990,MF,Specialised,0,0
+1990,F,Specialised,0,0
+1991,MF,Govt,113450,5593
+1991,F,Govt,55223,3353
+1991,MF,Aided,35315,1581
+1991,F,Aided,19719,1078
+1991,MF,Auto,0,0
+1991,F,Auto,0,0
+1991,MF,Independent,7981,358
+1991,F,Independent,1643,253
+1991,MF,Specialised Independant,0,0
+1991,F,Specialised Independant,0,0
+1991,MF,Specialised,0,0
+1991,F,Specialised,0,0
+1992,MF,Govt,111920,5615
+1992,F,Govt,54354,3393
+1992,MF,Aided,36024,1651
+1992,F,Aided,19763,1131
+1992,MF,Auto,0,0
+1992,F,Auto,0,0
+1992,MF,Independent,7888,322
+1992,F,Independent,1684,240
+1992,MF,Specialised Independant,0,0
+1992,F,Specialised Independant,0,0
+1992,MF,Specialised,0,0
+1992,F,Specialised,0,0
+1993,MF,Govt,109168,5435
+1993,F,Govt,52638,3254
+1993,MF,Aided,35569,1617
+1993,F,Aided,18720,1082
+1993,MF,Auto,0,0
+1993,F,Auto,0,0
+1993,MF,Independent,10559,443
+1993,F,Independent,4419,328
+1993,MF,Specialised Independant,0,0
+1993,F,Specialised Independant,0,0
+1993,MF,Specialised,0,0
+1993,F,Specialised,0,0
+1994,MF,Govt,117479,5477
+1994,F,Govt,56496,3331
+1994,MF,Aided,36917,1663
+1994,F,Aided,18252,1116
+1994,MF,Auto,8833,403
+1994,F,Auto,4537,258
+1994,MF,Independent,10705,447
+1994,F,Independent,4493,330
+1994,MF,Specialised Independant,0,0
+1994,F,Specialised Independant,0,0
+1994,MF,Specialised,0,0
+1994,F,Specialised,0,0
+1995,MF,Govt,119554,5424
+1995,F,Govt,56228,3257
+1995,MF,Aided,33376,1336
+1995,F,Aided,16229,869
+1995,MF,Auto,16990,781
+1995,F,Auto,9287,551
+1995,MF,Independent,11062,429
+1995,F,Independent,4708,320
+1995,MF,Specialised Independant,0,0
+1995,F,Specialised Independant,0,0
+1995,MF,Specialised,0,0
+1995,F,Specialised,0,0
+1996,MF,Govt,117400,5607
+1996,F,Govt,53857,3474
+1996,MF,Aided,30238,1400
+1996,F,Aided,15112,951
+1996,MF,Auto,24990,879
+1996,F,Auto,14079,639
+1996,MF,Independent,11272,652
+1996,F,Independent,4802,457
+1996,MF,Specialised Independant,0,0
+1996,F,Specialised Independant,0,0
+1996,MF,Specialised,0,0
+1996,F,Specialised,0,0
+1997,MF,Govt,120069,6272
+1997,F,Govt,54541,3995
+1997,MF,Aided,30136,1596
+1997,F,Aided,14901,1119
+1997,MF,Auto,25070,861
+1997,F,Auto,14186,638
+1997,MF,Independent,11477,700
+1997,F,Independent,4920,488
+1997,MF,Specialised Independant,0,0
+1997,F,Specialised Independant,0,0
+1997,MF,Specialised,0,0
+1997,F,Specialised,0,0
+1998,MF,Govt,112661,5692
+1998,F,Govt,51317,4142
+1998,MF,Aided,29134,1463
+1998,F,Aided,14350,1058
+1998,MF,Auto,24493,931
+1998,F,Auto,13872,684
+1998,MF,Independent,11608,743
+1998,F,Independent,5016,513
+1998,MF,Specialised Independant,0,0
+1998,F,Specialised Independant,0,0
+1998,MF,Specialised,0,0
+1998,F,Specialised,0,0
+1999,MF,Govt,107463,5638
+1999,F,Govt,49196,3513
+1999,MF,Aided,28121,1541
+1999,F,Aided,13804,1066
+1999,MF,Auto,24836,971
+1999,F,Auto,13949,697
+1999,MF,Independent,11839,750
+1999,F,Independent,5115,526
+1999,MF,Specialised Independant,0,0
+1999,F,Specialised Independant,0,0
+1999,MF,Specialised,0,0
+1999,F,Specialised,0,0
+2000,MF,Govt,110154,5791
+2000,F,Govt,50805,3650
+2000,MF,Aided,27902,1559
+2000,F,Aided,13659,1068
+2000,MF,Auto,25262,1026
+2000,F,Auto,14075,722
+2000,MF,Independent,12087,756
+2000,F,Independent,5315,545
+2000,MF,Specialised Independant,0,0
+2000,F,Specialised Independant,0,0
+2000,MF,Specialised,0,0
+2000,F,Specialised,0,0
+2001,MF,Govt,117637,6002
+2001,F,Govt,54644,3822
+2001,MF,Aided,28299,1576
+2001,F,Aided,13984,1059
+2001,MF,Auto,28739,1211
+2001,F,Auto,15754,829
+2001,MF,Independent,12406,763
+2001,F,Independent,5511,555
+2001,MF,Specialised Independant,0,0
+2001,F,Specialised Independant,0,0
+2001,MF,Specialised,0,0
+2001,F,Specialised,0,0
+2002,MF,Govt,123681,6525
+2002,F,Govt,57474,4193
+2002,MF,Aided,25977,1516
+2002,F,Aided,11579,992
+2002,MF,Auto,31747,1368
+2002,F,Auto,18594,965
+2002,MF,Independent,12597,837
+2002,F,Independent,5632,602
+2002,MF,Specialised Independant,0,0
+2002,F,Specialised Independant,0,0
+2002,MF,Specialised,0,0
+2002,F,Specialised,0,0
+2003,MF,Govt,133363,6935
+2003,F,Govt,62049,4517
+2003,MF,Aided,26582,1368
+2003,F,Aided,11347,902
+2003,MF,Auto,33709,1676
+2003,F,Auto,20293,1167
+2003,MF,Independent,12772,851
+2003,F,Independent,5679,600
+2003,MF,Specialised Independant,0,0
+2003,F,Specialised Independant,0,0
+2003,MF,Specialised,0,0
+2003,F,Specialised,0,0
+2004,MF,Govt,138591,7123
+2004,F,Govt,64585,4651
+2004,MF,Aided,26336,1332
+2004,F,Aided,11416,873
+2004,MF,Auto,35513,1860
+2004,F,Auto,21378,1326
+2004,MF,Independent,13094,925
+2004,F,Independent,5757,636
+2004,MF,Specialised Independant,0,0
+2004,F,Specialised Independant,0,0
+2004,MF,Specialised,0,0
+2004,F,Specialised,0,0
+2005,MF,Govt,136118,7238
+2005,F,Govt,63470,4744
+2005,MF,Aided,26875,1376
+2005,F,Aided,11587,892
+2005,MF,Auto,36677,1905
+2005,F,Auto,21938,1366
+2005,MF,Independent,13393,976
+2005,F,Independent,5820,665
+2005,MF,Specialised Independant,0,0
+2005,F,Specialised Independant,0,0
+2005,MF,Specialised,0,0
+2005,F,Specialised,0,0
+2006,MF,Govt,136047,7220
+2006,F,Govt,63348,4750
+2006,MF,Aided,27240,1425
+2006,F,Aided,11762,923
+2006,MF,Auto,38053,2042
+2006,F,Auto,22915,1461
+2006,MF,Independent,13757,985
+2006,F,Independent,5941,653
+2006,MF,Specialised Independant,0,0
+2006,F,Specialised Independant,0,0
+2006,MF,Specialised,0,0
+2006,F,Specialised,0,0
+2007,MF,Govt,137626,7239
+2007,F,Govt,64094,4744
+2007,MF,Aided,27471,1473
+2007,F,Aided,11765,955
+2007,MF,Auto,38270,2154
+2007,F,Auto,23005,1504
+2007,MF,Independent,14695,1026
+2007,F,Independent,6270,672
+2007,MF,Specialised Independant,0,0
+2007,F,Specialised Independant,0,0
+2007,MF,Specialised,0,0
+2007,F,Specialised,0,0
+2008,MF,Govt,158328,8586
+2008,F,Govt,76170,5628
+2008,MF,Aided,43490,2404
+2008,F,Aided,21856,1641
+2008,MF,Auto,0,0
+2008,F,Auto,0,0
+2008,MF,Independent,13225,1009
+2008,F,Independent,5796,673
+2008,MF,Specialised Independant,1367,105
+2008,F,Specialised Independant,631,58
+2008,MF,Specialised,671,39
+2008,F,Specialised,212,15
+2009,MF,Govt,157904,9378
+2009,F,Govt,75849,6200
+2009,MF,Aided,43367,2561
+2009,F,Aided,21814,1735
+2009,MF,Auto,0,0
+2009,F,Auto,0,0
+2009,MF,Independent,13309,1080
+2009,F,Independent,5850,712
+2009,MF,Specialised Independant,1567,140
+2009,F,Specialised Independant,752,80
+2009,MF,Specialised,1083,55
+2009,F,Specialised,361,22
+2010,MF,Govt,155033,9496
+2010,F,Govt,74437,6219
+2010,MF,Aided,42934,2515
+2010,F,Aided,21661,1722
+2010,MF,Auto,0,0
+2010,F,Auto,0,0
+2010,MF,Independent,13260,1078
+2010,F,Independent,5824,699
+2010,MF,Specialised Independant,1953,185
+2010,F,Specialised Independant,945,109
+2010,MF,Specialised,1208,58
+2010,F,Specialised,412,23
+2011,MF,Govt,148912,9859
+2011,F,Govt,71537,6429
+2011,MF,Aided,42412,2716
+2011,F,Aided,21546,1836
+2011,MF,Auto,0,0
+2011,F,Auto,0,0
+2011,MF,Independent,13118,1064
+2011,F,Independent,5789,701
+2011,MF,Specialised Independant,2212,259
+2011,F,Specialised Independant,1024,153
+2011,MF,Specialised,1320,145
+2011,F,Specialised,450,54
+2012,MF,Govt,143943,10181
+2012,F,Govt,69240,6631
+2012,MF,Aided,41620,2821
+2012,F,Aided,21119,1896
+2012,MF,Auto,0,0
+2012,F,Auto,0,0
+2012,MF,Independent,13024,1100
+2012,F,Independent,5723,727
+2012,MF,Specialised Independant,2465,309
+2012,F,Specialised Independant,1119,180
+2012,MF,Specialised,1468,163
+2012,F,Specialised,522,62
+2013,MF,Govt,139542,10416
+2013,F,Govt,67269,6778
+2013,MF,Aided,40456,2924
+2013,F,Aided,20512,1953
+2013,MF,Auto,0,0
+2013,F,Auto,0,0
+2013,MF,Independent,12759,1086
+2013,F,Independent,5619,716
+2013,MF,Specialised Independant,2693,358
+2013,F,Specialised Independant,1200,201
+2013,MF,Specialised,1715,209
+2013,F,Specialised,617,83
+2014,MF,Govt,133011,10538
+2014,F,Govt,64023,6814
+2014,MF,Aided,39537,2996
+2014,F,Aided,20034,2007
+2014,MF,Auto,0,0
+2014,F,Auto,0,0
+2014,MF,Independent,12585,1079
+2014,F,Independent,5585,706
+2014,MF,Specialised Independant,2698,349
+2014,F,Specialised Independant,1211,194
+2014,MF,Specialised,2165,246
+2014,F,Specialised,783,101
+2015,MF,Govt,129667,10541
+2015,F,Govt,62573,6775
+2015,MF,Aided,38557,2967
+2015,F,Aided,19488,1989
+2015,MF,Auto,0,0
+2015,F,Auto,0,0
+2015,MF,Independent,12399,1064
+2015,F,Independent,5552,685
+2015,MF,Specialised Independant,2670,353
+2015,F,Specialised Independant,1200,203
+2015,MF,Specialised,2562,282
+2015,F,Specialised,908,121
+2016,MF,Govt,124645,10356
+2016,F,Govt,60464,6640
+2016,MF,Aided,37482,2972
+2016,F,Aided,19032,1990
+2016,MF,Auto,0,0
+2016,F,Auto,0,0
+2016,MF,Independent,12067,1064
+2016,F,Independent,5478,685
+2016,MF,Specialised Independant,2665,386
+2016,F,Specialised Independant,1158,228
+2016,MF,Specialised,2894,318
+2016,F,Specialised,1027,142
+2017,MF,Govt,117148,10041
+2017,F,Govt,56821,6390
+2017,MF,Aided,36607,2985
+2017,F,Aided,18597,1991
+2017,MF,Auto,0,0
+2017,F,Auto,0,0
+2017,MF,Independent,11856,1063
+2017,F,Independent,5407,685
+2017,MF,Specialised Independant,2651,366
+2017,F,Specialised Independant,1144,223
+2017,MF,Specialised,2918,323
+2017,F,Specialised,1014,140
+2018,MF,Govt,111951,9571
+2018,F,Govt,54539,6094
+2018,MF,Aided,35912,2926
+2018,F,Aided,18225,1960
+2018,MF,Independent,11862,1048
+2018,F,Independent,5405,680
+2018,MF,Specialised Independant,2664,360
+2018,F,Specialised Independant,1178,218
+2018,MF,Specialised,2735,336
+2018,F,Specialised,921,149
+2019,MF,Govt,108825,9226
+2019,F,Govt,53049,5869
+2019,MF,Aided,35728,2890
+2019,F,Aided,18078,1925
+2019,MF,Independent,11819,1047
+2019,F,Independent,5378,670
+2019,MF,Specialised Independant,2688,356
+2019,F,Specialised Independant,1165,216
+2019,MF,Specialised,2771,329
+2019,F,Specialised,946,138
+2020,MF,Aided,35836,2844
+2020,F,Aided,18097,1888
+2020,MF,Govt,108803,9068
+2020,F,Govt,53174,5751
+2020,MF,Independent,11924,1061
+2020,F,Independent,5463,677
+2020,MF,Specialised,2770,280
+2020,F,Specialised,960,121
+2020,MF,Specialised Independant,2738,416
+2020,F,Specialised Independant,1201,235
