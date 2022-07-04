@@ -11,7 +11,7 @@ students_and_teachers_primary_schools %>%
   ggplot(aes(x = year, y = students_pri)) +
   geom_line() +
   geom_point() +
-  theme_light() +
+  theme_classic() +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
   scale_y_continuous(labels = label_number(big.mark = ",")) +
   labs(x = "", y = "",
@@ -25,7 +25,7 @@ students_and_teachers_primary_schools %>%
   ggplot(aes(x = year, y = students_pri)) +
   geom_line() +
   geom_point() +
-  theme_light() +
+  theme_classic() +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
   scale_y_continuous(labels = label_number(big.mark = ",")) +
   labs(x = "", y = "",
