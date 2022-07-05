@@ -33,7 +33,7 @@ total_fertility_rate_by_ethnic_group %>%
   geom_hline(yintercept = 2.1, linetype = 2, size = 0.5) +
   theme_classic() +
   theme(legend.title = element_blank(),
-        legend.position = "bottom") +
+        legend.position = c(0.8, 0.5)) +
   scale_colour_brewer(type = "qual", palette = 3) +
   scale_x_continuous(breaks = seq(1960, 2020, 5)) +
   scale_y_continuous(breaks = seq(0, 8, 1)) +
