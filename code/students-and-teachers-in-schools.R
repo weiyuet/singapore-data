@@ -33,3 +33,20 @@ students_and_teachers_primary_schools %>%
        caption = "Source: data.gov.sg\nGraphic: @weiyuet")
 
 ggsave("figures/primary-school-students-in-aided-schools.png", width = 8, height = 6)
+
+
+students_and_teachers_primary_schools %>% 
+  ggplot(aes(x = year, y = students_pri,
+             colour = school_type)) +
+  geom_line() +
+  facet_wrap(~sex) +
+  theme_classic() +
+  theme(legend.position = "right") +
+  scale_color_brewer(type = "qual", palette = 6) +
+  scale_x_continuous(breaks = seq(1980, 2020, 5)) +
+  scale_y_continuous(labels = label_number(big.mark = ",")) +
+  labs(x = "", y = "",
+       colour = "School Type",
+       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
+
+ggsave("figures/primary-school-students-in-govt-and-aided-schools.png", width = 8, height = 6)

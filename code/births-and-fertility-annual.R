@@ -17,6 +17,7 @@ live_births %>%
   facet_wrap(~level_1, scales = "free") +
   theme_classic() +
   theme(legend.position = "none") +
+  scale_colour_brewer(type = "qual", palette = 6) +
   labs(x = "", y = "",
        title = "Resident live-births and total live-births in Singapore",
        caption = "Source: data.gov.sg\nGraphic: @weiyuet")
@@ -33,8 +34,8 @@ total_fertility_rate_by_ethnic_group %>%
   geom_hline(yintercept = 2.1, linetype = 2, size = 0.5) +
   theme_classic() +
   theme(legend.title = element_blank(),
-        legend.position = c(0.8, 0.5)) +
-  scale_colour_brewer(type = "qual", palette = 3) +
+        legend.position = c(0.85, 0.55)) +
+  scale_colour_brewer(type = "qual", palette = 6) +
   scale_x_continuous(breaks = seq(1960, 2020, 5)) +
   scale_y_continuous(breaks = seq(0, 8, 1)) +
   labs(x = "", y ="",
