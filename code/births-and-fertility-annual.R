@@ -15,6 +15,7 @@ live_births %>%
   geom_line() +
   geom_hline(yintercept = 40000, linetype = 2, size = 0.5) +
   facet_wrap(~level_1, scales = "free") +
+  scale_y_continuous(labels = label_number(big.mark = ",")) +
   theme_classic() +
   theme(legend.position = "none") +
   scale_colour_brewer(type = "qual", palette = 6) +
