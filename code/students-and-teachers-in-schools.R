@@ -11,7 +11,7 @@ students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in
 students_and_teachers_primary_schools %>% 
   ggplot(aes(x = year, y = students_pri,
              colour = school_type)) +
-  geom_line(size = 1.1) +
+  geom_line(size = 1.05) +
   facet_wrap(~sex) +
   theme_classic() +
   theme(legend.position = "right") +
@@ -28,7 +28,8 @@ ggsave("figures/primary-school-students-in-govt-and-aided-schools.png", width = 
 # Wrangle data
 # Calculate student-teacher ratio
 students_and_teachers_primary_schools %>% 
-  select(year, school_type, students_pri, teachers_pri) %>% 
+  select(year, sex, school_type, students_pri, teachers_pri) %>% 
+  filter(sex == "MF") %>% 
   mutate(student_teacher_ratio = students_pri/teachers_pri) %>% 
   ggplot(aes( x = year, y = student_teacher_ratio, colour = school_type)) +
   geom_smooth() +
