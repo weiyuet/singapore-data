@@ -7,7 +7,7 @@ students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in
 
 # Wrangle data
 
-# Plot number of primary school students in governmentt and aided schools
+# Plot number of primary school students in government and aided schools
 students_and_teachers_primary_schools %>% 
   ggplot(aes(x = year, y = students_pri,
              colour = school_type)) +

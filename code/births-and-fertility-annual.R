@@ -31,12 +31,11 @@ total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annu
 total_fertility_rate_by_ethnic_group %>% 
   ggplot(aes(x = year, y = value, colour = level_2)) +
   geom_line() +
-  geom_point() +
   geom_hline(yintercept = 2.1, linetype = 2, size = 0.5) +
   theme_classic() +
   theme(legend.title = element_blank(),
         legend.position = c(0.85, 0.55)) +
-  scale_colour_brewer(type = "qual", palette = 6) +
+  scale_colour_brewer(type = "qual", palette = 2) +
   scale_x_continuous(breaks = seq(1960, 2020, 5)) +
   scale_y_continuous(breaks = seq(0, 8, 1)) +
   labs(x = "", y ="",
