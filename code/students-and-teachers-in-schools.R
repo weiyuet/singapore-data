@@ -5,8 +5,6 @@ library(scales)
 # Load data
 students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-primary-schools.csv")
 
-# Wrangle data
-
 # Plot number of primary school students in government and aided schools
 students_and_teachers_primary_schools %>% 
   ggplot(aes(x = year, y = students_pri,
@@ -27,10 +25,11 @@ ggsave("figures/primary-school-students-in-govt-and-aided-schools.png", width = 
 
 # Wrangle data
 # Calculate student-teacher ratio
+students_and_teachers_primary_schools <- students_and_teachers_primary_schools %>% 
+  mutate(student_teacher_ratio = students_pri/teachers_pri)
+
 students_and_teachers_primary_schools %>% 
-  select(year, sex, school_type, students_pri, teachers_pri) %>% 
-  filter(sex == "MF") %>% 
-  mutate(student_teacher_ratio = students_pri/teachers_pri) %>% 
+  filter(sex == "MF") %>%
   ggplot(aes( x = year, y = student_teacher_ratio, colour = school_type)) +
   geom_smooth() +
   geom_jitter() +
