@@ -12,7 +12,7 @@ live_births$value <- as.double(as.character(live_births$value))
 live_births %>% 
   drop_na() %>% 
   ggplot(aes(x = year, y = value, colour = level_1)) +
-  geom_line() +
+  geom_line(size = 1.05) +
   geom_hline(yintercept = 40000, linetype = 2, size = 0.5) +
   facet_wrap(~level_1, scales = "free") +
   scale_y_continuous(labels = label_number(big.mark = ",")) +
