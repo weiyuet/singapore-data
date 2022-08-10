@@ -7,7 +7,7 @@ library(lubridate)
 container_throughput_monthly <- read_csv("data/container-throughput-monthly-total/container-throughput-monthly.csv")
 
 # Wrangle data
-# Convert date from chr to date, and separate month and year, prelim plot
+# Convert date from chr to date, separate month and year, prelim plot
 container_throughput_monthly %>% separate(month, c("year", "month")) %>% 
   group_by(year) %>% summarise(container_throughput_yearly = sum(container_throughput)) %>% 
   ggplot(aes(x = year, y = container_throughput_yearly)) +

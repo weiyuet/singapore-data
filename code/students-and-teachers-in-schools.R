@@ -15,7 +15,8 @@ students_and_teachers_primary_schools %>%
   theme(legend.position = "right") +
   scale_color_brewer(type = "qual", palette = 6) +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
-  scale_y_continuous(labels = label_number(big.mark = ",")) +
+  scale_y_continuous(labels = label_number(big.mark = ","), 
+                     limits = c(10000, 250000)) +
   labs(x = "", y = "",
        colour = "School Type",
        caption = "Source: data.gov.sg\nGraphic: @weiyuet")

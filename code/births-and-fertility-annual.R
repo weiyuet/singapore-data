@@ -35,7 +35,6 @@ total_fertility_rate_by_ethnic_group %>%
   theme_classic() +
   theme(legend.title = element_blank(),
         legend.position = c(0.85, 0.55)) +
-  scale_colour_brewer(type = "qual", palette = 2) +
   scale_x_continuous(breaks = seq(1960, 2020, 5)) +
   scale_y_continuous(breaks = seq(0, 8, 1)) +
   labs(x = "", y ="",
