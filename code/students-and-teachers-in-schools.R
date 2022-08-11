@@ -12,7 +12,7 @@ students_and_teachers_primary_schools %>%
   geom_line(size = 1.05) +
   facet_wrap(~sex) +
   theme_classic() +
-  theme(legend.position = "right") +
+  theme(legend.position = c(0.25, 0.7)) +
   scale_color_brewer(type = "qual", palette = 6) +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
   scale_y_continuous(labels = label_number(big.mark = ","), 

@@ -14,10 +14,12 @@ flats_constructed %>%
   scale_y_continuous(limits = c(2000, 70000),
                      breaks = seq(5000, 70000, 10000),
                      labels = label_number(big.mark = ",")) +
+  annotate("text", x = 1984, y = 69000, label = "67,017", size = 3) +
+  annotate("text", x = 2006, y = 2300, label = "2,733", size = 3) +
   theme_classic() +
   labs(x = "", y = "",
        title = "Flats Constructed By Housing And Development Board, Annual",
        caption = "Source: data.gov.sg / Housing and Development Board\nGraphic: @weiyuet")
 
 #Save png
-ggsave("figures/flats-constructed.png", width = 7, height = 5)
+ggsave("figures/flats-constructed.png", width = 6, height = 4.5)
