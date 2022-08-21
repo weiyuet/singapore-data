@@ -79,6 +79,7 @@ total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annu
 total_fertility_rate_by_ethnic_group %>% 
   ggplot(aes(x = year, y = value, colour = level_2)) +
   geom_line() +
+  geom_point(aes(shape = level_2)) +
   geom_hline(yintercept = 2.1, linetype = 2, size = 0.5) +
   theme_classic() +
   theme(legend.title = element_blank(),
