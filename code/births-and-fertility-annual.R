@@ -1,6 +1,7 @@
 #Loading libraries
 library(tidyverse)
 library(scales)
+library(ggsci)
 
 # Loading live-births data
 live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
@@ -37,6 +38,7 @@ total_fertility_rate_by_ethnic_group %>%
         legend.position = c(0.85, 0.55)) +
   scale_x_continuous(breaks = seq(1960, 2020, 5)) +
   scale_y_continuous(breaks = seq(0, 8, 1)) +
+  scale_colour_jco() +
   labs(x = "", y ="",
        title = "Total Fertility Rate by Ethnic Groups",
        subtitle = "Dashed line at 2.1 represents the population replacement rate",
