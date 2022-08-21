@@ -20,8 +20,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #Libraries
 library(tidyverse)
-library(ggblanket)
-library(reshape2)
 library(scales)
 ```
 
@@ -41,228 +39,110 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
 
 # Society
 
-## Demographics Resident Population
-
-```{r Resident population data, warning=FALSE}
-singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual <- read_csv("data/resident-population-by-ethnicity-gender-and-age-group/singapore-residents-by-age-group-ethnic-group-and-sex-end-june-annual.csv")
-
-#Convert from chr to dbl
-singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual$value <- as.double(as.character(singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual$value))
-```
-
-```{r Resident population plot, warning=FALSE}
-singapore_residents_by_age_group_ethnic_group_and_sex_end_june_annual %>% 
-  filter(year == "2019" | level_1 == "Total Residents") %>% 
-  drop_na() %>% 
-  gg_col(x = level_2,
-         y = value,
-         col = level_2,
-         title = "Resident Population by Age-group, 2019",
-         x_title = "",
-         y_title = "",
-         col_legend_place = "",
-         col_title = "",
-         caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-         theme = theme_light())
-```
-
-## Births and Fertility
+## Live Births and Fertility
 
 Singapore has one of the lowest fertility rates globally [World Bank](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?locations=SG).
- 
-## Crude Birth Rate
 
-The crude birth rate is the annual number of live births per 1,000 population (WHO). But the calcuation used by Singapore is the number of live births in a given year, per thousand mid-year population.
-
-```{r Crude birth rate data, warning=FALSE}
-crude_birth_rate <- read_csv("data/births-and-fertility-annual/crude-birth-rate.csv")
-```
-
-```{r Crude birth rate plot, warning=FALSE}
-crude_birth_rate %>% 
-  gg_line(x = year,
-          y = value,
-          title = "Crude Birth Rate (per 1,000 popultaion)",
-          y_title = "",
-          x_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(1960, 2022, 5))
-```
-
-## Number of Live Births
-
-Live-births are defined as occurring within Singapore and its territorial waters as registered under the Registration of Births and Deaths Act (Chapter 267). Data are compiled based on date of occurrence.
-
-```{r Live births data, warning=FALSE}
+```{r Live births}
+# Load data
 live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
 
-#Convert from chr to dbl
+# Data wrangling
 live_births$value <- as.double(as.character(live_births$value))
-```
 
-```{r Live births plot, warning=FALSE}
+#Plot live births
 live_births %>% 
-  filter(level_1 == "Total Live-births") %>% 
-  gg_line(x = year,
-          y = value,
-          title = "Number of live births",
-          y_title = "",
-          x_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(1960, 2022, 5))
+  drop_na() %>% 
+  ggplot(aes(x = year, y = value, colour = level_1)) +
+  geom_line(size = 1.05) +
+  geom_hline(yintercept = 40000, linetype = 2, size = 0.5) +
+  facet_wrap(~level_1, scales = "free") +
+  scale_y_continuous(labels = label_number(big.mark = ",")) +
+  theme_classic() +
+  theme(legend.position = "none") +
+  scale_colour_brewer(type = "qual", palette = 6) +
+  labs(x = "", y = "",
+       title = "Resident live-births and total live-births in Singapore",
+       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
 ```
 
 ## Total Fertility Rate by Ethnic Groups
 
 The Total Fertility Rate refers to the average number of live-births each female would have during her reproductive years if she were to experience the age-specific fertility rates prevailing during the period. It is derived by aggregating the age-specific fertility rates of females in each of the reproductive ages for a specific year.
 
-```{r Fertility rate ethnic group data, warning=FALSE}
+```{r Fertility rate ethnic group}
+# Load data
 total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annual/total-fertility-rate-by-ethnic-group.csv")
-```
 
-```{r Fertility rate ethnic group plot, warning=FALSE}
+# Plot fertility rate by ethnic groups
 total_fertility_rate_by_ethnic_group %>% 
-  gg_line(x = year,
-          y = value,
-          col = level_2,
-          title = "Total Fertility Rate by Ethnic Groups",
-          y_title = "",
-          x_title = "",
-          col_legend_place = "r",
-          col_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(1960, 2022, 5))
-```
-
-## Total Fertility Rate by Age Groups
-
-Total Fertility Rate by Age Groups refer to the number of live-births to females in a particular age group, per thousand females in that age group during the period.
-
-  - Data prior to 1980 pertain to total population.
-      
-  - Data from 1980 onwards pertain to resident population (i.e. Singapore citizens and permanent residents).
-
-```{r Fertility rate age group data, warning=FALSE}
-age_specific_fertility_rate <- read_csv("data/births-and-fertility-annual/age-specific-fertility-rate.csv")
-
-#convert value from chr to dbl
-age_specific_fertility_rate$value <- as.double(as.character(age_specific_fertility_rate$value))
-```
-
-```{r Fertility rate age group plot, warning=FALSE}
-age_specific_fertility_rate %>% 
-  gg_line(x = year,
-          y = value,
-          col = level_2,
-          title = "Total Fertility Rate by Age Groups",
-          y_title = "",
-          x_title = "",
-          col_legend_place = "r",
-          col_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(1960, 2022, 5))
+  ggplot(aes(x = year, y = value, colour = level_2)) +
+  geom_line() +
+  geom_hline(yintercept = 2.1, linetype = 2, size = 0.5) +
+  theme_classic() +
+  theme(legend.title = element_blank(),
+        legend.position = c(0.85, 0.55)) +
+  scale_x_continuous(breaks = seq(1960, 2020, 5)) +
+  scale_y_continuous(breaks = seq(0, 8, 1)) +
+  labs(x = "", y ="",
+       title = "Total Fertility Rate by Ethnic Groups",
+       subtitle = "Dashed line at 2.1 represents the population replacement rate",
+       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
 ```
 
 # Health
 
-## Life Expectancy
+## Life Expectancy at Birth
 
-### Life Expectancy at Birth
+In contrast to falling birth rates and fertility rates, the life expectancy has been increasing steadily.
 
-```{r Life expectancy at birth data, warning=FALSE}
-life_expectancy_at_birth_and_age_65_years <- read_csv("data/life-expectancy-by-sex-annual/life-expectancy-at-birth-and-age-65-years.csv")
+# Number of Students in Primary and Secondary Schools
+
+Together with the falling birth rate, the number of students in primary and secondary schools have also been declining.
+
+Although, the student-teacher ratio has been decreasing (which is considered a positive metric).
+
+## Number of Students in Primary Schools
+```{r Number of students in primary schools}
+# Load data
+students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-primary-schools.csv")
+
+# Plot number of primary school students in government and aided schools
+students_and_teachers_primary_schools %>% 
+  ggplot(aes(x = year, y = students_pri,
+             colour = school_type)) +
+  geom_line(size = 1.05) +
+  facet_wrap(~sex) +
+  theme_classic() +
+  theme(legend.position = c(0.25, 0.7)) +
+  scale_color_brewer(type = "qual", palette = 6) +
+  scale_x_continuous(breaks = seq(1980, 2020, 5)) +
+  scale_y_continuous(labels = label_number(big.mark = ","), 
+                     limits = c(10000, 250000)) +
+  labs(x = "", y = "",
+       colour = "School Type",
+       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
 ```
 
-```{r Life expectancy at birth plot, warning=FALSE}
-life_expectancy_at_birth_and_age_65_years %>% 
-  gg_line(x = year,
-          y = value,
-          col = level_1,
-          title = "Life Expectancy at Birth",
-          x_title = "",
-          y_title = "",
-          col_legend_place = "b",
-          col_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(1960, 2022, 5))
-```
+## Student-Teacher Ratio in Primary Schools
+```{r Student-teacher ratio in primary schools}
+# Wrangle data
+# Calculate student-teacher ratio
+students_and_teachers_primary_schools <- students_and_teachers_primary_schools %>% 
+  mutate(student_teacher_ratio = students_pri/teachers_pri)
 
-### Life Expectancy by Gender
-
-```{r Life expectancy by gender data, warning=FALSE}
-life_expectancy_at_birth_and_age_65_years_by_sex <- read_csv("data/life-expectancy-by-sex-annual/life-expectancy-at-birth-and-age-65-years-by-sex.csv")
-```
-
-```{r Life expectancy by gender plot, warning=FALSE}
-life_expectancy_at_birth_and_age_65_years_by_sex %>% 
-  gg_line(x = year,
-          y = value,
-          col = level_2,
-          title = "Life Expectancy by Gender",
-          x_title = "",
-          y_title = "",
-          col_legend_place = "b",
-          col_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(1960, 2022, 5))
-```
-
-## Total Number of Deaths
-
-```{r Total number of deaths data, warning=FALSE}
-total_number_of_deaths <- read_csv("data/principal-causes-of-death/total-number-of-deaths.csv")
-```
-
-```{r Total number of deaths plot, warning=FALSE}
-total_number_of_deaths %>% 
-  gg_line(x = year,
-          y = no_of_deaths,
-          title = "Total Number of Deaths (Annual)",
-          x_title = "",
-          y_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(2005, 2022, 1))
-```
-
-## Principal Causes of Death
-
-```{r Principal causes of death data, warning=FALSE}
-principal_causes_of_death <- read_csv("data/principal-causes-of-death/principal-causes-of-death.csv")
-```
-
-```{r Principal causes of death plot, warning=FALSE}
-principal_causes_of_death %>%
-  filter(year == "2020") %>% 
-  gg_line(x = disease_condition,
-          y = percentage_deaths,
-          title = "Principal Causes of Death",
-          x_title = "",
-          col_title = "",
-          col_legend_place = "r",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_boxplot()
+students_and_teachers_primary_schools %>% 
+  filter(sex == "MF") %>%
+  ggplot(aes( x = year, y = student_teacher_ratio, colour = school_type)) +
+  geom_smooth() +
+  geom_jitter() +
+  facet_wrap(~school_type) +
+  theme_classic() +
+  theme(legend.position = "none") +
+  scale_colour_brewer(type = "qual", palette = 6) +
+  labs(x = "", y = "",
+       title = "Student-Teacher Ratio",
+       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
 ```
 
 # Infrastructure
@@ -275,143 +155,23 @@ principal_causes_of_death %>%
 
 ### Flats Constructed By Housing And Development Board, Annual
 
-```{r Flats constructed by hdb data, warning=FALSE}
-flats_constructed_by_housing_and_development_board_annual <- read_csv("data/flats-constructed/flats-constructed-by-housing-and-development-board-annual.csv")
+```{r Flats constructed by hdb}
+# Load data
+flats_constructed <- read_csv("data/flats-constructed/flats-constructed-by-housing-and-development-board-annual.csv")
+
+# Plot number of flats constructed
+flats_constructed %>% 
+  ggplot(aes(x = year, y = flats_constructed)) +
+  geom_line() +
+  scale_x_continuous(limits = c(1975, 2020),
+                     breaks = seq(1975, 2020, 5)) +
+  scale_y_continuous(limits = c(2000, 70000),
+                     breaks = seq(5000, 70000, 10000),
+                     labels = label_number(big.mark = ",")) +
+  annotate("text", x = 1984, y = 69000, label = "67,017", size = 3) + #peak
+  annotate("text", x = 2006, y = 2300, label = "2,733", size = 3) + #trough
+  theme_classic() +
+  labs(x = "", y = "",
+       title = "Flats Constructed By Housing And Development Board, Annual",
+       caption = "Source: data.gov.sg / Housing and Development Board\nGraphic: @weiyuet")
 ```
-
-```{r Flats constructed by hdb plot, warning=FALSE}
-flats_constructed_by_housing_and_development_board_annual %>% 
-  gg_line(x = year,
-          y = flats_constructed,
-          title = "Flats Constructed by Housing and Development Board (Annual)",
-          y_title = "",
-          x_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(1975, 2022, 5))
-```
-
-### Resale Flat Prices
-
-Resale flat prices based on registration date from Jan-2017 onwards
-
-```{r Resale flat prices data, warning=FALSE}
-resale_flat_prices_based_on_registration_date_from_jan_2017_onwards <- read_csv("data/resale-flat-prices/resale-flat-prices-based-on-registration-date-from-jan-2017-onwards.csv")
-
-#convert value from chr to dbl
-#resale_flat_prices_based_on_registration_date_from_jan_2017_onwards$month <- as.double(as.character(resale_flat_prices_based_on_registration_date_from_jan_2017_onwards$month))
-
-```
-
-```{r Resale flat prices plot, warning=FALSE}
-#resale_flat_prices_based_on_registration_date_from_jan_2017_onwards %>% 
-  #gg_smooth_col(x_var = month,
-  #              y_var = resale_price,
-  #              col_var = flat_type,
-  #              title = "Resale Flat Prices from Jan 2017",
-  #              y_title = "",
-  #              caption = "Graphic: @weiyuet Source: data.gov.sg",
-  #              theme = theme_light())
-
-```
-
-# Food Production
-
-## Total Value of Annual Food Prodcution (million SDG)
-
-```{r Value of local food production data, warning=FALSE}
-value_of_local_food_production_in_singapore <- read_csv("data/value-of-local-food-production/value-of-local-food-production-in-singapore.csv")
-
-#convert data to long format
-value_of_local_food_production_in_singapore_long <- melt(value_of_local_food_production_in_singapore, id = "year")
-```
-
-```{r Value of local food production plot, warning=FALSE}
-value_of_local_food_production_in_singapore_long %>% 
-  gg_col(x = year,
-         y = value,
-         col = variable,
-         title = "Value of Local Food Production (million SGD)",
-         x_title = "",
-         y_title = "",
-         col_legend_place = "b",
-         col_title = "",
-         caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-         theme = theme_light()) +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(2012, 2022, 1))
-```
-
-# Environment
-
-## CO2 Emissions from Fossil Fuels
-
-```{r CO2 emissions data, warning=FALSE}
-carbon_dioxide_emissions_from_combustion_of_fossil_fuels <- read_csv("data/climate-change-and-energy-carbon-dioxide-emissions-from-combustion-of-fossil-fuels/carbon-dioxide-emissions-from-combustion-of-fossil-fuels.csv")
-```
-
-```{r CO2 emissions plot, warning=FALSE}
-carbon_dioxide_emissions_from_combustion_of_fossil_fuels %>% 
-  gg_line(x = year,
-          y = co2_emissions,
-          title = "Carbon Dioxide Emissions (From Combustion of Fossil Fuels)",
-          x_title = "",
-          y_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(2005, 2022, 1))
-```
-
-## Waste Disposed Of And Recycled (Annual)
-
-```{r Waste disposed and recycled data, warning=FALSE}
-waste_disposed_of_and_recycled_annual <- read_csv("data/waste-disposed-of-and-recycled-annual/waste-disposed-of-and-recycled-annual.csv")
-
-#change data to long format
-waste_disposed_of_and_recycled_annual_long <- melt(waste_disposed_of_and_recycled_annual, id = "year")
-```
-
-```{r Waste disposed and recycled plot, warning=FALSE}
-waste_disposed_of_and_recycled_annual_long %>% 
-  gg_col(x = year,
-         y = value,
-         col = variable,
-         title = "Waste Disposed Of And Recycled (Annual)",
-         x_title = "",
-         y_title = "",
-         col_legend_place = "b",
-         col_title = "",
-         caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-         theme = theme_light()) +
-  scale_x_continuous(labels = label_number(big.mark = "", accuracy = 1),
-                     breaks = seq(2000, 2022, 1))
-```
-
-# Economy
-
-## Container Throughput Monthly (Total)
-
-```{r Container throughout monthly data, warning=FALSE}
-container_throughput_monthly <- read_csv("data/container-throughput-monthly-total/container-throughput-monthly.csv")
-
-#convert from chr to date
-#container_throughput_monthly$month <- as.Date(container_throughput_monthly$month, "%y-%m")
-```
-
-```{r Container throughput monthly plot, warning=FALSE}
-container_throughput_monthly %>% 
-  gg_line(x = month,
-          y = container_throughput,
-          title = "Container Throughput, Monthly (in twenty-foot equivalent)",
-          x_title = "",
-          y_title = "",
-          caption = "Source: data.gov.sg\nGraphic: @weiyuet",
-          theme = theme_light()) +
-  geom_point() +
-  scale_x_discrete()
-```
-
