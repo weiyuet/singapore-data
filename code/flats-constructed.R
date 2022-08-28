@@ -19,7 +19,7 @@ flats_constructed %>%
   theme_classic() +
   labs(x = "", y = "",
        title = "Flats Constructed By Housing And Development Board, Annual",
-       caption = "Source: data.gov.sg / Housing and Development Board\nGraphic: @weiyuet")
+       caption = "Source: Housing and Development Board (data.gov.sg)\nGraphic: @weiyuet")
 
 #Save png
 ggsave("figures/flats-constructed.png", width = 6, height = 4.5)

@@ -1,6 +1,7 @@
 # Load libraries
 library(tidyverse)
 library(scales)
+library(ggsci)
 
 # Load data
 students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-primary-schools.csv")
@@ -13,13 +14,13 @@ students_and_teachers_primary_schools %>%
   facet_wrap(~sex) +
   theme_classic() +
   theme(legend.position = c(0.25, 0.7)) +
-  scale_color_brewer(type = "qual", palette = 6) +
+  scale_colour_jco() +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
   scale_y_continuous(labels = label_number(big.mark = ","), 
                      limits = c(10000, 250000)) +
   labs(x = "", y = "",
        colour = "School Type",
-       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
+       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 
 # Save png
 ggsave("figures/primary-school-students-in-govt-and-aided-schools.png", width = 8, height = 6)
@@ -37,10 +38,10 @@ students_and_teachers_primary_schools %>%
   facet_wrap(~school_type) +
   theme_classic() +
   theme(legend.position = "none") +
-  scale_colour_brewer(type = "qual", palette = 6) +
+  scale_colour_jco() +
   labs(x = "", y = "",
        title = "Student-Teacher Ratio",
-       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
+       caption = "Source: Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 
 # Save png
 ggsave("figures/student-teacher-ratio-primary-schools.png", width = 8, height = 6)

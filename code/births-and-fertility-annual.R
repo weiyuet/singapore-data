@@ -19,10 +19,10 @@ live_births %>%
   scale_y_continuous(labels = label_number(big.mark = ",")) +
   theme_classic() +
   theme(legend.position = "none") +
-  scale_colour_brewer(type = "qual", palette = 6) +
+  scale_colour_jco() +
   labs(x = "", y = "",
        title = "Resident live-births and total live-births in Singapore",
-       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
+       caption = "Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet")
 
 ggsave("figures/resident-and-total-live-births.png", width = 8, height = 6)
 
@@ -43,6 +43,6 @@ total_fertility_rate_by_ethnic_group %>%
   labs(x = "", y ="",
        title = "Total Fertility Rate by Ethnic Groups",
        subtitle = "Dashed line at 2.1 represents the population replacement rate",
-       caption = "Source: data.gov.sg\nGraphic: @weiyuet")
+       caption = "Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet")
 
 ggsave("figures/fertility-rate-ethnic-groups.png", width = 8, height = 6)
