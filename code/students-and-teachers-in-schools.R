@@ -10,7 +10,7 @@ students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in
 students_and_teachers_primary_schools %>% 
   ggplot(aes(x = year, y = students_pri,
              colour = school_type)) +
-  geom_line(size = 1.05) +
+  geom_line(size = 1) +
   facet_wrap(~sex) +
   theme_classic() +
   theme(legend.position = c(0.25, 0.7)) +

@@ -11,8 +11,8 @@ flats_constructed %>%
   geom_line() +
   scale_x_continuous(limits = c(1975, 2020),
                      breaks = seq(1975, 2020, 5)) +
-  scale_y_continuous(limits = c(2000, 70000),
-                     breaks = seq(5000, 70000, 10000),
+  scale_y_continuous(limits = c(2000, 75000),
+                     breaks = seq(5000, 75000, 10000),
                      labels = label_number(big.mark = ",")) +
   annotate("text", x = 1984, y = 69000, label = "67,017", size = 3) + #peak
   annotate("text", x = 2006, y = 2300, label = "2,733", size = 3) + #trough
