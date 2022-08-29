@@ -1,4 +1,4 @@
-# Load libraries
+# Setup
 library(tidyverse)
 library(scales)
 library(ggsci)
