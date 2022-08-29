@@ -9,8 +9,7 @@ life_expectancy <- read_csv('data/life-expectancy-by-sex-annual/life-expectancy-
 # Plot data
 life_expectancy %>% 
   ggplot(aes(x = year, y = value, colour = level_1)) +
-  geom_line() +
-  geom_point() +
+  geom_line(size = 1) +
   facet_wrap(~level_1, scales = 'free_y') +
   scale_x_continuous(breaks = seq(1960, 2020, 10)) +
   scale_colour_jco() +
