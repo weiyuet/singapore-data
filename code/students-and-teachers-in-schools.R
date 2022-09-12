@@ -13,7 +13,9 @@ students_and_teachers_primary_schools %>%
   geom_line(size = 1) +
   facet_wrap(~sex) +
   theme_classic() +
-  theme(legend.position = c(0.25, 0.7)) +
+  theme(legend.position = "bottom",
+        legend.title = element_blank()) +
+  guides(colour = guide_legend(nrow = 1)) +
   scale_colour_jco() +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
   scale_y_continuous(labels = label_number(big.mark = ","), 
