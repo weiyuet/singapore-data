@@ -6,7 +6,7 @@ library(ggsci)
 # Load data
 students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-primary-schools.csv")
 
-# Plot number of primary school students in government and aided schools
+# Plot number of students in primary schools
 students_and_teachers_primary_schools %>% 
   ggplot(aes(x = year, y = students_pri,
              colour = school_type)) +
@@ -44,7 +44,7 @@ students_and_teachers_primary_schools %>%
   scale_colour_jco() +
   labs(x = "", y = "",
        title = "Student-Teacher Ratio in Primary Schools",
-       caption = "Source: Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 
 # Save png
 ggsave("figures/student-teacher-ratio-primary-schools.png", width = 8, height = 6)
@@ -89,7 +89,7 @@ students_and_teachers_secondary_schools %>%
   scale_colour_jco() +
   labs(x = "", y = "",
        title = "Student-Teacher Ratio in Secondary Schools",
-       caption = "Source: Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 
 # Save png
 ggsave("figures/student-teacher-ratio-secondary-schools.png", width = 8, height = 6)

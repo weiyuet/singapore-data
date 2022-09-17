@@ -1,0 +1,51 @@
+# Metadata for Common health problems of students examined - Defective Vision, Annual
+---
+Identifier: '12e5ec39-e051-45bf-a972-64d86881489f'
+Name: 'common-health-problems-in-students-defective-vision-annual'
+Title: 'Common health problems of students examined - Defective Vision, Annual'
+Description: 'Number of students with visual acuity - VA (Snellen) ≥ 6/12 or VA (LogMAR)
+  ≥ 0.30 for male and female students'
+Topics:
+  - 'Health'
+Keywords:
+  - 'Gender'
+  - 'Healthcare'
+  - 'Students'
+Publisher:
+  Name: 'Health Promotion Board'
+  Admin 1:
+    Name: 'Jeannie Chow'
+    Department: 'SHS'
+    Email: 'jeannie_chow@hpb.gov.sg'
+Sources:
+  - 'Health Promotion Board'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2009-01-01 to 2020-12-31'
+Last Updated: '2021-03-24T09:40:28.900818'
+Resources:
+  -
+    Identifier: '4c7c5734-53b6-4169-98ab-238329e61db2'
+    Title: 'Common health problems of students examined - Defective Vision, Annual'
+    Url: 'https://storage.data.gov.sg/common-health-problems-in-students-defective-vision-annual/resources/common-health-problems-of-students-examined-defective-vision-annual-2021-03-24T09-40-08Z.csv'
+    Format: 'CSV'
+    Coverage: '2009-01-01 to 2020-12-31'
+    Last Updated: '2021-03-24T09:40:08.283277'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'gender'
+        Title: 'Gender'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'per_10000_examined'
+        Title: 'Defective vision rate'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per 10000 examined'

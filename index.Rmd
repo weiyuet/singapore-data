@@ -131,19 +131,22 @@ Although, the student-teacher ratio has been decreasing (which is considered a p
 # Load data
 students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-primary-schools.csv")
 
-# Plot number of primary school students in government and aided schools
+# Plot number of students in primary schools
 students_and_teachers_primary_schools %>% 
   ggplot(aes(x = year, y = students_pri,
              colour = school_type)) +
   geom_line(size = 1) +
   facet_wrap(~sex) +
   theme_classic() +
-  theme(legend.position = c(0.25, 0.7)) +
+  theme(legend.position = "bottom",
+        legend.title = element_blank()) +
+  guides(colour = guide_legend(nrow = 1)) +
   scale_colour_jco() +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
   scale_y_continuous(labels = label_number(big.mark = ","), 
                      limits = c(10000, 250000)) +
   labs(x = "", y = "",
+       title = "Number of Students in Primary Schools",
        colour = "School Type",
        caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 ```
@@ -165,8 +168,53 @@ students_and_teachers_primary_schools %>%
   theme(legend.position = "none") +
   scale_colour_jco() +
   labs(x = "", y = "",
-       title = "Student-Teacher Ratio",
-       caption = "Source: Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       title = "Student-Teacher Ratio in Primary Schools",
+       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+```
+
+## Number of Students in Secondary Schools
+```{r Number of students in secondary schools}
+# Load data
+students_and_teachers_secondary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-secondary-schools.csv")
+
+# Plot number of secondary school students
+students_and_teachers_secondary_schools %>% 
+  ggplot(aes(x = year, y = student_sec,
+             colour = school_type)) +
+  geom_line(size = 1) +
+  facet_wrap(~sex) +
+  theme_classic() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank()) +
+  guides(colour = guide_legend(nrow = 1)) +
+  scale_colour_jco() +
+  scale_x_continuous(breaks = seq(1980, 2020, 5)) +
+  scale_y_continuous(labels = label_number(big.mark = ",")) +
+  labs(x = "", y = "",
+       title = "Number of Students in Secondary Schools",
+       colour = "School Type",
+       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+```
+
+## Student-Teacher Ratio in Seondary Schools
+```{r Student-teacher ratio in secondary schools}
+# Wrangle data
+# Calculate student-teacher ratio
+students_and_teachers_secondary_schools <- students_and_teachers_secondary_schools %>% 
+  mutate(student_teacher_ratio = student_sec/teacher_sec)
+
+students_and_teachers_secondary_schools %>% 
+  filter(sex == "MF") %>%
+  ggplot(aes( x = year, y = student_teacher_ratio, colour = school_type)) +
+  geom_smooth() +
+  geom_jitter() +
+  facet_wrap(~school_type, scales = "free") +
+  theme_classic() +
+  theme(legend.position = "none") +
+  scale_colour_jco() +
+  labs(x = "", y = "",
+       title = "Student-Teacher Ratio in Secondary Schools",
+       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 ```
 
 # Infrastructure
@@ -184,18 +232,26 @@ students_and_teachers_primary_schools %>%
 flats_constructed <- read_csv("data/flats-constructed/flats-constructed-by-housing-and-development-board-annual.csv")
 
 # Plot number of flats constructed
-flats_constructed %>% 
+p <- flats_constructed %>%
   ggplot(aes(x = year, y = flats_constructed)) +
   geom_line() +
-  scale_x_continuous(limits = c(1975, 2020),
-                     breaks = seq(1975, 2020, 5)) +
-  scale_y_continuous(limits = c(2000, 75000),
-                     breaks = seq(5000, 75000, 10000),
-                     labels = label_number(big.mark = ",")) +
-  annotate("text", x = 1984, y = 69000, label = "67,017", size = 3) + #peak
-  annotate("text", x = 2006, y = 2300, label = "2,733", size = 3) + #trough
+  scale_x_continuous(
+    limits = c(1975, 2020),
+    breaks = seq(1975, 2020, 5)
+  ) +
+  scale_y_continuous(
+    limits = c(2000, 75000),
+    breaks = seq(5000, 75000, 10000),
+    labels = label_number(big.mark = ",")
+  ) +
   theme_classic() +
-  labs(x = "", y = "",
-       title = "Flats Constructed By Housing And Development Board, Annual",
-       caption = "Source: Housing and Development Board (data.gov.sg)\nGraphic: @weiyuet")
+  labs(
+    x = "", y = "",
+    title = "Flats Constructed By Housing And Development Board, Annual",
+    caption = "Source: Housing and Development Board (data.gov.sg)\nGraphic: @weiyuet"
+  )
+
+# Annotate
+p + (annotate("text", x = 1984, y = 70000, label = "67,017", size = 3)) + 
+       (annotate("text", x = 2006, y = 8000, label = "2,733", size = 3))
 ```
