@@ -21,6 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #Libraries
 library(tidyverse)
 library(scales)
+library(ggalt)
 library(ggsci)
 ```
 
@@ -45,10 +46,9 @@ Data.gov.sg was launched in 2011 as the government's one-stop portal to its publ
 Singapore has one of the lowest fertility rates globally [World Bank](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?locations=SG).
 
 ```{r Live births}
-# Load data
+#Load data
 live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
 
-# Data wrangling
 live_births$value <- as.double(as.character(live_births$value))
 
 #Plot live births
@@ -72,10 +72,10 @@ live_births %>%
 The Total Fertility Rate refers to the average number of live-births each female would have during her reproductive years if she were to experience the age-specific fertility rates prevailing during the period. It is derived by aggregating the age-specific fertility rates of females in each of the reproductive ages for a specific year.
 
 ```{r Fertility rate ethnic group}
-# Load data
+#Load data
 total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annual/total-fertility-rate-by-ethnic-group.csv")
 
-# Plot fertility rate by ethnic groups
+#Plot fertility rate by ethnic groups
 total_fertility_rate_by_ethnic_group %>% 
   ggplot(aes(x = year, y = value, colour = level_2)) +
   geom_line() +
@@ -95,15 +95,16 @@ total_fertility_rate_by_ethnic_group %>%
 
 # Health
 
-## Life Expectancy at Birth
+## Life Expectancy
 
 In contrast to falling birth rates and fertility rates, the life expectancy has been increasing steadily.
 
 ```{r Life expectancy}
-# Load data
+#Load data
 life_expectancy <- read_csv('data/life-expectancy-by-sex-annual/life-expectancy-at-birth-and-age-65-years.csv')
 
-# Plot data
+#Plot data
+#Line plot of life expectancy
 life_expectancy %>% 
   ggplot(aes(x = year, y = value, colour = level_1)) +
   geom_line(size = 1) +
@@ -115,6 +116,27 @@ life_expectancy %>%
         legend.position = 'none') +
   labs(x = '', y = '',
        title = 'Life Expectancy of Residents in Singapore',
+       caption = 'Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet')
+
+#Change in life expectancy
+life_expectancy %>% 
+  filter(year == 1960 | year == 2018) %>%
+  pivot_wider(names_from = year, values_from = value) %>% 
+  mutate(gap = `2018` - `1960`) %>%
+  arrange(desc(gap)) %>%
+  ggplot(aes(x = `1960`, xend = `2018`, y = reorder(level_1, gap)),
+         group = level_1) +
+  geom_dumbbell(colour = "#dddddd",
+                size = 5,
+                colour_x = "#FAAB18",
+                colour_xend = "#1380A1") +
+  scale_x_continuous(limits = c(0, 85),
+                     breaks = seq(0, 85, 5)) +
+  scale_y_discrete(labels = c("From Age 65", "At Birth")) +
+  theme_classic() +
+  labs(x = "", y = "",
+       title = "We're living longer",
+       subtitle = "Change in life expectancy between 1960 - 2018",
        caption = 'Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet')
 ```
 
@@ -128,10 +150,10 @@ Although, the student-teacher ratio has been decreasing (which is considered a p
 
 ## Number of Students in Primary Schools
 ```{r Number of students in primary schools}
-# Load data
+#Load data
 students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-primary-schools.csv")
 
-# Plot number of students in primary schools
+#Plot number of students in primary schools
 students_and_teachers_primary_schools %>% 
   ggplot(aes(x = year, y = students_pri,
              colour = school_type)) +
@@ -153,8 +175,8 @@ students_and_teachers_primary_schools %>%
 
 ## Student-Teacher Ratio in Primary Schools
 ```{r Student-teacher ratio in primary schools}
-# Wrangle data
-# Calculate student-teacher ratio
+#Wrangle data
+#Calculate student-teacher ratio
 students_and_teachers_primary_schools <- students_and_teachers_primary_schools %>% 
   mutate(student_teacher_ratio = students_pri/teachers_pri)
 
@@ -174,10 +196,10 @@ students_and_teachers_primary_schools %>%
 
 ## Number of Students in Secondary Schools
 ```{r Number of students in secondary schools}
-# Load data
+#Load data
 students_and_teachers_secondary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-secondary-schools.csv")
 
-# Plot number of secondary school students
+#Plot number of secondary school students
 students_and_teachers_secondary_schools %>% 
   ggplot(aes(x = year, y = student_sec,
              colour = school_type)) +
@@ -198,8 +220,8 @@ students_and_teachers_secondary_schools %>%
 
 ## Student-Teacher Ratio in Seondary Schools
 ```{r Student-teacher ratio in secondary schools}
-# Wrangle data
-# Calculate student-teacher ratio
+#Wrangle data
+#Calculate student-teacher ratio
 students_and_teachers_secondary_schools <- students_and_teachers_secondary_schools %>% 
   mutate(student_teacher_ratio = student_sec/teacher_sec)
 
@@ -228,10 +250,10 @@ students_and_teachers_secondary_schools %>%
 ### Flats Constructed By Housing And Development Board, Annual
 
 ```{r Flats constructed by hdb}
-# Load data
+#Load data
 flats_constructed <- read_csv("data/flats-constructed/flats-constructed-by-housing-and-development-board-annual.csv")
 
-# Plot number of flats constructed
+#Plot number of flats constructed
 p <- flats_constructed %>%
   ggplot(aes(x = year, y = flats_constructed)) +
   geom_line() +
@@ -251,7 +273,7 @@ p <- flats_constructed %>%
     caption = "Source: Housing and Development Board (data.gov.sg)\nGraphic: @weiyuet"
   )
 
-# Annotate
+#Annotate
 p + (annotate("text", x = 1984, y = 70000, label = "67,017", size = 3)) + 
        (annotate("text", x = 2006, y = 8000, label = "2,733", size = 3))
 ```
