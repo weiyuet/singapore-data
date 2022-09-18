@@ -1,15 +1,15 @@
-#Loading libraries
+#Setup
 library(tidyverse)
 library(scales)
 library(ggsci)
 
-# Loading live-births data
+#Load live-births data
 live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
 
-# Data wrangling
+#Wrangle
 live_births$value <- as.double(as.character(live_births$value))
 
-# Plotting number of live-births
+#Plot number of live-births
 live_births %>% 
   drop_na() %>% 
   ggplot(aes(x = year, y = value, colour = level_1)) +
@@ -26,7 +26,7 @@ live_births %>%
 
 ggsave("figures/resident-and-total-live-births.png", width = 8, height = 6)
 
-# Loading total fertility rate by ethnic group data
+#Load total fertility rate by ethnic group data
 total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annual/total-fertility-rate-by-ethnic-group.csv")
 
 total_fertility_rate_by_ethnic_group %>% 
