@@ -21,6 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #Libraries
 library(tidyverse)
 library(scales)
+library(glue)
 library(ggalt)
 library(ggsci)
 ```
@@ -64,7 +65,7 @@ live_births %>%
   scale_colour_jco() +
   labs(x = "", y = "",
        title = "Resident live-births and total live-births in Singapore",
-       caption = "Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet")
 ```
 
 ## Total Fertility Rate by Ethnic Groups
@@ -90,7 +91,7 @@ total_fertility_rate_by_ethnic_group %>%
   labs(x = "", y ="",
        title = "Total Fertility Rate by Ethnic Groups",
        subtitle = "Dashed line at 2.1 represents the population replacement rate",
-       caption = "Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet")
 ```
 
 # Health
@@ -116,7 +117,7 @@ life_expectancy %>%
         legend.position = 'none') +
   labs(x = '', y = '',
        title = 'Life Expectancy of Residents in Singapore',
-       caption = 'Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet')
+       caption = 'Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet')
 
 #Change in life expectancy
 life_expectancy %>% 
@@ -136,8 +137,8 @@ life_expectancy %>%
   theme_classic() +
   labs(x = "", y = "",
        title = "We're living longer",
-       subtitle = "Change in life expectancy between 1960 - 2018",
-       caption = 'Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet')
+       subtitle = "Change in life expectancy between 1960 to 2018",
+       caption = 'Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet')
 ```
 
 # Number of Students in Primary and Secondary Schools
@@ -170,7 +171,7 @@ students_and_teachers_primary_schools %>%
   labs(x = "", y = "",
        title = "Number of Students in Primary Schools",
        colour = "School Type",
-       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 ```
 
 ## Student-Teacher Ratio in Primary Schools
@@ -191,7 +192,7 @@ students_and_teachers_primary_schools %>%
   scale_colour_jco() +
   labs(x = "", y = "",
        title = "Student-Teacher Ratio in Primary Schools",
-       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 ```
 
 ## Number of Students in Secondary Schools
@@ -215,7 +216,7 @@ students_and_teachers_secondary_schools %>%
   labs(x = "", y = "",
        title = "Number of Students in Secondary Schools",
        colour = "School Type",
-       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 ```
 
 ## Student-Teacher Ratio in Seondary Schools
@@ -236,7 +237,7 @@ students_and_teachers_secondary_schools %>%
   scale_colour_jco() +
   labs(x = "", y = "",
        title = "Student-Teacher Ratio in Secondary Schools",
-       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
 ```
 
 # Infrastructure
@@ -256,8 +257,9 @@ flats_constructed <- read_csv("data/flats-constructed/flats-constructed-by-housi
 #Plot number of flats constructed
 p <- flats_constructed %>%
   ggplot(aes(x = year, y = flats_constructed)) +
-  geom_line() +
+  geom_step() +
   scale_x_continuous(
+    expand = c(0, 0),
     limits = c(1975, 2020),
     breaks = seq(1975, 2020, 5)
   ) +
@@ -269,11 +271,11 @@ p <- flats_constructed %>%
   theme_classic() +
   labs(
     x = "", y = "",
-    title = "Flats Constructed By Housing And Development Board, Annual",
-    caption = "Source: Housing and Development Board (data.gov.sg)\nGraphic: @weiyuet"
+    title = glue("Number of Flats Constructed by the Housing and Development Board ({min(flats_constructed$year)}-{max(flats_constructed$year)})"),
+    caption = "Data: Housing and Development Board (data.gov.sg)\nGraphic: @weiyuet"
   )
 
-#Annotate
+# Annotate
 p + (annotate("text", x = 1984, y = 70000, label = "67,017", size = 3)) + 
        (annotate("text", x = 2006, y = 8000, label = "2,733", size = 3))
 ```

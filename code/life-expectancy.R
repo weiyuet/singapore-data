@@ -23,7 +23,7 @@ life_expectancy %>%
        labs(
               x = "", y = "",
               title = "Life Expectancy of Residents in Singapore",
-              caption = "Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet"
+              caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet"
        )
 
 # Save png
@@ -54,8 +54,8 @@ life_expectancy %>%
        labs(
               x = "", y = "",
               title = "We're living longer",
-              subtitle = "Change in life expectancy between 1960 - 2018",
-              caption = "Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet"
+              subtitle = "Change in life expectancy between 1960 to 2018",
+              caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet"
        )
 
 # Save png
