@@ -1,8 +1,11 @@
-# singapore-data
+## singapore-data
 
-Data from [`data.gov.sg`](https://data.gov.sg/open-data-licence) and [`Department of Statistics Singapore`.](https://www.singstat.gov.sg/)
+Data:
+  - [`data.gov.sg`](https://data.gov.sg/open-data-licence)
   
-The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses.
+  - [`Department of Statistics Singapore`.](https://www.singstat.gov.sg/)
+  
+The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
 
 Live Births
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/resident-and-total-live-births.png)
@@ -21,3 +24,5 @@ Number of Students in Secondary Schools
 
 Number of Flats Constructed by HDB
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/flats-constructed.png)
+
+EOL
