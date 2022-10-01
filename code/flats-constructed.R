@@ -24,12 +24,12 @@ p <- flats_constructed %>%
   labs(
     x = "", y = "",
     title = glue("Number of Flats Constructed by the Housing and Development Board ({min(flats_constructed$year)}-{max(flats_constructed$year)})"),
-    caption = "Data: Housing and Development Board (data.gov.sg)\nGraphic: @weiyuet"
+    caption = "Data: Housing and Development Board (data.gov.sg) | Graphic: @weiyuet"
   )
 
 # Annotate
 p + (annotate("text", x = 1984, y = 70000, label = "67,017", size = 3)) + 
        (annotate("text", x = 2006, y = 8000, label = "2,733", size = 3))
 
-# Save png
+# Save image
 ggsave("figures/flats-constructed.png", width = 8, height = 4.5)

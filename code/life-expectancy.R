@@ -3,6 +3,7 @@ library(tidyverse)
 library(scales)
 library(ggalt)
 library(ggsci)
+library(glue)
 
 # Load data
 life_expectancy <- read_csv("data/life-expectancy-by-sex-annual/life-expectancy-at-birth-and-age-65-years.csv")
@@ -23,10 +24,10 @@ life_expectancy %>%
        labs(
               x = "", y = "",
               title = "Life Expectancy of Residents in Singapore",
-              caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet"
+              caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg) | Graphic: @weiyuet"
        )
 
-# Save png
+# Save image
 ggsave("figures/life-expectancy.png", width = 6.5, height = 4.5)
 
 # Wrangle data and plot
@@ -53,10 +54,10 @@ life_expectancy %>%
        theme_classic() +
        labs(
               x = "", y = "",
-              title = "We're living longer",
-              subtitle = "Change in life expectancy between 1960 to 2018",
-              caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet"
+              title = glue("Change in Life Expectancy between {min(life_expectancy$year)} to {max(life_expectancy$year)}"),
+              subtitle = "We're living longer",
+              caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg) | Graphic: @weiyuet"
        )
 
-# Save png
+# Save image
 ggsave("figures/life-expectancy-change.png", width = 8, height = 4.5)

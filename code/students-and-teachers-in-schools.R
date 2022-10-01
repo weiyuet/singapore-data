@@ -23,9 +23,9 @@ students_and_teachers_primary_schools %>%
   labs(x = "", y = "",
        title = "Number of Students in Primary Schools",
        colour = "School Type",
-       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet")
 
-# Save png
+# Save image
 ggsave("figures/primary-school-students.png", width = 8, height = 6)
 
 # Wrangle data
@@ -44,9 +44,9 @@ students_and_teachers_primary_schools %>%
   scale_colour_jco() +
   labs(x = "", y = "",
        title = "Student-Teacher Ratio in Primary Schools",
-       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet")
 
-# Save png
+# Save image
 ggsave("figures/student-teacher-ratio-primary-schools.png", width = 8, height = 6)
 
 # Load data
@@ -68,9 +68,9 @@ students_and_teachers_secondary_schools %>%
   labs(x = "", y = "",
        title = "Number of Students in Secondary Schools",
        colour = "School Type",
-       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet")
 
-# Save png
+# Save image
 ggsave("figures/secondary-school-students.png", width = 8, height = 6)
 
 # Wrangle data
@@ -89,7 +89,7 @@ students_and_teachers_secondary_schools %>%
   scale_colour_jco() +
   labs(x = "", y = "",
        title = "Student-Teacher Ratio in Secondary Schools",
-       caption = "Source: Ministry of Education (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet")
 
-# Save png
+# Save image
 ggsave("figures/student-teacher-ratio-secondary-schools.png", width = 8, height = 6)

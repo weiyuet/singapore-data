@@ -1,4 +1,4 @@
-#Setup
+# Setup
 library(tidyverse)
 library(scales)
 library(ggsci)
@@ -6,10 +6,10 @@ library(ggsci)
 #Load live-births data
 live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
 
-#Wrangle
+# Wrangle
 live_births$value <- as.double(as.character(live_births$value))
 
-#Plot number of live-births
+# Plot number of live-births
 live_births %>% 
   drop_na() %>% 
   ggplot(aes(x = year, y = value, colour = level_1)) +
@@ -22,11 +22,12 @@ live_births %>%
   scale_colour_jco() +
   labs(x = "", y = "",
        title = "Resident live-births and total live-births in Singapore",
-       caption = "Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg) | Graphic: @weiyuet")
 
+# Save image
 ggsave("figures/resident-and-total-live-births.png", width = 8, height = 6)
 
-#Load total fertility rate by ethnic group data
+# Load total fertility rate by ethnic group data
 total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annual/total-fertility-rate-by-ethnic-group.csv")
 
 total_fertility_rate_by_ethnic_group %>% 
@@ -43,6 +44,7 @@ total_fertility_rate_by_ethnic_group %>%
   labs(x = "", y ="",
        title = "Total Fertility Rate by Ethnic Groups",
        subtitle = "Dashed line at 2.1 represents the population replacement rate",
-       caption = "Source: Ministry of Trade and Industry - Department of Statistics (data.gov.sg)\nGraphic: @weiyuet")
+       caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg) | Graphic: @weiyuet")
 
+# Save image
 ggsave("figures/fertility-rate-ethnic-groups.png", width = 8, height = 6)
