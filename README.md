@@ -16,11 +16,11 @@ Fertility Rate - Ethnic Groups
 Life Expectancy
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/life-expectancy.png)
 
-Number of Students in Primary Schools
-![](https://github.com/weiyuet/singapore-data/blob/main/figures/primary-school-students.png)
-
 Number of Students in Secondary Schools
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/secondary-school-students.png)
+
+Weekly Cases of Dengue Fever
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/weekly-cases-dengue-fever.png)
 
 Number of Flats Constructed by HDB
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/flats-constructed.png)
