@@ -24,7 +24,8 @@ weekly_infectious_disease %>%
   ggplot(aes(x = week, y = cases)) +
   geom_col() +
   facet_wrap(~year) +
-  scale_y_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0),
+                     labels = label_number(big.mark = ",")) +
   theme_classic() +
   theme(axis.text.x = element_blank(),
         axis.ticks.x = element_blank()) +
