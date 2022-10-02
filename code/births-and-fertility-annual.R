@@ -15,7 +15,7 @@ live_births %>%
   ggplot(aes(x = year, y = value, colour = level_1)) +
   geom_line(size = 1.05) +
   geom_hline(yintercept = 40000, linetype = 2, size = 0.5) +
-  facet_wrap(~level_1, scales = "free") +
+  facet_wrap(~level_1, scales = "free_x") +
   scale_y_continuous(labels = label_number(big.mark = ",")) +
   theme_classic() +
   theme(legend.position = "none") +
