@@ -21,7 +21,7 @@ live_births %>%
   theme(legend.position = "none") +
   scale_colour_jco() +
   labs(x = "", y = "",
-       title = "Number of live-births in Singapore",
+       title = "Number of Live-births in Singapore",
        subtitle = "Dashed line at 40,000 represents the long term mean",
        caption = "*Note: Resident Live-Births refers to births with at least one parent who is a Singapore citizen or permanent resident\nData: Ministry of Trade and Industry - Department of Statistics (data.gov.sg) | Graphic: @weiyuet")
 
