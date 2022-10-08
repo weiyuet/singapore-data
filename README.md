@@ -9,7 +9,7 @@ Data:
   
 The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
 
-Updated: 2022-10-06
+Updated: 2022-10-08
 
 ## Live Births
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/resident-and-total-live-births.png)
