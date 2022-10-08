@@ -39,8 +39,11 @@ total_fertility_rate_by_ethnic_group %>%
   theme_classic() +
   theme(legend.title = element_blank(),
         legend.position = c(0.85, 0.55)) +
-  scale_x_continuous(breaks = seq(1960, 2020, 5)) +
-  scale_y_continuous(breaks = seq(0, 8, 0.5), labels = label_number(decimal.mark = '.', accuracy = 0.1)) +
+  scale_x_continuous(expand = c(0.01, 0),
+                     limits = c(1960, 2020),
+                     breaks = seq(1960, 2020, 5)) +
+  scale_y_continuous(breaks = seq(0, 8, 0.5),
+                     labels = label_number(decimal.mark = '.', accuracy = 0.1)) +
   scale_colour_jco() +
   labs(x = "", y ="",
        title = "Total Fertility Rate by Ethnic Groups",

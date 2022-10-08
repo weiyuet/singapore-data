@@ -11,7 +11,7 @@ p <- flats_constructed %>%
   ggplot(aes(x = year, y = flats_constructed)) +
   geom_step() +
   scale_x_continuous(
-    expand = c(0, 0),
+    expand = c(0.01, 0),
     limits = c(1975, 2020),
     breaks = seq(1975, 2020, 5)
   ) +
