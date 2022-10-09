@@ -6,9 +6,10 @@ library(glue)
 # Load data
 weekly_infectious_disease <- read_csv('data/weekly-infectious-disease-bulletin-cases/weekly-infectious-disease-bulletin-cases.csv')
 
-# Wrangle split year and week column
+# Wrangle
 col <- paste("col", 1:2)
 
+# Split year and week column
 weekly_infectious_disease <- weekly_infectious_disease %>%
   separate(col = epi_week, sep = "-", into = col, remove = TRUE)
 
@@ -16,6 +17,11 @@ weekly_infectious_disease <- weekly_infectious_disease %>%
   rename(year = "col 1",
          week = "col 2",
          cases = "no._of_cases")
+
+# Clean HFMD and Hand, Foot Mouth Disease names
+weekly_infectious_disease <- weekly_infectious_disease %>% 
+  mutate(disease = case_when(disease == "HFMD" ~ "Hand, Foot Mouth Disease",
+                             TRUE ~ disease))
 
 # Visualize weekly case numbers of Dengue Fever from 2012 to 2021
 weekly_infectious_disease %>% 

@@ -1,0 +1,53 @@
+# Metadata for Consumer Price Index (CPI), Additional Indicators, 2019 as Base Year, Annual
+---
+Identifier: 'ae1f2851-d1bd-49be-84b7-281ed7b93458'
+Name: 'consumer-price-index-cpi-additional-indicators-annual'
+Title: 'Consumer Price Index (CPI), Additional Indicators, 2019 as Base Year, Annual'
+Description: 'Based on Monetary Authority of Singapore (MAS)''s classifications.'
+Topics:
+  - 'Economy'
+Keywords:
+  - 'cpi'
+  - 'inflation'
+  - 'prices'
+Publisher:
+  Name: 'Ministry of Trade and Industry - Department of Statistics'
+  Admin 1:
+    Name: 'Singstat info'
+    Department: 'Statistics Information Services'
+    Email: 'info@singstat.gov.sg'
+Sources:
+  - 'Ministry of Trade and Industry - Department of Statistics'
+Source Url: 'http://www.tablebuilder.singstat.gov.sg:80/publicfacing/createDataTable.action?refId=16846&exportType=csv'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '1990-01-01 to 2021-12-31'
+Last Updated: '2022-04-13T17:39:40.141530'
+Resources:
+  -
+    Identifier: 'b4b3fbd4-e23f-4143-a776-41e101439fa5'
+    Title: 'Consumer Price Index (CPI), Additional Indicators, 2019 as Base Year,
+      Index, Annual'
+    Url: 'https://storage.data.gov.sg/consumer-price-index-cpi-additional-indicators-annual/resources/consumer-price-index-cpi-additional-indicators-2019-as-base-year-index-annual-2022-04-13T17-39-39Z.csv'
+    Format: 'CSV'
+    Coverage: '1990-01-01 to 2021-12-31'
+    Last Updated: '2022-04-13T17:39:39.467402'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Indicators'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Index'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Index'
+        Description: '"na" : Not available or not applicable'

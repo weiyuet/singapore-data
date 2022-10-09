@@ -3,7 +3,7 @@
 Wong Wei Yuet 2022-05-26
 
 Data:
-  - [`data.gov.sg`](https://data.gov.sg/open-data-licence)
+  - [`data.gov.sg`](https://data.gov.sg/)
   
   - [`Department of Statistics Singapore`.](https://www.singstat.gov.sg/)
   
