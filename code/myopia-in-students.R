@@ -13,15 +13,14 @@ myopia <- myopia %>%
 # Visualize
 myopia %>% 
   ggplot(aes(x = year, y = percentage, colour = gender)) +
-  geom_line(size = 1.1) +
+  geom_line() +
   scale_x_continuous(expand = c(0.01, 0),
                      limits = c(min(myopia$year), max(myopia$year)),
                      breaks = seq(min(myopia$year), max(myopia$year), 1)) +
   scale_y_continuous(labels = label_percent()) +
   scale_colour_jco() +
   theme_classic() +
-  theme(legend.position = c(0.85, 0.9)) +
-  guides(colour = guide_legend(nrow = 1)) +
+  theme(legend.position = c(0.85, 0.85)) +
   labs(x = "", y = "",
        colour = "",
        title = "Defective Vision Rate",
