@@ -9,16 +9,16 @@ Data:
   
 The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
 
-Updated: 2022-10-08
+Updated: 2022-10-09
+
+## CPI Indicators
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/cpi-indicators.png)
 
 ## Live Births
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/resident-and-total-live-births.png)
 
 ## Fertility Rate - Ethnic Groups
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/fertility-rate-ethnic-groups.png)
-
-## Life Expectancy
-![](https://github.com/weiyuet/singapore-data/blob/main/figures/life-expectancy.png)
 
 ## Number of Students in Secondary Schools
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/secondary-school-students.png)
