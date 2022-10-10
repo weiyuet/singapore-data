@@ -28,9 +28,10 @@ live_births %>%
 # Save image
 ggsave("figures/resident-and-total-live-births.png", width = 8, height = 6)
 
-# Load total fertility rate by ethnic group data
+# Load fertility rate by ethnic group data
 total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annual/total-fertility-rate-by-ethnic-group.csv")
 
+#Plot fertility rate by ethnic groups
 total_fertility_rate_by_ethnic_group %>% 
   ggplot(aes(x = year, y = value, colour = level_2)) +
   geom_line() +
