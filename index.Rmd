@@ -1,7 +1,7 @@
 ---
 title: "Singapore Data Project"
-subtitle: "Visualising publicly available data"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+subtitle: "Exploring publicly available data"
+date: "Created: 26 May, 2022.\nUpdated: `r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document: 
     code_folding: hide
@@ -23,9 +23,10 @@ library(scales)
 library(glue)
 library(ggalt)
 library(ggsci)
+library(gt)
 ```
 
-  - Data.gov.sg was launched in 2011 as the government's one-stop portal to its publicly-available data sets from 70 public agencies.
+  - Data.gov.sg was launched in 2011 as a one-stop portal to its publicly-available data sets from 70 public agencies.
   
   - Data from [data.gov.sg](https://data.gov.sg) and [Department of Statistics Singapore.](https://www.singstat.gov.sg)
   
@@ -42,6 +43,12 @@ Singapore has one of the lowest fertility rates globally [World Bank](https://da
 live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
 
 live_births$value <- as.double(as.character(live_births$value))
+
+# Show first 10 rows of data set
+live_births %>% 
+  head() %>% 
+  gt() %>% 
+  tab_header(title = "")
 
 # Plot number of live-births
 live_births %>% 
@@ -67,6 +74,12 @@ The Total Fertility Rate refers to the average number of live-births each female
 ```{r Fertility rate ethnic group}
 # Load data
 total_fertility_rate_by_ethnic_group <- read_csv("data/births-and-fertility-annual/total-fertility-rate-by-ethnic-group.csv")
+
+# Show first 10 rows of data set
+total_fertility_rate_by_ethnic_group %>% 
+  head() %>% 
+  gt() %>% 
+  tab_header(title = "")
 
 # Plot fertility rate by ethnic groups
 total_fertility_rate_by_ethnic_group %>% 
@@ -98,6 +111,12 @@ In contrast to falling birth rates and fertility rates, the life expectancy has 
 ```{r Life expectancy}
 # Load data
 life_expectancy <- read_csv('data/life-expectancy-by-sex-annual/life-expectancy-at-birth-and-age-65-years.csv')
+
+# Show first 10 rows of data set
+life_expectancy %>% 
+  head() %>% 
+  gt() %>% 
+  tab_header(title = "")
 
 # Plot data
 # Line plot of life expectancy
@@ -140,14 +159,19 @@ life_expectancy %>%
 
 Together with the falling birth rate, the number of students in primary and secondary schools have also been declining.
 
-This has lead to the Ministry of Education [merging and closing schools.](https://www.moe.gov.sg/news/press-releases/20210407-school-mergers)
-
-Although, the student-teacher ratio has been decreasing (which is considered a positive metric).
+This has lead to the Ministry of Education [merging and closing schools.](https://www.moe.gov.sg/news/press-releases/20210407-school-mergers) Although, the student-teacher ratio has been decreasing (which is considered a positive metric).
 
 ## Number of Students in Primary Schools
+
 ```{r Number of students in primary schools}
 # Load data
 students_and_teachers_primary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-primary-schools.csv")
+
+# Show first 10 rows of data set
+students_and_teachers_primary_schools %>% 
+  head() %>% 
+  gt() %>% 
+  tab_header(title = "")
 
 # Plot number of students in primary schools
 students_and_teachers_primary_schools %>% 
@@ -170,6 +194,7 @@ students_and_teachers_primary_schools %>%
 ```
 
 ## Student-Teacher Ratio in Primary Schools
+
 ```{r Student-teacher ratio in primary schools}
 # Wrangle data
 # Calculate student-teacher ratio
@@ -191,9 +216,16 @@ students_and_teachers_primary_schools %>%
 ```
 
 ## Number of Students in Secondary Schools
+
 ```{r Number of students in secondary schools}
 # Load data
 students_and_teachers_secondary_schools <- read_csv("data/students-and-teachers-in-schools/students-and-teachers-secondary-schools.csv")
+
+# Show first 10 rows of data set
+students_and_teachers_secondary_schools %>% 
+  head() %>% 
+  gt() %>% 
+  tab_header(title = "")
 
 # Plot number of secondary school students
 students_and_teachers_secondary_schools %>% 
@@ -215,6 +247,7 @@ students_and_teachers_secondary_schools %>%
 ```
 
 ## Student-Teacher Ratio in Seondary Schools
+
 ```{r Student-teacher ratio in secondary schools}
 # Wrangle data
 # Calculate student-teacher ratio
@@ -243,11 +276,17 @@ students_and_teachers_secondary_schools %>%
 
   - The majority of people live in public housing, and the term evokes a different image compared to other countries.
 
-### Flats Constructed By Housing And Development Board, Annual
+## Flats Constructed By Housing And Development Board, Annual
 
 ```{r Flats constructed by hdb}
 # Load data
 flats_constructed <- read_csv("data/flats-constructed/flats-constructed-by-housing-and-development-board-annual.csv")
+
+# Show first 10 rows of data set
+flats_constructed %>% 
+  head() %>% 
+  gt() %>% 
+  tab_header(title = "")
 
 # Plot number of flats constructed
 p <- flats_constructed %>%
