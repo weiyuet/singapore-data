@@ -1,3 +1,4 @@
+# Setup
 library(tidyverse)
 library(scales)
 
@@ -33,7 +34,12 @@ tidy_prices %>%
   ggplot(aes(x = year, y = price, colour = item)) +
   geom_line(show.legend = FALSE) +
   facet_wrap(~item, scales = "free_y") +
-  scale_x_continuous(limits = c(2014, 2022))
+  scale_x_continuous(limits = c(2014, 2022)) +
+  theme_light() +
+  labs(x = "", y = "")
+
+# Save image
+ggsave("figures/price-typical-dishes.png", width = 7, height = 5)
 
 # Price of selected household groceries
 items_selected <- c("Premium Thai Rice (Per 5 Kilogram)", "Ordinary White Bread (Per 400 Gram)", "Instant Noodles (Per 5 Packets)", "Whole Chicken, Chilled (Per Kilogram)", "Hen Eggs (Per 10)", "Chinese Kale (Kailan) (Per Kilogram)")
@@ -42,7 +48,12 @@ tidy_prices %>%
   filter(item %in% items_selected) %>% 
   ggplot(aes(x = year, y = price, colour = item)) +
   geom_line(show.legend = FALSE) +
-  facet_wrap(~item, scales = "free_y")
+  facet_wrap(~item, scales = "free_y") +
+  theme_light() +
+  labs(x = "", y = "")
+
+# Save image
+ggsave("figures/price-household-groceries.png", width = 7, height = 5)
 
 # Price of fuel
 items_selected <- c("Diesel (Per Litre)", "Petrol, 98 Octane (Per Litre)", "Petrol, 95 Octane (Per Litre)", "Petrol, 92 Octane (Per Litre)", "Liquefied Petroleum Gas (LPG) (Per Kilogram)")
@@ -51,5 +62,10 @@ tidy_prices %>%
   filter(item %in% items_selected) %>% 
   ggplot(aes(x = year, y = price, colour = item)) +
   geom_line(show.legend = FALSE) +
-  facet_wrap(~item, scales = "free_y")
+  facet_wrap(~item, scales = "free_y") +
+  theme_light() +
+  labs(x = "", y = "")
+
+# Save image
+ggsave("figures/price-fuel.png", width = 7, height = 5)
   
