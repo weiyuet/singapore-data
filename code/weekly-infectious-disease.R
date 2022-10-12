@@ -24,8 +24,7 @@ weekly_infectious_disease <- weekly_infectious_disease %>%
                              TRUE ~ disease))
 
 # Visualize weekly case numbers of Dengue Fever from 2012 to 2021
-weekly_infectious_disease %>% 
-  group_by(year) %>%
+weekly_infectious_disease %>%
   filter(disease == "Dengue Fever") %>%
   ggplot(aes(x = week, y = cases)) +
   geom_col() +
