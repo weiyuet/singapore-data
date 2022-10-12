@@ -35,8 +35,12 @@ tidy_prices %>%
   geom_line(show.legend = FALSE) +
   facet_wrap(~item, scales = "free_y") +
   scale_x_continuous(limits = c(2014, 2022)) +
+  scale_y_continuous(labels = label_number(prefix = "$",
+                                           accuracy = 0.01)) +
   theme_light() +
-  labs(x = "", y = "")
+  labs(x = "", y = "",
+       title = "Price Trends of Typical Dishes",
+       caption = "Data: Singapore Department of Statistics")
 
 # Save image
 ggsave("figures/price-typical-dishes.png", width = 7, height = 5)
@@ -49,8 +53,12 @@ tidy_prices %>%
   ggplot(aes(x = year, y = price, colour = item)) +
   geom_line(show.legend = FALSE) +
   facet_wrap(~item, scales = "free_y") +
+  scale_y_continuous(labels = label_number(prefix = "$",
+                                           accuracy = 0.01)) +
   theme_light() +
-  labs(x = "", y = "")
+  labs(x = "", y = "",
+       title = "Price Trends of Selected Groceries",
+       caption = "Data: Singapore Department of Statistics")
 
 # Save image
 ggsave("figures/price-household-groceries.png", width = 7, height = 5)
@@ -63,8 +71,12 @@ tidy_prices %>%
   ggplot(aes(x = year, y = price, colour = item)) +
   geom_line(show.legend = FALSE) +
   facet_wrap(~item, scales = "free_y") +
+  scale_y_continuous(labels = label_number(prefix = "$",
+                                           accuracy = 0.1)) +
   theme_light() +
-  labs(x = "", y = "")
+  labs(x = "", y = "",
+       title = "Price Trends of Fuel",
+       caption = "Data: Singapore Department of Statistics")
 
 # Save image
 ggsave("figures/price-fuel.png", width = 7, height = 5)
