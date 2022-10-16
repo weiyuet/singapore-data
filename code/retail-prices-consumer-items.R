@@ -3,6 +3,7 @@ library(tidyverse)
 library(scales)
 library(ggsci)
 
+# Load data retail prices of consumer items
 raw_prices <- read_csv("data/retail-prices-consumer-items/M212951-table.csv", skip = 10)
 
 # Wrangle
@@ -17,7 +18,7 @@ prices <- prices %>%
 prices <- prices %>%
   mutate(across(10:13, as.numeric))
 
-# Change to tidy format
+# Data to tidy format
 tidy_prices <- prices %>%
   pivot_longer(2:13,
                names_to = "year",
@@ -47,7 +48,7 @@ tidy_prices %>%
   scale_y_continuous(labels = label_number(prefix = "$",
                                            accuracy = 0.01)) +
   scale_colour_jco() +
-  theme_classic() +
+  theme_bw() +
   labs(x = "", y = "",
        title = "Price Trends of Typical Dishes",
        caption = "Data: Singapore Department of Statistics | Graphic: @weiyuet")
@@ -75,7 +76,7 @@ tidy_prices %>%
   scale_y_continuous(labels = label_number(prefix = "$",
                                            accuracy = 0.01)) +
   scale_colour_jco() +
-  theme_classic() +
+  theme_bw() +
   labs(x = "", y = "",
        title = "Price Trends of Selected Groceries",
        caption = "Data: Singapore Department of Statistics | Graphic: @weiyuet")
@@ -102,10 +103,48 @@ tidy_prices %>%
   scale_y_continuous(labels = label_number(prefix = "$",
                                            accuracy = 0.01)) +
   scale_colour_jco() +
-  theme_classic() +
+  theme_bw() +
   labs(x = "", y = "",
        title = "Price Trends of Fuel",
        caption = "Data: Singapore Department of Statistics | Graphic: @weiyuet")
 
 # Save image
 ggsave("figures/price-fuel.png", width = 7, height = 5)
+
+# Load data household expenditure
+raw_household_expenditure <- read_csv("data//retail-prices-consumer-items/M212981-table.csv", skip = 10)
+
+# Wrangle
+# Remove bottom rows
+household_expenditure <- raw_household_expenditure[-c(17:45), ]
+
+# Rename category column
+household_expenditure <- household_expenditure %>% 
+  rename(category = `Data Series`)
+
+# Data to tidy format
+tidy_household_expenditure <- household_expenditure %>% 
+  pivot_longer(cols = 2:7,
+               names_to = "year",
+               values_to = "expenditure")
+
+# Visualize
+categories_selected <- c("Food", "Housing And Utilities", "Transport")
+
+tidy_household_expenditure %>%
+  filter(category %in% categories_selected) %>% 
+  ggplot(aes(x = year, y = expenditure, fill = category)) +
+  geom_bar(stat = "identity", colour = "black") +
+  scale_y_continuous(expand = c(0.01, 0),
+                     labels = label_number(prefix = "$", big.mark = ",")) +
+  scale_fill_jco() +
+  theme_bw() +
+  theme(legend.position = c(0.25, 0.85)) +
+  labs(x = "", y = "",
+       fill = "",
+       title = "Average Monthly Household Expenditure - Food, housing and transport",
+       subtitle = "Surveyed Quinquenially - There was a spiked increase after the 2008 Global Financial Crisis",
+       caption = "Data: Singapore Department of Statistics | Graphic: @weiyuet")
+
+# Save image
+ggsave("figures/average-household-expenditure.png", width = 7, height = 5)
