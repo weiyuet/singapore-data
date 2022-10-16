@@ -47,7 +47,7 @@ tidy_prices %>%
   scale_y_continuous(labels = label_number(prefix = "$",
                                            accuracy = 0.01)) +
   scale_colour_jco() +
-  theme_bw() +
+  theme_classic() +
   labs(x = "", y = "",
        title = "Price Trends of Typical Dishes",
        caption = "Data: Singapore Department of Statistics | Graphic: @weiyuet")
@@ -75,7 +75,7 @@ tidy_prices %>%
   scale_y_continuous(labels = label_number(prefix = "$",
                                            accuracy = 0.01)) +
   scale_colour_jco() +
-  theme_bw() +
+  theme_classic() +
   labs(x = "", y = "",
        title = "Price Trends of Selected Groceries",
        caption = "Data: Singapore Department of Statistics | Graphic: @weiyuet")
@@ -102,7 +102,7 @@ tidy_prices %>%
   scale_y_continuous(labels = label_number(prefix = "$",
                                            accuracy = 0.01)) +
   scale_colour_jco() +
-  theme_bw() +
+  theme_classic() +
   labs(x = "", y = "",
        title = "Price Trends of Fuel",
        caption = "Data: Singapore Department of Statistics | Graphic: @weiyuet")
