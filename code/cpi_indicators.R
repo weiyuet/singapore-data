@@ -24,8 +24,9 @@ cpi %>%
   scale_y_continuous(limits = c(60, 120),
                      breaks = seq(60, 120, 5)) +
   scale_colour_jco(labels = c("Electricity & Gas Inflation", "MAS Core Inflation", "Retail & Other Goods Inflation", "Services Inflation")) +
-  theme_classic() +
-  theme(legend.position = c(0.3, 0.85)) +
+  theme_bw() +
+  theme(legend.position = c(0.3, 0.85),
+        legend.background = element_blank()) +
   labs(x = "", y = "",
        colour = "",
        title = "Consumer Price Index (CPI), 2019 as Base Year",

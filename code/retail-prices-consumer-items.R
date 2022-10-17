@@ -135,11 +135,11 @@ tidy_household_expenditure %>%
   filter(category %in% categories_selected) %>% 
   ggplot(aes(x = year, y = expenditure, fill = category)) +
   geom_bar(stat = "identity", colour = "black") +
-  scale_y_continuous(expand = c(0.01, 0),
-                     labels = label_number(prefix = "$", big.mark = ",")) +
+  scale_y_continuous(labels = label_number(prefix = "$", big.mark = ",")) +
   scale_fill_jco() +
   theme_bw() +
-  theme(legend.position = c(0.25, 0.85)) +
+  theme(legend.position = c(0.25, 0.85),
+        legend.background = element_blank()) +
   labs(x = "", y = "",
        fill = "",
        title = "Average Monthly Household Expenditure - Food, housing and transport",
