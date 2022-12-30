@@ -27,6 +27,8 @@ container_throughput_monthly %>%
   facet_wrap(vars(year)) +
   scale_x_continuous(breaks = seq(1, 12, 3),
                      labels = month.abb[seq(1, 12, 3)]) +
+  scale_y_continuous(expand = c(0, 0),
+                     labels = label_number(big.mark = ",")) +
   theme_classic() +
   labs(x = "",
        y = "",
@@ -34,4 +36,4 @@ container_throughput_monthly %>%
        caption = "Data: Maritime and Port Authority of Singapore (data.gov.sg) | Graphic: @weiyuet")
 
 #### Save image ####
-ggsave("figures/container-throughput-yearly-total.png", width = 10, height = 6.5)
+ggsave("figures/container-throughput-monthly.png", width = 10, height = 6.5)
