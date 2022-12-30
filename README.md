@@ -5,11 +5,11 @@ Wong Wei Yuet 2022-05-26
 Data:
   - [`data.gov.sg`](https://data.gov.sg/)
   
-  - [`Department of Statistics Singapore`.](https://www.singstat.gov.sg/)
+  - [`Department of Statistics Singapore`](https://www.singstat.gov.sg/)
   
 The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
 
-Updated: 2022-10-16
+Updated: 2022-12-31
 
 ## CPI Indicators and Household Expenditure
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/cpi-indicators.png)
@@ -37,5 +37,8 @@ Updated: 2022-10-16
 
 ## Number of Flats Constructed by HDB
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/flats-constructed.png)
+
+## Container Throughput Monthly
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/container-throughput-monthly.png)
 
 EOL
