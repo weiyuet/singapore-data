@@ -1,0 +1,52 @@
+# Metadata for Rainfall - Monthly Number of Rain Days
+---
+Identifier: 'f0b330c4-18c5-4d8e-ba95-7c7739297bd2'
+Name: 'rainfall-monthly-number-of-rain-days'
+Title: 'Rainfall - Monthly Number of Rain Days'
+Description: 'The number of rain days (day with rainfall amount of 0.2mm or more)
+  in a month recorded at the Changi Climate Station.'
+Topics:
+  - 'Environment'
+Keywords:
+  - 'Climate'
+  - 'NEA'
+  - 'Precipitation'
+  - 'Rainfall'
+  - 'Weather'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Ong Chin Hong'
+    Department: 'CCRS'
+    Email: 'ong_chin_hong@nea.gov.sg'
+  Admin 2:
+    Name: 'Ang Chieng Hai'
+    Department: 'CCRS'
+    Email: 'ang_chieng_hai@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Monthly'
+Coverage: '1982-01-01 to 2022-11-30'
+Last Updated: '2022-12-15T08:59:02.375479'
+Resources:
+  -
+    Identifier: '8b94f596-91fd-4545-bf9e-7a426493b674'
+    Title: 'Rainfall - Monthly Number of Rain Days'
+    Url: 'https://storage.data.gov.sg/rainfall-monthly-number-of-rain-days/resources/rainfall-monthly-number-of-rain-days-2022-12-15T08-59-01Z.csv'
+    Format: 'CSV'
+    Coverage: '1982-01-01 to 2022-11-30'
+    Last Updated: '2022-12-15T08:59:01.432262'
+    Schema:
+      -
+        Name: 'month'
+        Title: 'Month'
+        Type: 'datetime'
+        Sub Type: 'month'
+        Format: 'YYYY-MM'
+      -
+        Name: 'no_of_rainy_days'
+        Title: 'Number of Rain Days in the Month'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Days'
