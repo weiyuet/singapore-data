@@ -1,27 +1,37 @@
-# Setup
+################################
+# Container Throughput Monthly #
+################################
+
+#### Setup ####
 library(tidyverse)
 library(scales)
-library(lubridate)
 
-# Load data
+#### Load data ####
 container_throughput_monthly <- read_csv("data/container-throughput-monthly-total/container-throughput-monthly.csv")
 
-# Wrangle
+#### Wrangle ####
 # Separate month and year
-container_throughput_monthly %>% separate(month, c("year", "month")) %>% 
-  group_by(year) %>% summarise(container_throughput_yearly = sum(container_throughput)) %>% 
-  ggplot(aes(x = year, y = container_throughput_yearly)) +
-  geom_col(colour = "gray10", fill = "gray35") +
-  coord_flip() +
-  scale_y_continuous(labels = label_number(big.mark = ","),
-                     breaks = seq(0, 40000, 5000),
-                     limits = c(0, 40000),
-                     expand = c(0, 0)) +
+container_throughput_monthly <- container_throughput_monthly %>% 
+  separate(month, c("year", "month"))
+
+# Convert year and month into numeric
+container_throughput_monthly <- container_throughput_monthly %>% 
+  mutate(across(1:2, as.numeric))
+
+#### Visualize ####
+# How many containers go through Singapore each month?
+container_throughput_monthly %>% 
+  ggplot(aes(x = month,
+             y = container_throughput)) +
+  geom_col() +
+  facet_wrap(vars(year)) +
+  scale_x_continuous(breaks = seq(1, 12, 3),
+                     labels = month.abb[seq(1, 12, 3)]) +
   theme_classic() +
-  labs(x = "", y ="",
-       title = "Container Throughput (Total)",
-       subtitle = "'000 Twenty-foot equivalent units",
+  labs(x = "",
+       y = "",
+       title = "Container Throughput (Monthly) - '000 Twenty-foot equivalent units",
        caption = "Data: Maritime and Port Authority of Singapore (data.gov.sg) | Graphic: @weiyuet")
 
-# Save image
+#### Save image ####
 ggsave("figures/container-throughput-yearly-total.png", width = 10, height = 6.5)
