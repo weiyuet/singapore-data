@@ -36,4 +36,4 @@ container_throughput_monthly %>%
        caption = "Data: Maritime and Port Authority of Singapore (data.gov.sg) | Graphic: @weiyuet")
 
 #### Save image ####
-ggsave("figures/container-throughput-monthly.png", width = 10, height = 6.5)
+ggsave("figures/container-throughput-monthly.png", width = 8, height = 8)

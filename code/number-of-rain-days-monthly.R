@@ -22,7 +22,8 @@ number_of_rain_days_monthly = transform(number_of_rain_days_monthly,
 #### Visualize ####
 # How many rain days are there in a month?
 number_of_rain_days_monthly %>% 
-  ggplot(aes(x = month, y = no_of_rainy_days)) +
+  ggplot(aes(x = month,
+             y = no_of_rainy_days)) +
   geom_point() +
   geom_line() +
   geom_hline(yintercept = 15,
