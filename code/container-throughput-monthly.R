@@ -5,6 +5,7 @@
 #### Setup ####
 library(tidyverse)
 library(scales)
+library(glue)
 
 #### Load data ####
 container_throughput_monthly <- read_csv("data/container-throughput-monthly-total/container-throughput-monthly.csv")
@@ -27,13 +28,15 @@ container_throughput_monthly %>%
   facet_wrap(vars(year)) +
   scale_x_continuous(breaks = seq(1, 12, 3),
                      labels = month.abb[seq(1, 12, 3)]) +
-  scale_y_continuous(expand = c(0, 0),
-                     labels = label_number(big.mark = ",")) +
-  theme_classic() +
+  scale_y_continuous(expand = c(0, 0)) +
   labs(x = "",
        y = "",
-       title = "Container Throughput (Monthly) - '000 Twenty-foot equivalent units",
-       caption = "Data: Maritime and Port Authority of Singapore (data.gov.sg) | Graphic: @weiyuet")
+       title = glue("Container Throughput ({min(container_throughput_monthly$year)}-{max(container_throughput_monthly$year)}) '000 Twenty-foot equivalent units"),
+       caption = "Data: Maritime and Port Authority of Singapore (data.gov.sg) | Graphic: @weiyuet") +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90,
+                                   vjust = 0.5,
+                                   hjust = 1))
 
 #### Save image ####
 ggsave("figures/container-throughput-monthly.png", width = 8, height = 8)

@@ -34,17 +34,16 @@ weekly_infectious_disease %>%
   ggplot(aes(x = week,
              y = cases)) +
   geom_col() +
-  facet_wrap(~year) +
-  scale_y_continuous(expand = c(0, 0),
-                     labels = label_number(big.mark = ",")) +
-  theme_classic() +
-  theme(axis.text.x = element_blank(),
-        axis.ticks.x = element_blank()) +
+  facet_wrap(vars(year)) +
+  scale_y_continuous(expand = c(0, 0)) +
   labs(x = "",
        y = "",
-       title = glue("Weekly Case Numbers of Dengue Fever from {min(weekly_infectious_disease$year)} to {max(weekly_infectious_disease$year)} in Singapore"),
+       title = glue("Weekly Case Numbers of Dengue Fever ({min(weekly_infectious_disease$year)} - {max(weekly_infectious_disease$year)}) in Singapore"),
        subtitle = "June seems to be the peak month, with 2020 being a particularly bad year",
-       caption = "Data: Ministry of Health (data.gov.sg) | Graphic: @weiyuet")
+       caption = "Data: Ministry of Health (data.gov.sg) | Graphic: @weiyuet") +
+  theme_classic() +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank())
 
 #### Save image ####
 ggsave("figures/weekly-cases-dengue-fever.png", width = 8, height = 5)
