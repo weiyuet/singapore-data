@@ -27,20 +27,22 @@ number_of_rain_days_monthly %>%
   geom_point() +
   geom_line() +
   geom_hline(yintercept = 15,
-             linetype = "dashed",
+             linetype = "dotted",
              colour = "red") +
   facet_wrap(vars(year)) +
-  scale_x_continuous(breaks = seq(1, 12, 2),
-                     labels = month.abb[seq(1, 12, 2)]) +
+  scale_x_continuous(breaks = 1:12,
+                     labels = month.abb[1:12]) +
   scale_y_continuous(breaks = seq(0, 30, 5)) +
   labs(x = "",
        y = "",
-       title = "Number of Rain Days per Month - recorded at Changi Climate Station",
+       title = "Number of Rain Days per Month",
+       subtitle = "Recorded at Changi Climate Station (1.3667, 103.9833)",
        caption = "Data: National Environment Agency (data.gov.sg) | Graphic: @weiyuet") +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 90,
                                    vjust = 0.5,
-                                   hjust = 1))
+                                   hjust = 1,
+                                   size = 7))
 
 #### Save image ####
 ggsave("figures/number-of-rain-days-monthly.png", width = 8, height = 8)
