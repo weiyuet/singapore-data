@@ -15,7 +15,10 @@ col <- paste("col", 1:2)
 
 # Split year and week column
 weekly_infectious_disease <- weekly_infectious_disease %>%
-  separate(col = epi_week, sep = "-", into = col, remove = TRUE)
+  separate(col = epi_week,
+           sep = "-",
+           into = col,
+           remove = TRUE)
 
 weekly_infectious_disease <- weekly_infectious_disease %>% 
   rename(year = "col 1",
@@ -38,7 +41,7 @@ weekly_infectious_disease %>%
   scale_y_continuous(expand = c(0, 0)) +
   labs(x = "",
        y = "",
-       title = glue("Weekly Case Numbers of Dengue Fever ({min(weekly_infectious_disease$year)} - {max(weekly_infectious_disease$year)}) in Singapore"),
+       title = glue("Weekly Case Numbers of Dengue Fever ({min(weekly_infectious_disease$year)}-{max(weekly_infectious_disease$year)}) in Singapore"),
        subtitle = "June seems to be the peak month, with 2020 being a particularly bad year",
        caption = "Data: Ministry of Health (data.gov.sg) | Graphic: @weiyuet") +
   theme_classic() +
