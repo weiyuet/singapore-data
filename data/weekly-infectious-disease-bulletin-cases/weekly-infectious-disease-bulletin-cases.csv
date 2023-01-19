@@ -18011,7 +18011,7 @@ epi_week,disease,no._of_cases
 2021-W52,Poliomyelitis,0
 2021-W52,Plague,0
 2021-W52,Yellow Fever,0
-2021-W52,Dengue Fever,76
+2021-W52,Dengue Fever,79
 2021-W52,Dengue Haemorrhagic Fever,0
 2021-W52,Malaria,0
 2021-W52,Chikungunya,0
@@ -18041,3 +18041,2031 @@ epi_week,disease,no._of_cases
 2021-W52,Tetanus,0
 2021-W52,Botulism,0
 2021-W52,Murine Typhus,1
+2022-W01,Cholera,0
+2022-W01,Paratyphoid,0
+2022-W01,Typhoid,1
+2022-W01,Acute Viral Hepatitis A,0
+2022-W01,Acute Viral Hepatitis E,3
+2022-W01,Poliomyelitis,0
+2022-W01,Plague,0
+2022-W01,Yellow Fever,0
+2022-W01,Dengue Fever,106
+2022-W01,Dengue Haemorrhagic Fever,0
+2022-W01,Malaria,0
+2022-W01,Chikungunya,0
+2022-W01,HFMD,0
+2022-W01,Diphtheria,0
+2022-W01,Measles,0
+2022-W01,Mumps,0
+2022-W01,Rubella,0
+2022-W01,SARS,0
+2022-W01,Nipah,0
+2022-W01,Acute Viral hepatitis B,0
+2022-W01,Encephalitis,0
+2022-W01,Legionellosis,0
+2022-W01,Campylobacter enteritis,17
+2022-W01,Acute Viral hepatitis C,0
+2022-W01,Leptospirosis,2
+2022-W01,Melioidosis,1
+2022-W01,Meningococcal Infection,0
+2022-W01,Pertussis,0
+2022-W01,Pneumococcal Disease (invasive),1
+2022-W01,Haemophilus influenzae type b,0
+2022-W01,Salmonellosis(non-enteric fevers),24
+2022-W01,Avian Influenza,0
+2022-W01,Zika,0
+2022-W01,Ebola Virus Disease,0
+2022-W01,Japanese Encephalitis,0
+2022-W01,Tetanus,0
+2022-W01,Botulism,0
+2022-W01,Murine Typhus,2
+2022-W01,Monkeypox,0
+2022-W02,Cholera,0
+2022-W02,Paratyphoid,0
+2022-W02,Typhoid,1
+2022-W02,Acute Viral Hepatitis A,1
+2022-W02,Acute Viral Hepatitis E,0
+2022-W02,Poliomyelitis,0
+2022-W02,Plague,0
+2022-W02,Yellow Fever,0
+2022-W02,Dengue Fever,146
+2022-W02,Dengue Haemorrhagic Fever,0
+2022-W02,Malaria,0
+2022-W02,Chikungunya,0
+2022-W02,HFMD,0
+2022-W02,Diphtheria,0
+2022-W02,Measles,0
+2022-W02,Mumps,1
+2022-W02,Rubella,0
+2022-W02,SARS,0
+2022-W02,Nipah,0
+2022-W02,Acute Viral hepatitis B,0
+2022-W02,Encephalitis,0
+2022-W02,Legionellosis,1
+2022-W02,Campylobacter enteritis,19
+2022-W02,Acute Viral hepatitis C,0
+2022-W02,Leptospirosis,1
+2022-W02,Melioidosis,0
+2022-W02,Meningococcal Infection,0
+2022-W02,Pertussis,0
+2022-W02,Pneumococcal Disease (invasive),1
+2022-W02,Haemophilus influenzae type b,0
+2022-W02,Salmonellosis(non-enteric fevers),18
+2022-W02,Avian Influenza,0
+2022-W02,Zika,0
+2022-W02,Ebola Virus Disease,0
+2022-W02,Japanese Encephalitis,0
+2022-W02,Tetanus,0
+2022-W02,Botulism,0
+2022-W02,Murine Typhus,0
+2022-W02,Monkeypox,0
+2022-W03,Cholera,0
+2022-W03,Paratyphoid,0
+2022-W03,Typhoid,2
+2022-W03,Acute Viral Hepatitis A,0
+2022-W03,Acute Viral Hepatitis E,0
+2022-W03,Poliomyelitis,0
+2022-W03,Plague,0
+2022-W03,Yellow Fever,0
+2022-W03,Dengue Fever,178
+2022-W03,Dengue Haemorrhagic Fever,2
+2022-W03,Malaria,0
+2022-W03,Chikungunya,0
+2022-W03,HFMD,0
+2022-W03,Diphtheria,0
+2022-W03,Measles,0
+2022-W03,Mumps,2
+2022-W03,Rubella,0
+2022-W03,SARS,0
+2022-W03,Nipah,0
+2022-W03,Acute Viral hepatitis B,1
+2022-W03,Encephalitis,0
+2022-W03,Legionellosis,1
+2022-W03,Campylobacter enteritis,13
+2022-W03,Acute Viral hepatitis C,2
+2022-W03,Leptospirosis,0
+2022-W03,Melioidosis,1
+2022-W03,Meningococcal Infection,0
+2022-W03,Pertussis,0
+2022-W03,Pneumococcal Disease (invasive),1
+2022-W03,Haemophilus influenzae type b,0
+2022-W03,Salmonellosis(non-enteric fevers),16
+2022-W03,Avian Influenza,0
+2022-W03,Zika,0
+2022-W03,Ebola Virus Disease,0
+2022-W03,Japanese Encephalitis,0
+2022-W03,Tetanus,0
+2022-W03,Botulism,0
+2022-W03,Murine Typhus,0
+2022-W03,Monkeypox,0
+2022-W04,Cholera,0
+2022-W04,Paratyphoid,0
+2022-W04,Typhoid,1
+2022-W04,Acute Viral Hepatitis A,0
+2022-W04,Acute Viral Hepatitis E,1
+2022-W04,Poliomyelitis,0
+2022-W04,Plague,0
+2022-W04,Yellow Fever,0
+2022-W04,Dengue Fever,169
+2022-W04,Dengue Haemorrhagic Fever,2
+2022-W04,Malaria,0
+2022-W04,Chikungunya,0
+2022-W04,HFMD,0
+2022-W04,Diphtheria,0
+2022-W04,Measles,0
+2022-W04,Mumps,1
+2022-W04,Rubella,0
+2022-W04,SARS,0
+2022-W04,Nipah,0
+2022-W04,Acute Viral hepatitis B,1
+2022-W04,Encephalitis,0
+2022-W04,Legionellosis,0
+2022-W04,Campylobacter enteritis,17
+2022-W04,Acute Viral hepatitis C,0
+2022-W04,Leptospirosis,2
+2022-W04,Melioidosis,2
+2022-W04,Meningococcal Infection,1
+2022-W04,Pertussis,0
+2022-W04,Pneumococcal Disease (invasive),0
+2022-W04,Haemophilus influenzae type b,0
+2022-W04,Salmonellosis(non-enteric fevers),15
+2022-W04,Avian Influenza,0
+2022-W04,Zika,0
+2022-W04,Ebola Virus Disease,0
+2022-W04,Japanese Encephalitis,0
+2022-W04,Tetanus,0
+2022-W04,Botulism,0
+2022-W04,Murine Typhus,0
+2022-W04,Monkeypox,0
+2022-W05,Cholera,0
+2022-W05,Paratyphoid,0
+2022-W05,Typhoid,3
+2022-W05,Acute Viral Hepatitis A,0
+2022-W05,Acute Viral Hepatitis E,0
+2022-W05,Poliomyelitis,0
+2022-W05,Plague,0
+2022-W05,Yellow Fever,0
+2022-W05,Dengue Fever,153
+2022-W05,Dengue Haemorrhagic Fever,1
+2022-W05,Malaria,1
+2022-W05,Chikungunya,0
+2022-W05,HFMD,0
+2022-W05,Diphtheria,0
+2022-W05,Measles,0
+2022-W05,Mumps,1
+2022-W05,Rubella,0
+2022-W05,SARS,0
+2022-W05,Nipah,0
+2022-W05,Acute Viral hepatitis B,1
+2022-W05,Encephalitis,0
+2022-W05,Legionellosis,1
+2022-W05,Campylobacter enteritis,17
+2022-W05,Acute Viral hepatitis C,0
+2022-W05,Leptospirosis,0
+2022-W05,Melioidosis,1
+2022-W05,Meningococcal Infection,0
+2022-W05,Pertussis,0
+2022-W05,Pneumococcal Disease (invasive),0
+2022-W05,Haemophilus influenzae type b,0
+2022-W05,Salmonellosis(non-enteric fevers),16
+2022-W05,Avian Influenza,0
+2022-W05,Zika,0
+2022-W05,Ebola Virus Disease,0
+2022-W05,Japanese Encephalitis,0
+2022-W05,Tetanus,0
+2022-W05,Botulism,0
+2022-W05,Murine Typhus,1
+2022-W05,Monkeypox,0
+2022-W06,Cholera,0
+2022-W06,Paratyphoid,2
+2022-W06,Typhoid,0
+2022-W06,Acute Viral Hepatitis A,0
+2022-W06,Acute Viral Hepatitis E,0
+2022-W06,Poliomyelitis,0
+2022-W06,Plague,0
+2022-W06,Yellow Fever,0
+2022-W06,Dengue Fever,168
+2022-W06,Dengue Haemorrhagic Fever,1
+2022-W06,Malaria,0
+2022-W06,Chikungunya,0
+2022-W06,HFMD,0
+2022-W06,Diphtheria,0
+2022-W06,Measles,0
+2022-W06,Mumps,7
+2022-W06,Rubella,0
+2022-W06,SARS,0
+2022-W06,Nipah,0
+2022-W06,Acute Viral hepatitis B,1
+2022-W06,Encephalitis,0
+2022-W06,Legionellosis,0
+2022-W06,Campylobacter enteritis,11
+2022-W06,Acute Viral hepatitis C,0
+2022-W06,Leptospirosis,0
+2022-W06,Melioidosis,1
+2022-W06,Meningococcal Infection,0
+2022-W06,Pertussis,0
+2022-W06,Pneumococcal Disease (invasive),0
+2022-W06,Haemophilus influenzae type b,0
+2022-W06,Salmonellosis(non-enteric fevers),23
+2022-W06,Avian Influenza,0
+2022-W06,Zika,0
+2022-W06,Ebola Virus Disease,0
+2022-W06,Japanese Encephalitis,0
+2022-W06,Tetanus,0
+2022-W06,Botulism,0
+2022-W06,Murine Typhus,0
+2022-W06,Monkeypox,0
+2022-W07,Cholera,0
+2022-W07,Paratyphoid,0
+2022-W07,Typhoid,0
+2022-W07,Acute Viral Hepatitis A,0
+2022-W07,Acute Viral Hepatitis E,0
+2022-W07,Poliomyelitis,0
+2022-W07,Plague,0
+2022-W07,Yellow Fever,0
+2022-W07,Dengue Fever,206
+2022-W07,Dengue Haemorrhagic Fever,0
+2022-W07,Malaria,0
+2022-W07,Chikungunya,0
+2022-W07,HFMD,0
+2022-W07,Diphtheria,0
+2022-W07,Measles,0
+2022-W07,Mumps,0
+2022-W07,Rubella,0
+2022-W07,SARS,0
+2022-W07,Nipah,0
+2022-W07,Acute Viral hepatitis B,0
+2022-W07,Encephalitis,0
+2022-W07,Legionellosis,0
+2022-W07,Campylobacter enteritis,12
+2022-W07,Acute Viral hepatitis C,0
+2022-W07,Leptospirosis,1
+2022-W07,Melioidosis,0
+2022-W07,Meningococcal Infection,0
+2022-W07,Pertussis,0
+2022-W07,Pneumococcal Disease (invasive),0
+2022-W07,Haemophilus influenzae type b,0
+2022-W07,Salmonellosis(non-enteric fevers),22
+2022-W07,Avian Influenza,0
+2022-W07,Zika,0
+2022-W07,Ebola Virus Disease,0
+2022-W07,Japanese Encephalitis,0
+2022-W07,Tetanus,0
+2022-W07,Botulism,0
+2022-W07,Murine Typhus,1
+2022-W07,Monkeypox,0
+2022-W08,Cholera,0
+2022-W08,Paratyphoid,0
+2022-W08,Typhoid,0
+2022-W08,Acute Viral Hepatitis A,0
+2022-W08,Acute Viral Hepatitis E,0
+2022-W08,Poliomyelitis,0
+2022-W08,Plague,0
+2022-W08,Yellow Fever,0
+2022-W08,Dengue Fever,200
+2022-W08,Dengue Haemorrhagic Fever,1
+2022-W08,Malaria,0
+2022-W08,Chikungunya,0
+2022-W08,HFMD,0
+2022-W08,Diphtheria,0
+2022-W08,Measles,0
+2022-W08,Mumps,5
+2022-W08,Rubella,0
+2022-W08,SARS,0
+2022-W08,Nipah,0
+2022-W08,Acute Viral hepatitis B,1
+2022-W08,Encephalitis,0
+2022-W08,Legionellosis,1
+2022-W08,Campylobacter enteritis,13
+2022-W08,Acute Viral hepatitis C,0
+2022-W08,Leptospirosis,0
+2022-W08,Melioidosis,1
+2022-W08,Meningococcal Infection,0
+2022-W08,Pertussis,0
+2022-W08,Pneumococcal Disease (invasive),1
+2022-W08,Haemophilus influenzae type b,0
+2022-W08,Salmonellosis(non-enteric fevers),21
+2022-W08,Avian Influenza,0
+2022-W08,Zika,0
+2022-W08,Ebola Virus Disease,0
+2022-W08,Japanese Encephalitis,0
+2022-W08,Tetanus,0
+2022-W08,Botulism,0
+2022-W08,Murine Typhus,0
+2022-W08,Monkeypox,0
+2022-W09,Cholera,0
+2022-W09,Paratyphoid,0
+2022-W09,Typhoid,2
+2022-W09,Acute Viral Hepatitis A,0
+2022-W09,Acute Viral Hepatitis E,0
+2022-W09,Poliomyelitis,0
+2022-W09,Plague,0
+2022-W09,Yellow Fever,0
+2022-W09,Dengue Fever,263
+2022-W09,Dengue Haemorrhagic Fever,0
+2022-W09,Malaria,0
+2022-W09,Chikungunya,0
+2022-W09,HFMD,0
+2022-W09,Diphtheria,0
+2022-W09,Measles,0
+2022-W09,Mumps,0
+2022-W09,Rubella,0
+2022-W09,SARS,0
+2022-W09,Nipah,0
+2022-W09,Acute Viral hepatitis B,1
+2022-W09,Encephalitis,0
+2022-W09,Legionellosis,0
+2022-W09,Campylobacter enteritis,14
+2022-W09,Acute Viral hepatitis C,0
+2022-W09,Leptospirosis,0
+2022-W09,Melioidosis,2
+2022-W09,Meningococcal Infection,0
+2022-W09,Pertussis,0
+2022-W09,Pneumococcal Disease (invasive),0
+2022-W09,Haemophilus influenzae type b,0
+2022-W09,Salmonellosis(non-enteric fevers),25
+2022-W09,Avian Influenza,0
+2022-W09,Zika,0
+2022-W09,Ebola Virus Disease,0
+2022-W09,Japanese Encephalitis,0
+2022-W09,Tetanus,0
+2022-W09,Botulism,0
+2022-W09,Murine Typhus,0
+2022-W09,Monkeypox,0
+2022-W10,Cholera,1
+2022-W10,Paratyphoid,0
+2022-W10,Typhoid,0
+2022-W10,Acute Viral Hepatitis A,1
+2022-W10,Acute Viral Hepatitis E,0
+2022-W10,Poliomyelitis,0
+2022-W10,Plague,0
+2022-W10,Yellow Fever,0
+2022-W10,Dengue Fever,369
+2022-W10,Dengue Haemorrhagic Fever,0
+2022-W10,Malaria,0
+2022-W10,Chikungunya,0
+2022-W10,HFMD,0
+2022-W10,Diphtheria,0
+2022-W10,Measles,0
+2022-W10,Mumps,1
+2022-W10,Rubella,0
+2022-W10,SARS,0
+2022-W10,Nipah,0
+2022-W10,Acute Viral hepatitis B,1
+2022-W10,Encephalitis,0
+2022-W10,Legionellosis,0
+2022-W10,Campylobacter enteritis,13
+2022-W10,Acute Viral hepatitis C,1
+2022-W10,Leptospirosis,0
+2022-W10,Melioidosis,2
+2022-W10,Meningococcal Infection,0
+2022-W10,Pertussis,0
+2022-W10,Pneumococcal Disease (invasive),2
+2022-W10,Haemophilus influenzae type b,0
+2022-W10,Salmonellosis(non-enteric fevers),28
+2022-W10,Avian Influenza,0
+2022-W10,Zika,0
+2022-W10,Ebola Virus Disease,0
+2022-W10,Japanese Encephalitis,0
+2022-W10,Tetanus,0
+2022-W10,Botulism,0
+2022-W10,Murine Typhus,0
+2022-W10,Monkeypox,0
+2022-W11,Cholera,0
+2022-W11,Paratyphoid,1
+2022-W11,Typhoid,0
+2022-W11,Acute Viral Hepatitis A,0
+2022-W11,Acute Viral Hepatitis E,0
+2022-W11,Poliomyelitis,0
+2022-W11,Plague,0
+2022-W11,Yellow Fever,0
+2022-W11,Dengue Fever,421
+2022-W11,Dengue Haemorrhagic Fever,0
+2022-W11,Malaria,0
+2022-W11,Chikungunya,0
+2022-W11,HFMD,0
+2022-W11,Diphtheria,0
+2022-W11,Measles,0
+2022-W11,Mumps,2
+2022-W11,Rubella,0
+2022-W11,SARS,0
+2022-W11,Nipah,0
+2022-W11,Acute Viral hepatitis B,0
+2022-W11,Encephalitis,0
+2022-W11,Legionellosis,0
+2022-W11,Campylobacter enteritis,18
+2022-W11,Acute Viral hepatitis C,1
+2022-W11,Leptospirosis,0
+2022-W11,Melioidosis,0
+2022-W11,Meningococcal Infection,0
+2022-W11,Pertussis,0
+2022-W11,Pneumococcal Disease (invasive),0
+2022-W11,Haemophilus influenzae type b,0
+2022-W11,Salmonellosis(non-enteric fevers),25
+2022-W11,Avian Influenza,0
+2022-W11,Zika,0
+2022-W11,Ebola Virus Disease,0
+2022-W11,Japanese Encephalitis,0
+2022-W11,Tetanus,0
+2022-W11,Botulism,0
+2022-W11,Murine Typhus,0
+2022-W11,Monkeypox,0
+2022-W12,Cholera,2
+2022-W12,Paratyphoid,0
+2022-W12,Typhoid,1
+2022-W12,Acute Viral Hepatitis A,0
+2022-W12,Acute Viral Hepatitis E,1
+2022-W12,Poliomyelitis,0
+2022-W12,Plague,0
+2022-W12,Yellow Fever,0
+2022-W12,Dengue Fever,441
+2022-W12,Dengue Haemorrhagic Fever,0
+2022-W12,Malaria,1
+2022-W12,Chikungunya,0
+2022-W12,HFMD,0
+2022-W12,Diphtheria,0
+2022-W12,Measles,0
+2022-W12,Mumps,4
+2022-W12,Rubella,0
+2022-W12,SARS,0
+2022-W12,Nipah,0
+2022-W12,Acute Viral hepatitis B,1
+2022-W12,Encephalitis,0
+2022-W12,Legionellosis,0
+2022-W12,Campylobacter enteritis,20
+2022-W12,Acute Viral hepatitis C,0
+2022-W12,Leptospirosis,0
+2022-W12,Melioidosis,0
+2022-W12,Meningococcal Infection,0
+2022-W12,Pertussis,0
+2022-W12,Pneumococcal Disease (invasive),2
+2022-W12,Haemophilus influenzae type b,0
+2022-W12,Salmonellosis(non-enteric fevers),25
+2022-W12,Avian Influenza,0
+2022-W12,Zika,0
+2022-W12,Ebola Virus Disease,0
+2022-W12,Japanese Encephalitis,0
+2022-W12,Tetanus,0
+2022-W12,Botulism,0
+2022-W12,Murine Typhus,0
+2022-W12,Monkeypox,0
+2022-W13,Cholera,0
+2022-W13,Paratyphoid,0
+2022-W13,Typhoid,3
+2022-W13,Acute Viral Hepatitis A,1
+2022-W13,Acute Viral Hepatitis E,1
+2022-W13,Poliomyelitis,0
+2022-W13,Plague,0
+2022-W13,Yellow Fever,0
+2022-W13,Dengue Fever,510
+2022-W13,Dengue Haemorrhagic Fever,0
+2022-W13,Malaria,0
+2022-W13,Chikungunya,0
+2022-W13,HFMD,0
+2022-W13,Diphtheria,0
+2022-W13,Measles,0
+2022-W13,Mumps,1
+2022-W13,Rubella,0
+2022-W13,SARS,0
+2022-W13,Nipah,0
+2022-W13,Acute Viral hepatitis B,1
+2022-W13,Encephalitis,0
+2022-W13,Legionellosis,0
+2022-W13,Campylobacter enteritis,17
+2022-W13,Acute Viral hepatitis C,1
+2022-W13,Leptospirosis,0
+2022-W13,Melioidosis,0
+2022-W13,Meningococcal Infection,0
+2022-W13,Pertussis,0
+2022-W13,Pneumococcal Disease (invasive),1
+2022-W13,Haemophilus influenzae type b,0
+2022-W13,Salmonellosis(non-enteric fevers),36
+2022-W13,Avian Influenza,0
+2022-W13,Zika,0
+2022-W13,Ebola Virus Disease,0
+2022-W13,Japanese Encephalitis,0
+2022-W13,Tetanus,0
+2022-W13,Botulism,0
+2022-W13,Murine Typhus,0
+2022-W13,Monkeypox,0
+2022-W14,Cholera,3
+2022-W14,Paratyphoid,0
+2022-W14,Typhoid,0
+2022-W14,Acute Viral Hepatitis A,2
+2022-W14,Acute Viral Hepatitis E,1
+2022-W14,Poliomyelitis,0
+2022-W14,Plague,0
+2022-W14,Yellow Fever,0
+2022-W14,Dengue Fever,642
+2022-W14,Dengue Haemorrhagic Fever,1
+2022-W14,Malaria,0
+2022-W14,Chikungunya,0
+2022-W14,HFMD,0
+2022-W14,Diphtheria,0
+2022-W14,Measles,0
+2022-W14,Mumps,1
+2022-W14,Rubella,0
+2022-W14,SARS,0
+2022-W14,Nipah,0
+2022-W14,Acute Viral hepatitis B,0
+2022-W14,Encephalitis,0
+2022-W14,Legionellosis,0
+2022-W14,Campylobacter enteritis,16
+2022-W14,Acute Viral hepatitis C,1
+2022-W14,Leptospirosis,2
+2022-W14,Melioidosis,0
+2022-W14,Meningococcal Infection,0
+2022-W14,Pertussis,0
+2022-W14,Pneumococcal Disease (invasive),1
+2022-W14,Haemophilus influenzae type b,0
+2022-W14,Salmonellosis(non-enteric fevers),33
+2022-W14,Avian Influenza,0
+2022-W14,Zika,0
+2022-W14,Ebola Virus Disease,0
+2022-W14,Japanese Encephalitis,0
+2022-W14,Tetanus,0
+2022-W14,Botulism,0
+2022-W14,Murine Typhus,0
+2022-W14,Monkeypox,0
+2022-W15,Cholera,0
+2022-W15,Paratyphoid,1
+2022-W15,Typhoid,0
+2022-W15,Acute Viral Hepatitis A,0
+2022-W15,Acute Viral Hepatitis E,1
+2022-W15,Poliomyelitis,0
+2022-W15,Plague,0
+2022-W15,Yellow Fever,0
+2022-W15,Dengue Fever,733
+2022-W15,Dengue Haemorrhagic Fever,1
+2022-W15,Malaria,0
+2022-W15,Chikungunya,0
+2022-W15,HFMD,0
+2022-W15,Diphtheria,0
+2022-W15,Measles,0
+2022-W15,Mumps,3
+2022-W15,Rubella,0
+2022-W15,SARS,0
+2022-W15,Nipah,0
+2022-W15,Acute Viral hepatitis B,1
+2022-W15,Encephalitis,0
+2022-W15,Legionellosis,0
+2022-W15,Campylobacter enteritis,22
+2022-W15,Acute Viral hepatitis C,1
+2022-W15,Leptospirosis,1
+2022-W15,Melioidosis,0
+2022-W15,Meningococcal Infection,0
+2022-W15,Pertussis,0
+2022-W15,Pneumococcal Disease (invasive),4
+2022-W15,Haemophilus influenzae type b,0
+2022-W15,Salmonellosis(non-enteric fevers),34
+2022-W15,Avian Influenza,0
+2022-W15,Zika,0
+2022-W15,Ebola Virus Disease,0
+2022-W15,Japanese Encephalitis,0
+2022-W15,Tetanus,0
+2022-W15,Botulism,0
+2022-W15,Murine Typhus,0
+2022-W15,Monkeypox,0
+2022-W16,Cholera,0
+2022-W16,Paratyphoid,0
+2022-W16,Typhoid,1
+2022-W16,Acute Viral Hepatitis A,0
+2022-W16,Acute Viral Hepatitis E,0
+2022-W16,Poliomyelitis,0
+2022-W16,Plague,0
+2022-W16,Yellow Fever,0
+2022-W16,Dengue Fever,942
+2022-W16,Dengue Haemorrhagic Fever,0
+2022-W16,Malaria,0
+2022-W16,Chikungunya,0
+2022-W16,HFMD,0
+2022-W16,Diphtheria,0
+2022-W16,Measles,0
+2022-W16,Mumps,5
+2022-W16,Rubella,0
+2022-W16,SARS,0
+2022-W16,Nipah,0
+2022-W16,Acute Viral hepatitis B,1
+2022-W16,Encephalitis,0
+2022-W16,Legionellosis,1
+2022-W16,Campylobacter enteritis,17
+2022-W16,Acute Viral hepatitis C,0
+2022-W16,Leptospirosis,0
+2022-W16,Melioidosis,0
+2022-W16,Meningococcal Infection,0
+2022-W16,Pertussis,0
+2022-W16,Pneumococcal Disease (invasive),1
+2022-W16,Haemophilus influenzae type b,0
+2022-W16,Salmonellosis(non-enteric fevers),38
+2022-W16,Avian Influenza,0
+2022-W16,Zika,0
+2022-W16,Ebola Virus Disease,0
+2022-W16,Japanese Encephalitis,0
+2022-W16,Tetanus,0
+2022-W16,Botulism,0
+2022-W16,Murine Typhus,0
+2022-W16,Monkeypox,0
+2022-W17,Cholera,0
+2022-W17,Paratyphoid,0
+2022-W17,Typhoid,1
+2022-W17,Acute Viral Hepatitis A,0
+2022-W17,Acute Viral Hepatitis E,0
+2022-W17,Poliomyelitis,0
+2022-W17,Plague,0
+2022-W17,Yellow Fever,0
+2022-W17,Dengue Fever,1002
+2022-W17,Dengue Haemorrhagic Fever,1
+2022-W17,Malaria,0
+2022-W17,Chikungunya,0
+2022-W17,HFMD,0
+2022-W17,Diphtheria,0
+2022-W17,Measles,0
+2022-W17,Mumps,3
+2022-W17,Rubella,0
+2022-W17,SARS,0
+2022-W17,Nipah,0
+2022-W17,Acute Viral hepatitis B,2
+2022-W17,Encephalitis,0
+2022-W17,Legionellosis,0
+2022-W17,Campylobacter enteritis,16
+2022-W17,Acute Viral hepatitis C,0
+2022-W17,Leptospirosis,1
+2022-W17,Melioidosis,0
+2022-W17,Meningococcal Infection,0
+2022-W17,Pertussis,0
+2022-W17,Pneumococcal Disease (invasive),0
+2022-W17,Haemophilus influenzae type b,0
+2022-W17,Salmonellosis(non-enteric fevers),39
+2022-W17,Avian Influenza,0
+2022-W17,Zika,0
+2022-W17,Ebola Virus Disease,0
+2022-W17,Japanese Encephalitis,0
+2022-W17,Tetanus,0
+2022-W17,Botulism,0
+2022-W17,Murine Typhus,0
+2022-W17,Monkeypox,0
+2022-W18,Cholera,1
+2022-W18,Paratyphoid,0
+2022-W18,Typhoid,6
+2022-W18,Acute Viral Hepatitis A,0
+2022-W18,Acute Viral Hepatitis E,1
+2022-W18,Poliomyelitis,0
+2022-W18,Plague,0
+2022-W18,Yellow Fever,0
+2022-W18,Dengue Fever,845
+2022-W18,Dengue Haemorrhagic Fever,1
+2022-W18,Malaria,1
+2022-W18,Chikungunya,0
+2022-W18,HFMD,0
+2022-W18,Diphtheria,0
+2022-W18,Measles,0
+2022-W18,Mumps,0
+2022-W18,Rubella,0
+2022-W18,SARS,0
+2022-W18,Nipah,0
+2022-W18,Acute Viral hepatitis B,0
+2022-W18,Encephalitis,0
+2022-W18,Legionellosis,0
+2022-W18,Campylobacter enteritis,14
+2022-W18,Acute Viral hepatitis C,0
+2022-W18,Leptospirosis,0
+2022-W18,Melioidosis,1
+2022-W18,Meningococcal Infection,0
+2022-W18,Pertussis,0
+2022-W18,Pneumococcal Disease (invasive),1
+2022-W18,Haemophilus influenzae type b,0
+2022-W18,Salmonellosis(non-enteric fevers),37
+2022-W18,Avian Influenza,0
+2022-W18,Zika,0
+2022-W18,Ebola Virus Disease,0
+2022-W18,Japanese Encephalitis,0
+2022-W18,Tetanus,0
+2022-W18,Botulism,0
+2022-W18,Murine Typhus,0
+2022-W18,Monkeypox,0
+2022-W19,Cholera,0
+2022-W19,Paratyphoid,1
+2022-W19,Typhoid,3
+2022-W19,Acute Viral Hepatitis A,0
+2022-W19,Acute Viral Hepatitis E,1
+2022-W19,Poliomyelitis,0
+2022-W19,Plague,0
+2022-W19,Yellow Fever,0
+2022-W19,Dengue Fever,1311
+2022-W19,Dengue Haemorrhagic Fever,4
+2022-W19,Malaria,1
+2022-W19,Chikungunya,1
+2022-W19,HFMD,0
+2022-W19,Diphtheria,0
+2022-W19,Measles,0
+2022-W19,Mumps,2
+2022-W19,Rubella,0
+2022-W19,SARS,0
+2022-W19,Nipah,0
+2022-W19,Acute Viral hepatitis B,0
+2022-W19,Encephalitis,0
+2022-W19,Legionellosis,2
+2022-W19,Campylobacter enteritis,17
+2022-W19,Acute Viral hepatitis C,2
+2022-W19,Leptospirosis,3
+2022-W19,Melioidosis,0
+2022-W19,Meningococcal Infection,0
+2022-W19,Pertussis,0
+2022-W19,Pneumococcal Disease (invasive),0
+2022-W19,Haemophilus influenzae type b,0
+2022-W19,Salmonellosis(non-enteric fevers),24
+2022-W19,Avian Influenza,0
+2022-W19,Zika,0
+2022-W19,Ebola Virus Disease,0
+2022-W19,Japanese Encephalitis,0
+2022-W19,Tetanus,0
+2022-W19,Botulism,0
+2022-W19,Murine Typhus,0
+2022-W19,Monkeypox,0
+2022-W20,Cholera,0
+2022-W20,Paratyphoid,0
+2022-W20,Typhoid,3
+2022-W20,Acute Viral Hepatitis A,0
+2022-W20,Acute Viral Hepatitis E,1
+2022-W20,Poliomyelitis,0
+2022-W20,Plague,0
+2022-W20,Yellow Fever,0
+2022-W20,Dengue Fever,1273
+2022-W20,Dengue Haemorrhagic Fever,3
+2022-W20,Malaria,0
+2022-W20,Chikungunya,2
+2022-W20,HFMD,0
+2022-W20,Diphtheria,0
+2022-W20,Measles,0
+2022-W20,Mumps,1
+2022-W20,Rubella,0
+2022-W20,SARS,0
+2022-W20,Nipah,0
+2022-W20,Acute Viral hepatitis B,1
+2022-W20,Encephalitis,0
+2022-W20,Legionellosis,2
+2022-W20,Campylobacter enteritis,17
+2022-W20,Acute Viral hepatitis C,1
+2022-W20,Leptospirosis,1
+2022-W20,Melioidosis,0
+2022-W20,Meningococcal Infection,0
+2022-W20,Pertussis,0
+2022-W20,Pneumococcal Disease (invasive),0
+2022-W20,Haemophilus influenzae type b,0
+2022-W20,Salmonellosis(non-enteric fevers),30
+2022-W20,Avian Influenza,0
+2022-W20,Zika,0
+2022-W20,Ebola Virus Disease,0
+2022-W20,Japanese Encephalitis,0
+2022-W20,Tetanus,0
+2022-W20,Botulism,0
+2022-W20,Murine Typhus,0
+2022-W20,Monkeypox,0
+2022-W21,Cholera,0
+2022-W21,Paratyphoid,0
+2022-W21,Typhoid,2
+2022-W21,Acute Viral Hepatitis A,0
+2022-W21,Acute Viral Hepatitis E,0
+2022-W21,Poliomyelitis,0
+2022-W21,Plague,0
+2022-W21,Yellow Fever,0
+2022-W21,Dengue Fever,1563
+2022-W21,Dengue Haemorrhagic Fever,4
+2022-W21,Malaria,1
+2022-W21,Chikungunya,0
+2022-W21,HFMD,0
+2022-W21,Diphtheria,0
+2022-W21,Measles,0
+2022-W21,Mumps,3
+2022-W21,Rubella,0
+2022-W21,SARS,0
+2022-W21,Nipah,0
+2022-W21,Acute Viral hepatitis B,1
+2022-W21,Encephalitis,0
+2022-W21,Legionellosis,0
+2022-W21,Campylobacter enteritis,17
+2022-W21,Acute Viral hepatitis C,0
+2022-W21,Leptospirosis,4
+2022-W21,Melioidosis,1
+2022-W21,Meningococcal Infection,0
+2022-W21,Pertussis,0
+2022-W21,Pneumococcal Disease (invasive),1
+2022-W21,Haemophilus influenzae type b,0
+2022-W21,Salmonellosis(non-enteric fevers),33
+2022-W21,Avian Influenza,0
+2022-W21,Zika,0
+2022-W21,Ebola Virus Disease,0
+2022-W21,Japanese Encephalitis,0
+2022-W21,Tetanus,0
+2022-W21,Botulism,0
+2022-W21,Murine Typhus,0
+2022-W21,Monkeypox,0
+2022-W22,Cholera,0
+2022-W22,Paratyphoid,0
+2022-W22,Typhoid,3
+2022-W22,Acute Viral Hepatitis A,0
+2022-W22,Acute Viral Hepatitis E,0
+2022-W22,Poliomyelitis,0
+2022-W22,Plague,0
+2022-W22,Yellow Fever,0
+2022-W22,Dengue Fever,1451
+2022-W22,Dengue Haemorrhagic Fever,3
+2022-W22,Malaria,2
+2022-W22,Chikungunya,2
+2022-W22,HFMD,0
+2022-W22,Diphtheria,0
+2022-W22,Measles,0
+2022-W22,Mumps,3
+2022-W22,Rubella,0
+2022-W22,SARS,0
+2022-W22,Nipah,0
+2022-W22,Acute Viral hepatitis B,0
+2022-W22,Encephalitis,0
+2022-W22,Legionellosis,1
+2022-W22,Campylobacter enteritis,18
+2022-W22,Acute Viral hepatitis C,0
+2022-W22,Leptospirosis,3
+2022-W22,Melioidosis,0
+2022-W22,Meningococcal Infection,0
+2022-W22,Pertussis,0
+2022-W22,Pneumococcal Disease (invasive),1
+2022-W22,Haemophilus influenzae type b,0
+2022-W22,Salmonellosis(non-enteric fevers),22
+2022-W22,Avian Influenza,0
+2022-W22,Zika,0
+2022-W22,Ebola Virus Disease,0
+2022-W22,Japanese Encephalitis,0
+2022-W22,Tetanus,0
+2022-W22,Botulism,0
+2022-W22,Murine Typhus,1
+2022-W22,Monkeypox,0
+2022-W23,Cholera,0
+2022-W23,Paratyphoid,0
+2022-W23,Typhoid,0
+2022-W23,Acute Viral Hepatitis A,0
+2022-W23,Acute Viral Hepatitis E,0
+2022-W23,Poliomyelitis,0
+2022-W23,Plague,0
+2022-W23,Yellow Fever,0
+2022-W23,Dengue Fever,1459
+2022-W23,Dengue Haemorrhagic Fever,1
+2022-W23,Malaria,0
+2022-W23,Chikungunya,2
+2022-W23,HFMD,0
+2022-W23,Diphtheria,0
+2022-W23,Measles,1
+2022-W23,Mumps,0
+2022-W23,Rubella,0
+2022-W23,SARS,0
+2022-W23,Nipah,0
+2022-W23,Acute Viral hepatitis B,0
+2022-W23,Encephalitis,0
+2022-W23,Legionellosis,0
+2022-W23,Campylobacter enteritis,22
+2022-W23,Acute Viral hepatitis C,1
+2022-W23,Leptospirosis,0
+2022-W23,Melioidosis,1
+2022-W23,Meningococcal Infection,0
+2022-W23,Pertussis,0
+2022-W23,Pneumococcal Disease (invasive),0
+2022-W23,Haemophilus influenzae type b,1
+2022-W23,Salmonellosis(non-enteric fevers),44
+2022-W23,Avian Influenza,0
+2022-W23,Zika,0
+2022-W23,Ebola Virus Disease,0
+2022-W23,Japanese Encephalitis,0
+2022-W23,Tetanus,0
+2022-W23,Botulism,0
+2022-W23,Murine Typhus,0
+2022-W23,Monkeypox,0
+2022-W24,Cholera,0
+2022-W24,Paratyphoid,0
+2022-W24,Typhoid,3
+2022-W24,Acute Viral Hepatitis A,0
+2022-W24,Acute Viral Hepatitis E,0
+2022-W24,Poliomyelitis,0
+2022-W24,Plague,0
+2022-W24,Yellow Fever,0
+2022-W24,Dengue Fever,1253
+2022-W24,Dengue Haemorrhagic Fever,1
+2022-W24,Malaria,0
+2022-W24,Chikungunya,0
+2022-W24,HFMD,0
+2022-W24,Diphtheria,0
+2022-W24,Measles,0
+2022-W24,Mumps,6
+2022-W24,Rubella,0
+2022-W24,SARS,0
+2022-W24,Nipah,0
+2022-W24,Acute Viral hepatitis B,1
+2022-W24,Encephalitis,0
+2022-W24,Legionellosis,0
+2022-W24,Campylobacter enteritis,14
+2022-W24,Acute Viral hepatitis C,0
+2022-W24,Leptospirosis,1
+2022-W24,Melioidosis,0
+2022-W24,Meningococcal Infection,0
+2022-W24,Pertussis,0
+2022-W24,Pneumococcal Disease (invasive),0
+2022-W24,Haemophilus influenzae type b,0
+2022-W24,Salmonellosis(non-enteric fevers),34
+2022-W24,Avian Influenza,0
+2022-W24,Zika,0
+2022-W24,Ebola Virus Disease,0
+2022-W24,Japanese Encephalitis,0
+2022-W24,Tetanus,0
+2022-W24,Botulism,0
+2022-W24,Murine Typhus,0
+2022-W24,Monkeypox,0
+2022-W25,Cholera,0
+2022-W25,Paratyphoid,0
+2022-W25,Typhoid,0
+2022-W25,Acute Viral Hepatitis A,0
+2022-W25,Acute Viral Hepatitis E,0
+2022-W25,Poliomyelitis,0
+2022-W25,Plague,0
+2022-W25,Yellow Fever,0
+2022-W25,Dengue Fever,1171
+2022-W25,Dengue Haemorrhagic Fever,1
+2022-W25,Malaria,0
+2022-W25,Chikungunya,0
+2022-W25,HFMD,0
+2022-W25,Diphtheria,0
+2022-W25,Measles,0
+2022-W25,Mumps,5
+2022-W25,Rubella,0
+2022-W25,SARS,0
+2022-W25,Nipah,0
+2022-W25,Acute Viral hepatitis B,0
+2022-W25,Encephalitis,0
+2022-W25,Legionellosis,0
+2022-W25,Campylobacter enteritis,9
+2022-W25,Acute Viral hepatitis C,0
+2022-W25,Leptospirosis,0
+2022-W25,Melioidosis,0
+2022-W25,Meningococcal Infection,0
+2022-W25,Pertussis,0
+2022-W25,Pneumococcal Disease (invasive),1
+2022-W25,Haemophilus influenzae type b,0
+2022-W25,Salmonellosis(non-enteric fevers),31
+2022-W25,Avian Influenza,0
+2022-W25,Zika,0
+2022-W25,Ebola Virus Disease,0
+2022-W25,Japanese Encephalitis,0
+2022-W25,Tetanus,0
+2022-W25,Botulism,0
+2022-W25,Murine Typhus,0
+2022-W25,Monkeypox,1
+2022-W26,Cholera,0
+2022-W26,Paratyphoid,0
+2022-W26,Typhoid,3
+2022-W26,Acute Viral Hepatitis A,1
+2022-W26,Acute Viral Hepatitis E,1
+2022-W26,Poliomyelitis,0
+2022-W26,Plague,0
+2022-W26,Yellow Fever,0
+2022-W26,Dengue Fever,1186
+2022-W26,Dengue Haemorrhagic Fever,1
+2022-W26,Malaria,0
+2022-W26,Chikungunya,1
+2022-W26,HFMD,0
+2022-W26,Diphtheria,0
+2022-W26,Measles,0
+2022-W26,Mumps,6
+2022-W26,Rubella,0
+2022-W26,SARS,0
+2022-W26,Nipah,0
+2022-W26,Acute Viral hepatitis B,0
+2022-W26,Encephalitis,0
+2022-W26,Legionellosis,1
+2022-W26,Campylobacter enteritis,14
+2022-W26,Acute Viral hepatitis C,0
+2022-W26,Leptospirosis,0
+2022-W26,Melioidosis,1
+2022-W26,Meningococcal Infection,0
+2022-W26,Pertussis,0
+2022-W26,Pneumococcal Disease (invasive),1
+2022-W26,Haemophilus influenzae type b,0
+2022-W26,Salmonellosis(non-enteric fevers),31
+2022-W26,Avian Influenza,0
+2022-W26,Zika,0
+2022-W26,Ebola Virus Disease,0
+2022-W26,Japanese Encephalitis,0
+2022-W26,Tetanus,0
+2022-W26,Botulism,0
+2022-W26,Murine Typhus,0
+2022-W26,Monkeypox,0
+2022-W27,Cholera,0
+2022-W27,Paratyphoid,0
+2022-W27,Typhoid,0
+2022-W27,Acute Viral Hepatitis A,1
+2022-W27,Acute Viral Hepatitis E,2
+2022-W27,Poliomyelitis,0
+2022-W27,Plague,0
+2022-W27,Yellow Fever,0
+2022-W27,Dengue Fever,1164
+2022-W27,Dengue Haemorrhagic Fever,0
+2022-W27,Malaria,0
+2022-W27,Chikungunya,0
+2022-W27,HFMD,0
+2022-W27,Diphtheria,0
+2022-W27,Measles,0
+2022-W27,Mumps,5
+2022-W27,Rubella,0
+2022-W27,SARS,0
+2022-W27,Nipah,0
+2022-W27,Acute Viral hepatitis B,0
+2022-W27,Encephalitis,0
+2022-W27,Legionellosis,0
+2022-W27,Campylobacter enteritis,10
+2022-W27,Acute Viral hepatitis C,0
+2022-W27,Leptospirosis,1
+2022-W27,Melioidosis,0
+2022-W27,Meningococcal Infection,0
+2022-W27,Pertussis,0
+2022-W27,Pneumococcal Disease (invasive),1
+2022-W27,Haemophilus influenzae type b,0
+2022-W27,Salmonellosis(non-enteric fevers),23
+2022-W27,Avian Influenza,0
+2022-W27,Zika,0
+2022-W27,Ebola Virus Disease,0
+2022-W27,Japanese Encephalitis,0
+2022-W27,Tetanus,0
+2022-W27,Botulism,0
+2022-W27,Murine Typhus,0
+2022-W27,Monkeypox,3
+2022-W28,Cholera,0
+2022-W28,Paratyphoid,1
+2022-W28,Typhoid,0
+2022-W28,Acute Viral Hepatitis A,1
+2022-W28,Acute Viral Hepatitis E,3
+2022-W28,Poliomyelitis,0
+2022-W28,Plague,0
+2022-W28,Yellow Fever,0
+2022-W28,Dengue Fever,918
+2022-W28,Dengue Haemorrhagic Fever,0
+2022-W28,Malaria,0
+2022-W28,Chikungunya,2
+2022-W28,HFMD,0
+2022-W28,Diphtheria,0
+2022-W28,Measles,0
+2022-W28,Mumps,4
+2022-W28,Rubella,0
+2022-W28,SARS,0
+2022-W28,Nipah,0
+2022-W28,Acute Viral hepatitis B,1
+2022-W28,Encephalitis,0
+2022-W28,Legionellosis,0
+2022-W28,Campylobacter enteritis,7
+2022-W28,Acute Viral hepatitis C,0
+2022-W28,Leptospirosis,2
+2022-W28,Melioidosis,1
+2022-W28,Meningococcal Infection,0
+2022-W28,Pertussis,0
+2022-W28,Pneumococcal Disease (invasive),3
+2022-W28,Haemophilus influenzae type b,0
+2022-W28,Salmonellosis(non-enteric fevers),33
+2022-W28,Avian Influenza,0
+2022-W28,Zika,0
+2022-W28,Ebola Virus Disease,0
+2022-W28,Japanese Encephalitis,0
+2022-W28,Tetanus,0
+2022-W28,Botulism,0
+2022-W28,Murine Typhus,0
+2022-W28,Monkeypox,2
+2022-W29,Cholera,0
+2022-W29,Paratyphoid,0
+2022-W29,Typhoid,4
+2022-W29,Acute Viral Hepatitis A,3
+2022-W29,Acute Viral Hepatitis E,0
+2022-W29,Poliomyelitis,0
+2022-W29,Plague,0
+2022-W29,Yellow Fever,0
+2022-W29,Dengue Fever,1035
+2022-W29,Dengue Haemorrhagic Fever,1
+2022-W29,Malaria,1
+2022-W29,Chikungunya,1
+2022-W29,HFMD,0
+2022-W29,Diphtheria,0
+2022-W29,Measles,0
+2022-W29,Mumps,4
+2022-W29,Rubella,0
+2022-W29,SARS,0
+2022-W29,Nipah,0
+2022-W29,Acute Viral hepatitis B,1
+2022-W29,Encephalitis,0
+2022-W29,Legionellosis,0
+2022-W29,Campylobacter enteritis,9
+2022-W29,Acute Viral hepatitis C,0
+2022-W29,Leptospirosis,1
+2022-W29,Melioidosis,0
+2022-W29,Meningococcal Infection,0
+2022-W29,Pertussis,0
+2022-W29,Pneumococcal Disease (invasive),1
+2022-W29,Haemophilus influenzae type b,0
+2022-W29,Salmonellosis(non-enteric fevers),35
+2022-W29,Avian Influenza,0
+2022-W29,Zika,0
+2022-W29,Ebola Virus Disease,0
+2022-W29,Japanese Encephalitis,0
+2022-W29,Tetanus,0
+2022-W29,Botulism,0
+2022-W29,Murine Typhus,0
+2022-W29,Monkeypox,0
+2022-W30,Cholera,0
+2022-W30,Paratyphoid,0
+2022-W30,Typhoid,2
+2022-W30,Acute Viral Hepatitis A,1
+2022-W30,Acute Viral Hepatitis E,1
+2022-W30,Poliomyelitis,0
+2022-W30,Plague,0
+2022-W30,Yellow Fever,0
+2022-W30,Dengue Fever,1092
+2022-W30,Dengue Haemorrhagic Fever,0
+2022-W30,Malaria,1
+2022-W30,Chikungunya,2
+2022-W30,HFMD,0
+2022-W30,Diphtheria,0
+2022-W30,Measles,0
+2022-W30,Mumps,9
+2022-W30,Rubella,0
+2022-W30,SARS,0
+2022-W30,Nipah,0
+2022-W30,Acute Viral hepatitis B,2
+2022-W30,Encephalitis,0
+2022-W30,Legionellosis,1
+2022-W30,Campylobacter enteritis,3
+2022-W30,Acute Viral hepatitis C,0
+2022-W30,Leptospirosis,2
+2022-W30,Melioidosis,1
+2022-W30,Meningococcal Infection,1
+2022-W30,Pertussis,0
+2022-W30,Pneumococcal Disease (invasive),0
+2022-W30,Haemophilus influenzae type b,0
+2022-W30,Salmonellosis(non-enteric fevers),18
+2022-W30,Avian Influenza,0
+2022-W30,Zika,0
+2022-W30,Ebola Virus Disease,0
+2022-W30,Japanese Encephalitis,0
+2022-W30,Tetanus,0
+2022-W30,Botulism,0
+2022-W30,Murine Typhus,0
+2022-W30,Monkeypox,5
+2022-W31,Cholera,0
+2022-W31,Paratyphoid,0
+2022-W31,Typhoid,2
+2022-W31,Acute Viral Hepatitis A,0
+2022-W31,Acute Viral Hepatitis E,1
+2022-W31,Poliomyelitis,0
+2022-W31,Plague,0
+2022-W31,Yellow Fever,0
+2022-W31,Dengue Fever,894
+2022-W31,Dengue Haemorrhagic Fever,2
+2022-W31,Malaria,0
+2022-W31,Chikungunya,1
+2022-W31,HFMD,0
+2022-W31,Diphtheria,0
+2022-W31,Measles,0
+2022-W31,Mumps,9
+2022-W31,Rubella,0
+2022-W31,SARS,0
+2022-W31,Nipah,0
+2022-W31,Acute Viral hepatitis B,0
+2022-W31,Encephalitis,0
+2022-W31,Legionellosis,1
+2022-W31,Campylobacter enteritis,5
+2022-W31,Acute Viral hepatitis C,0
+2022-W31,Leptospirosis,1
+2022-W31,Melioidosis,0
+2022-W31,Meningococcal Infection,0
+2022-W31,Pertussis,0
+2022-W31,Pneumococcal Disease (invasive),1
+2022-W31,Haemophilus influenzae type b,0
+2022-W31,Salmonellosis(non-enteric fevers),21
+2022-W31,Avian Influenza,0
+2022-W31,Zika,0
+2022-W31,Ebola Virus Disease,0
+2022-W31,Japanese Encephalitis,0
+2022-W31,Tetanus,0
+2022-W31,Botulism,0
+2022-W31,Murine Typhus,0
+2022-W31,Monkeypox,4
+2022-W32,Cholera,0
+2022-W32,Paratyphoid,0
+2022-W32,Typhoid,2
+2022-W32,Acute Viral Hepatitis A,0
+2022-W32,Acute Viral Hepatitis E,1
+2022-W32,Poliomyelitis,0
+2022-W32,Plague,0
+2022-W32,Yellow Fever,0
+2022-W32,Dengue Fever,879
+2022-W32,Dengue Haemorrhagic Fever,0
+2022-W32,Malaria,0
+2022-W32,Chikungunya,0
+2022-W32,HFMD,0
+2022-W32,Diphtheria,0
+2022-W32,Measles,1
+2022-W32,Mumps,6
+2022-W32,Rubella,0
+2022-W32,SARS,0
+2022-W32,Nipah,0
+2022-W32,Acute Viral hepatitis B,0
+2022-W32,Encephalitis,0
+2022-W32,Legionellosis,0
+2022-W32,Campylobacter enteritis,4
+2022-W32,Acute Viral hepatitis C,0
+2022-W32,Leptospirosis,2
+2022-W32,Melioidosis,1
+2022-W32,Meningococcal Infection,0
+2022-W32,Pertussis,0
+2022-W32,Pneumococcal Disease (invasive),1
+2022-W32,Haemophilus influenzae type b,0
+2022-W32,Salmonellosis(non-enteric fevers),11
+2022-W32,Avian Influenza,0
+2022-W32,Zika,0
+2022-W32,Ebola Virus Disease,0
+2022-W32,Japanese Encephalitis,0
+2022-W32,Tetanus,0
+2022-W32,Botulism,0
+2022-W32,Murine Typhus,1
+2022-W32,Monkeypox,0
+2022-W33,Cholera,0
+2022-W33,Paratyphoid,0
+2022-W33,Typhoid,1
+2022-W33,Acute Viral Hepatitis A,1
+2022-W33,Acute Viral Hepatitis E,0
+2022-W33,Poliomyelitis,0
+2022-W33,Plague,0
+2022-W33,Yellow Fever,0
+2022-W33,Dengue Fever,679
+2022-W33,Dengue Haemorrhagic Fever,0
+2022-W33,Malaria,0
+2022-W33,Chikungunya,0
+2022-W33,HFMD,0
+2022-W33,Diphtheria,0
+2022-W33,Measles,0
+2022-W33,Mumps,2
+2022-W33,Rubella,0
+2022-W33,SARS,0
+2022-W33,Nipah,0
+2022-W33,Acute Viral hepatitis B,1
+2022-W33,Encephalitis,0
+2022-W33,Legionellosis,0
+2022-W33,Campylobacter enteritis,6
+2022-W33,Acute Viral hepatitis C,0
+2022-W33,Leptospirosis,1
+2022-W33,Melioidosis,0
+2022-W33,Meningococcal Infection,0
+2022-W33,Pertussis,0
+2022-W33,Pneumococcal Disease (invasive),4
+2022-W33,Haemophilus influenzae type b,0
+2022-W33,Salmonellosis(non-enteric fevers),17
+2022-W33,Avian Influenza,0
+2022-W33,Zika,0
+2022-W33,Ebola Virus Disease,0
+2022-W33,Japanese Encephalitis,0
+2022-W33,Tetanus,0
+2022-W33,Botulism,0
+2022-W33,Murine Typhus,1
+2022-W33,Monkeypox,1
+2022-W34,Cholera,0
+2022-W34,Paratyphoid,0
+2022-W34,Typhoid,3
+2022-W34,Acute Viral Hepatitis A,0
+2022-W34,Acute Viral Hepatitis E,2
+2022-W34,Poliomyelitis,0
+2022-W34,Plague,0
+2022-W34,Yellow Fever,0
+2022-W34,Dengue Fever,661
+2022-W34,Dengue Haemorrhagic Fever,1
+2022-W34,Malaria,1
+2022-W34,Chikungunya,0
+2022-W34,HFMD,0
+2022-W34,Diphtheria,0
+2022-W34,Measles,0
+2022-W34,Mumps,3
+2022-W34,Rubella,0
+2022-W34,SARS,0
+2022-W34,Nipah,0
+2022-W34,Acute Viral hepatitis B,0
+2022-W34,Encephalitis,0
+2022-W34,Legionellosis,1
+2022-W34,Campylobacter enteritis,3
+2022-W34,Acute Viral hepatitis C,1
+2022-W34,Leptospirosis,1
+2022-W34,Melioidosis,0
+2022-W34,Meningococcal Infection,0
+2022-W34,Pertussis,0
+2022-W34,Pneumococcal Disease (invasive),1
+2022-W34,Haemophilus influenzae type b,0
+2022-W34,Salmonellosis(non-enteric fevers),26
+2022-W34,Avian Influenza,0
+2022-W34,Zika,1
+2022-W34,Ebola Virus Disease,0
+2022-W34,Japanese Encephalitis,0
+2022-W34,Tetanus,0
+2022-W34,Botulism,0
+2022-W34,Murine Typhus,0
+2022-W34,Monkeypox,0
+2022-W35,Cholera,0
+2022-W35,Paratyphoid,0
+2022-W35,Typhoid,3
+2022-W35,Acute Viral Hepatitis A,1
+2022-W35,Acute Viral Hepatitis E,0
+2022-W35,Poliomyelitis,0
+2022-W35,Plague,0
+2022-W35,Yellow Fever,0
+2022-W35,Dengue Fever,577
+2022-W35,Dengue Haemorrhagic Fever,4
+2022-W35,Malaria,0
+2022-W35,Chikungunya,0
+2022-W35,HFMD,0
+2022-W35,Diphtheria,0
+2022-W35,Measles,0
+2022-W35,Mumps,3
+2022-W35,Rubella,0
+2022-W35,SARS,0
+2022-W35,Nipah,0
+2022-W35,Acute Viral hepatitis B,1
+2022-W35,Encephalitis,0
+2022-W35,Legionellosis,1
+2022-W35,Campylobacter enteritis,2
+2022-W35,Acute Viral hepatitis C,0
+2022-W35,Leptospirosis,3
+2022-W35,Melioidosis,1
+2022-W35,Meningococcal Infection,0
+2022-W35,Pertussis,0
+2022-W35,Pneumococcal Disease (invasive),1
+2022-W35,Haemophilus influenzae type b,0
+2022-W35,Salmonellosis(non-enteric fevers),39
+2022-W35,Avian Influenza,0
+2022-W35,Zika,0
+2022-W35,Ebola Virus Disease,0
+2022-W35,Japanese Encephalitis,0
+2022-W35,Tetanus,0
+2022-W35,Botulism,0
+2022-W35,Murine Typhus,0
+2022-W35,Monkeypox,0
+2022-W36,Cholera,0
+2022-W36,Paratyphoid,1
+2022-W36,Typhoid,3
+2022-W36,Acute Viral Hepatitis A,0
+2022-W36,Acute Viral Hepatitis E,2
+2022-W36,Poliomyelitis,0
+2022-W36,Plague,0
+2022-W36,Yellow Fever,0
+2022-W36,Dengue Fever,569
+2022-W36,Dengue Haemorrhagic Fever,1
+2022-W36,Malaria,0
+2022-W36,Chikungunya,1
+2022-W36,HFMD,0
+2022-W36,Diphtheria,0
+2022-W36,Measles,0
+2022-W36,Mumps,5
+2022-W36,Rubella,0
+2022-W36,SARS,0
+2022-W36,Nipah,0
+2022-W36,Acute Viral hepatitis B,0
+2022-W36,Encephalitis,0
+2022-W36,Legionellosis,0
+2022-W36,Campylobacter enteritis,3
+2022-W36,Acute Viral hepatitis C,1
+2022-W36,Leptospirosis,0
+2022-W36,Melioidosis,2
+2022-W36,Meningococcal Infection,0
+2022-W36,Pertussis,0
+2022-W36,Pneumococcal Disease (invasive),2
+2022-W36,Haemophilus influenzae type b,0
+2022-W36,Salmonellosis(non-enteric fevers),24
+2022-W36,Avian Influenza,0
+2022-W36,Zika,0
+2022-W36,Ebola Virus Disease,0
+2022-W36,Japanese Encephalitis,0
+2022-W36,Tetanus,0
+2022-W36,Botulism,0
+2022-W36,Murine Typhus,0
+2022-W36,Monkeypox,3
+2022-W37,Cholera,0
+2022-W37,Paratyphoid,0
+2022-W37,Typhoid,1
+2022-W37,Acute Viral Hepatitis A,0
+2022-W37,Acute Viral Hepatitis E,0
+2022-W37,Poliomyelitis,0
+2022-W37,Plague,0
+2022-W37,Yellow Fever,0
+2022-W37,Dengue Fever,544
+2022-W37,Dengue Haemorrhagic Fever,0
+2022-W37,Malaria,1
+2022-W37,Chikungunya,1
+2022-W37,HFMD,0
+2022-W37,Diphtheria,0
+2022-W37,Measles,0
+2022-W37,Mumps,3
+2022-W37,Rubella,0
+2022-W37,SARS,0
+2022-W37,Nipah,0
+2022-W37,Acute Viral hepatitis B,0
+2022-W37,Encephalitis,0
+2022-W37,Legionellosis,2
+2022-W37,Campylobacter enteritis,4
+2022-W37,Acute Viral hepatitis C,1
+2022-W37,Leptospirosis,0
+2022-W37,Melioidosis,1
+2022-W37,Meningococcal Infection,0
+2022-W37,Pertussis,0
+2022-W37,Pneumococcal Disease (invasive),1
+2022-W37,Haemophilus influenzae type b,0
+2022-W37,Salmonellosis(non-enteric fevers),18
+2022-W37,Avian Influenza,0
+2022-W37,Zika,0
+2022-W37,Ebola Virus Disease,0
+2022-W37,Japanese Encephalitis,0
+2022-W37,Tetanus,0
+2022-W37,Botulism,0
+2022-W37,Murine Typhus,0
+2022-W37,Monkeypox,0
+2022-W38,Cholera,0
+2022-W38,Paratyphoid,0
+2022-W38,Typhoid,1
+2022-W38,Acute Viral Hepatitis A,0
+2022-W38,Acute Viral Hepatitis E,0
+2022-W38,Poliomyelitis,0
+2022-W38,Plague,0
+2022-W38,Yellow Fever,0
+2022-W38,Dengue Fever,472
+2022-W38,Dengue Haemorrhagic Fever,0
+2022-W38,Malaria,0
+2022-W38,Chikungunya,1
+2022-W38,HFMD,0
+2022-W38,Diphtheria,0
+2022-W38,Measles,0
+2022-W38,Mumps,7
+2022-W38,Rubella,0
+2022-W38,SARS,0
+2022-W38,Nipah,0
+2022-W38,Acute Viral hepatitis B,2
+2022-W38,Encephalitis,0
+2022-W38,Legionellosis,1
+2022-W38,Campylobacter enteritis,3
+2022-W38,Acute Viral hepatitis C,0
+2022-W38,Leptospirosis,0
+2022-W38,Melioidosis,0
+2022-W38,Meningococcal Infection,0
+2022-W38,Pertussis,0
+2022-W38,Pneumococcal Disease (invasive),2
+2022-W38,Haemophilus influenzae type b,0
+2022-W38,Salmonellosis(non-enteric fevers),19
+2022-W38,Avian Influenza,0
+2022-W38,Zika,0
+2022-W38,Ebola Virus Disease,0
+2022-W38,Japanese Encephalitis,0
+2022-W38,Tetanus,0
+2022-W38,Botulism,0
+2022-W38,Murine Typhus,0
+2022-W38,Monkeypox,0
+2022-W39,Cholera,0
+2022-W39,Paratyphoid,0
+2022-W39,Typhoid,0
+2022-W39,Acute Viral Hepatitis A,0
+2022-W39,Acute Viral Hepatitis E,2
+2022-W39,Poliomyelitis,0
+2022-W39,Plague,0
+2022-W39,Yellow Fever,0
+2022-W39,Dengue Fever,426
+2022-W39,Dengue Haemorrhagic Fever,0
+2022-W39,Malaria,0
+2022-W39,Chikungunya,1
+2022-W39,HFMD,0
+2022-W39,Diphtheria,0
+2022-W39,Measles,0
+2022-W39,Mumps,5
+2022-W39,Rubella,0
+2022-W39,SARS,0
+2022-W39,Nipah,0
+2022-W39,Acute Viral hepatitis B,1
+2022-W39,Encephalitis,0
+2022-W39,Legionellosis,2
+2022-W39,Campylobacter enteritis,8
+2022-W39,Acute Viral hepatitis C,0
+2022-W39,Leptospirosis,0
+2022-W39,Melioidosis,0
+2022-W39,Meningococcal Infection,0
+2022-W39,Pertussis,0
+2022-W39,Pneumococcal Disease (invasive),0
+2022-W39,Haemophilus influenzae type b,0
+2022-W39,Salmonellosis(non-enteric fevers),25
+2022-W39,Avian Influenza,0
+2022-W39,Zika,0
+2022-W39,Ebola Virus Disease,0
+2022-W39,Japanese Encephalitis,0
+2022-W39,Tetanus,0
+2022-W39,Botulism,0
+2022-W39,Murine Typhus,0
+2022-W39,Monkeypox,0
+2022-W40,Cholera,0
+2022-W40,Paratyphoid,0
+2022-W40,Typhoid,0
+2022-W40,Acute Viral Hepatitis A,0
+2022-W40,Acute Viral Hepatitis E,0
+2022-W40,Poliomyelitis,0
+2022-W40,Plague,0
+2022-W40,Yellow Fever,0
+2022-W40,Dengue Fever,397
+2022-W40,Dengue Haemorrhagic Fever,0
+2022-W40,Malaria,0
+2022-W40,Chikungunya,1
+2022-W40,HFMD,0
+2022-W40,Diphtheria,0
+2022-W40,Measles,0
+2022-W40,Mumps,4
+2022-W40,Rubella,0
+2022-W40,SARS,0
+2022-W40,Nipah,0
+2022-W40,Acute Viral hepatitis B,0
+2022-W40,Encephalitis,0
+2022-W40,Legionellosis,0
+2022-W40,Campylobacter enteritis,6
+2022-W40,Acute Viral hepatitis C,1
+2022-W40,Leptospirosis,1
+2022-W40,Melioidosis,0
+2022-W40,Meningococcal Infection,0
+2022-W40,Pertussis,0
+2022-W40,Pneumococcal Disease (invasive),1
+2022-W40,Haemophilus influenzae type b,1
+2022-W40,Salmonellosis(non-enteric fevers),27
+2022-W40,Avian Influenza,0
+2022-W40,Zika,0
+2022-W40,Ebola Virus Disease,0
+2022-W40,Japanese Encephalitis,0
+2022-W40,Tetanus,0
+2022-W40,Botulism,0
+2022-W40,Murine Typhus,0
+2022-W40,Monkeypox,0
+2022-W41,Cholera,0
+2022-W41,Paratyphoid,0
+2022-W41,Typhoid,0
+2022-W41,Acute Viral Hepatitis A,0
+2022-W41,Acute Viral Hepatitis E,1
+2022-W41,Poliomyelitis,0
+2022-W41,Plague,0
+2022-W41,Yellow Fever,0
+2022-W41,Dengue Fever,376
+2022-W41,Dengue Haemorrhagic Fever,0
+2022-W41,Malaria,0
+2022-W41,Chikungunya,1
+2022-W41,HFMD,0
+2022-W41,Diphtheria,0
+2022-W41,Measles,0
+2022-W41,Mumps,3
+2022-W41,Rubella,0
+2022-W41,SARS,0
+2022-W41,Nipah,0
+2022-W41,Acute Viral hepatitis B,0
+2022-W41,Encephalitis,0
+2022-W41,Legionellosis,2
+2022-W41,Campylobacter enteritis,6
+2022-W41,Acute Viral hepatitis C,1
+2022-W41,Leptospirosis,0
+2022-W41,Melioidosis,0
+2022-W41,Meningococcal Infection,1
+2022-W41,Pertussis,0
+2022-W41,Pneumococcal Disease (invasive),2
+2022-W41,Haemophilus influenzae type b,0
+2022-W41,Salmonellosis(non-enteric fevers),27
+2022-W41,Avian Influenza,0
+2022-W41,Zika,0
+2022-W41,Ebola Virus Disease,0
+2022-W41,Japanese Encephalitis,0
+2022-W41,Tetanus,0
+2022-W41,Botulism,0
+2022-W41,Murine Typhus,0
+2022-W41,Monkeypox,0
+2022-W42,Cholera,1
+2022-W42,Paratyphoid,0
+2022-W42,Typhoid,0
+2022-W42,Acute Viral Hepatitis A,2
+2022-W42,Acute Viral Hepatitis E,1
+2022-W42,Poliomyelitis,0
+2022-W42,Plague,0
+2022-W42,Yellow Fever,0
+2022-W42,Dengue Fever,373
+2022-W42,Dengue Haemorrhagic Fever,0
+2022-W42,Malaria,0
+2022-W42,Chikungunya,0
+2022-W42,HFMD,0
+2022-W42,Diphtheria,0
+2022-W42,Measles,0
+2022-W42,Mumps,4
+2022-W42,Rubella,0
+2022-W42,SARS,0
+2022-W42,Nipah,0
+2022-W42,Acute Viral hepatitis B,0
+2022-W42,Encephalitis,0
+2022-W42,Legionellosis,2
+2022-W42,Campylobacter enteritis,5
+2022-W42,Acute Viral hepatitis C,0
+2022-W42,Leptospirosis,1
+2022-W42,Melioidosis,2
+2022-W42,Meningococcal Infection,0
+2022-W42,Pertussis,0
+2022-W42,Pneumococcal Disease (invasive),4
+2022-W42,Haemophilus influenzae type b,0
+2022-W42,Salmonellosis(non-enteric fevers),23
+2022-W42,Avian Influenza,0
+2022-W42,Zika,0
+2022-W42,Ebola Virus Disease,0
+2022-W42,Japanese Encephalitis,0
+2022-W42,Tetanus,0
+2022-W42,Botulism,0
+2022-W42,Murine Typhus,0
+2022-W42,Monkeypox,0
+2022-W43,Cholera,0
+2022-W43,Paratyphoid,1
+2022-W43,Typhoid,1
+2022-W43,Acute Viral Hepatitis A,1
+2022-W43,Acute Viral Hepatitis E,1
+2022-W43,Poliomyelitis,0
+2022-W43,Plague,0
+2022-W43,Yellow Fever,0
+2022-W43,Dengue Fever,313
+2022-W43,Dengue Haemorrhagic Fever,1
+2022-W43,Malaria,0
+2022-W43,Chikungunya,0
+2022-W43,HFMD,0
+2022-W43,Diphtheria,0
+2022-W43,Measles,0
+2022-W43,Mumps,4
+2022-W43,Rubella,0
+2022-W43,SARS,0
+2022-W43,Nipah,0
+2022-W43,Acute Viral hepatitis B,0
+2022-W43,Encephalitis,0
+2022-W43,Legionellosis,2
+2022-W43,Campylobacter enteritis,5
+2022-W43,Acute Viral hepatitis C,0
+2022-W43,Leptospirosis,1
+2022-W43,Melioidosis,2
+2022-W43,Meningococcal Infection,0
+2022-W43,Pertussis,0
+2022-W43,Pneumococcal Disease (invasive),0
+2022-W43,Haemophilus influenzae type b,0
+2022-W43,Salmonellosis(non-enteric fevers),20
+2022-W43,Avian Influenza,0
+2022-W43,Zika,0
+2022-W43,Ebola Virus Disease,0
+2022-W43,Japanese Encephalitis,0
+2022-W43,Tetanus,0
+2022-W43,Botulism,0
+2022-W43,Murine Typhus,0
+2022-W43,Monkeypox,0
+2022-W44,Cholera,0
+2022-W44,Paratyphoid,0
+2022-W44,Typhoid,2
+2022-W44,Acute Viral Hepatitis A,1
+2022-W44,Acute Viral Hepatitis E,1
+2022-W44,Poliomyelitis,0
+2022-W44,Plague,0
+2022-W44,Yellow Fever,0
+2022-W44,Dengue Fever,317
+2022-W44,Dengue Haemorrhagic Fever,1
+2022-W44,Malaria,1
+2022-W44,Chikungunya,3
+2022-W44,HFMD,0
+2022-W44,Diphtheria,0
+2022-W44,Measles,1
+2022-W44,Mumps,7
+2022-W44,Rubella,0
+2022-W44,SARS,0
+2022-W44,Nipah,0
+2022-W44,Acute Viral hepatitis B,1
+2022-W44,Encephalitis,0
+2022-W44,Legionellosis,0
+2022-W44,Campylobacter enteritis,8
+2022-W44,Acute Viral hepatitis C,0
+2022-W44,Leptospirosis,1
+2022-W44,Melioidosis,3
+2022-W44,Meningococcal Infection,0
+2022-W44,Pertussis,0
+2022-W44,Pneumococcal Disease (invasive),2
+2022-W44,Haemophilus influenzae type b,0
+2022-W44,Salmonellosis(non-enteric fevers),26
+2022-W44,Avian Influenza,0
+2022-W44,Zika,1
+2022-W44,Ebola Virus Disease,0
+2022-W44,Japanese Encephalitis,0
+2022-W44,Tetanus,0
+2022-W44,Botulism,0
+2022-W44,Murine Typhus,0
+2022-W44,Monkeypox,0
+2022-W45,Cholera,0
+2022-W45,Paratyphoid,0
+2022-W45,Typhoid,2
+2022-W45,Acute Viral Hepatitis A,0
+2022-W45,Acute Viral Hepatitis E,0
+2022-W45,Poliomyelitis,0
+2022-W45,Plague,0
+2022-W45,Yellow Fever,0
+2022-W45,Dengue Fever,294
+2022-W45,Dengue Haemorrhagic Fever,0
+2022-W45,Malaria,0
+2022-W45,Chikungunya,1
+2022-W45,HFMD,0
+2022-W45,Diphtheria,0
+2022-W45,Measles,0
+2022-W45,Mumps,2
+2022-W45,Rubella,0
+2022-W45,SARS,0
+2022-W45,Nipah,0
+2022-W45,Acute Viral hepatitis B,0
+2022-W45,Encephalitis,0
+2022-W45,Legionellosis,0
+2022-W45,Campylobacter enteritis,6
+2022-W45,Acute Viral hepatitis C,0
+2022-W45,Leptospirosis,3
+2022-W45,Melioidosis,1
+2022-W45,Meningococcal Infection,0
+2022-W45,Pertussis,0
+2022-W45,Pneumococcal Disease (invasive),1
+2022-W45,Haemophilus influenzae type b,0
+2022-W45,Salmonellosis(non-enteric fevers),31
+2022-W45,Avian Influenza,0
+2022-W45,Zika,0
+2022-W45,Ebola Virus Disease,0
+2022-W45,Japanese Encephalitis,0
+2022-W45,Tetanus,0
+2022-W45,Botulism,0
+2022-W45,Murine Typhus,0
+2022-W45,Monkeypox,0
+2022-W46,Cholera,0
+2022-W46,Paratyphoid,1
+2022-W46,Typhoid,0
+2022-W46,Acute Viral Hepatitis A,1
+2022-W46,Acute Viral Hepatitis E,0
+2022-W46,Poliomyelitis,0
+2022-W46,Plague,0
+2022-W46,Yellow Fever,0
+2022-W46,Dengue Fever,312
+2022-W46,Dengue Haemorrhagic Fever,3
+2022-W46,Malaria,0
+2022-W46,Chikungunya,2
+2022-W46,HFMD,0
+2022-W46,Diphtheria,0
+2022-W46,Measles,0
+2022-W46,Mumps,2
+2022-W46,Rubella,0
+2022-W46,SARS,0
+2022-W46,Nipah,0
+2022-W46,Acute Viral hepatitis B,0
+2022-W46,Encephalitis,0
+2022-W46,Legionellosis,0
+2022-W46,Campylobacter enteritis,7
+2022-W46,Acute Viral hepatitis C,1
+2022-W46,Leptospirosis,3
+2022-W46,Melioidosis,1
+2022-W46,Meningococcal Infection,0
+2022-W46,Pertussis,0
+2022-W46,Pneumococcal Disease (invasive),1
+2022-W46,Haemophilus influenzae type b,0
+2022-W46,Salmonellosis(non-enteric fevers),33
+2022-W46,Avian Influenza,0
+2022-W46,Zika,0
+2022-W46,Ebola Virus Disease,0
+2022-W46,Japanese Encephalitis,0
+2022-W46,Tetanus,0
+2022-W46,Botulism,0
+2022-W46,Murine Typhus,1
+2022-W46,Monkeypox,0
+2022-W47,Cholera,0
+2022-W47,Paratyphoid,1
+2022-W47,Typhoid,2
+2022-W47,Acute Viral Hepatitis A,2
+2022-W47,Acute Viral Hepatitis E,2
+2022-W47,Poliomyelitis,0
+2022-W47,Plague,0
+2022-W47,Yellow Fever,0
+2022-W47,Dengue Fever,265
+2022-W47,Dengue Haemorrhagic Fever,0
+2022-W47,Malaria,0
+2022-W47,Chikungunya,0
+2022-W47,HFMD,0
+2022-W47,Diphtheria,0
+2022-W47,Measles,0
+2022-W47,Mumps,4
+2022-W47,Rubella,0
+2022-W47,SARS,0
+2022-W47,Nipah,0
+2022-W47,Acute Viral hepatitis B,1
+2022-W47,Encephalitis,0
+2022-W47,Legionellosis,0
+2022-W47,Campylobacter enteritis,12
+2022-W47,Acute Viral hepatitis C,0
+2022-W47,Leptospirosis,3
+2022-W47,Melioidosis,2
+2022-W47,Meningococcal Infection,0
+2022-W47,Pertussis,1
+2022-W47,Pneumococcal Disease (invasive),3
+2022-W47,Haemophilus influenzae type b,0
+2022-W47,Salmonellosis(non-enteric fevers),34
+2022-W47,Avian Influenza,0
+2022-W47,Zika,0
+2022-W47,Ebola Virus Disease,0
+2022-W47,Japanese Encephalitis,0
+2022-W47,Tetanus,0
+2022-W47,Botulism,0
+2022-W47,Murine Typhus,0
+2022-W47,Monkeypox,0
+2022-W48,Cholera,0
+2022-W48,Paratyphoid,0
+2022-W48,Typhoid,0
+2022-W48,Acute Viral Hepatitis A,1
+2022-W48,Acute Viral Hepatitis E,1
+2022-W48,Poliomyelitis,0
+2022-W48,Plague,0
+2022-W48,Yellow Fever,0
+2022-W48,Dengue Fever,242
+2022-W48,Dengue Haemorrhagic Fever,0
+2022-W48,Malaria,1
+2022-W48,Chikungunya,1
+2022-W48,HFMD,0
+2022-W48,Diphtheria,0
+2022-W48,Measles,0
+2022-W48,Mumps,2
+2022-W48,Rubella,0
+2022-W48,SARS,0
+2022-W48,Nipah,0
+2022-W48,Acute Viral hepatitis B,0
+2022-W48,Encephalitis,0
+2022-W48,Legionellosis,0
+2022-W48,Campylobacter enteritis,12
+2022-W48,Acute Viral hepatitis C,0
+2022-W48,Leptospirosis,0
+2022-W48,Melioidosis,0
+2022-W48,Meningococcal Infection,0
+2022-W48,Pertussis,0
+2022-W48,Pneumococcal Disease (invasive),0
+2022-W48,Haemophilus influenzae type b,0
+2022-W48,Salmonellosis(non-enteric fevers),28
+2022-W48,Avian Influenza,0
+2022-W48,Zika,0
+2022-W48,Ebola Virus Disease,0
+2022-W48,Japanese Encephalitis,0
+2022-W48,Tetanus,0
+2022-W48,Botulism,0
+2022-W48,Murine Typhus,0
+2022-W48,Monkeypox,0
+2022-W49,Cholera,0
+2022-W49,Paratyphoid,0
+2022-W49,Typhoid,0
+2022-W49,Acute Viral Hepatitis A,0
+2022-W49,Acute Viral Hepatitis E,1
+2022-W49,Poliomyelitis,0
+2022-W49,Plague,0
+2022-W49,Yellow Fever,0
+2022-W49,Dengue Fever,326
+2022-W49,Dengue Haemorrhagic Fever,1
+2022-W49,Malaria,1
+2022-W49,Chikungunya,0
+2022-W49,HFMD,0
+2022-W49,Diphtheria,0
+2022-W49,Measles,1
+2022-W49,Mumps,1
+2022-W49,Rubella,0
+2022-W49,SARS,0
+2022-W49,Nipah,0
+2022-W49,Acute Viral hepatitis B,0
+2022-W49,Encephalitis,0
+2022-W49,Legionellosis,0
+2022-W49,Campylobacter enteritis,9
+2022-W49,Acute Viral hepatitis C,0
+2022-W49,Leptospirosis,3
+2022-W49,Melioidosis,0
+2022-W49,Meningococcal Infection,0
+2022-W49,Pertussis,0
+2022-W49,Pneumococcal Disease (invasive),3
+2022-W49,Haemophilus influenzae type b,0
+2022-W49,Salmonellosis(non-enteric fevers),19
+2022-W49,Avian Influenza,0
+2022-W49,Zika,0
+2022-W49,Ebola Virus Disease,0
+2022-W49,Japanese Encephalitis,0
+2022-W49,Tetanus,0
+2022-W49,Botulism,0
+2022-W49,Murine Typhus,0
+2022-W49,Monkeypox,0
+2022-W50,Cholera,0
+2022-W50,Paratyphoid,0
+2022-W50,Typhoid,0
+2022-W50,Acute Viral Hepatitis A,0
+2022-W50,Acute Viral Hepatitis E,1
+2022-W50,Poliomyelitis,0
+2022-W50,Plague,0
+2022-W50,Yellow Fever,0
+2022-W50,Dengue Fever,289
+2022-W50,Dengue Haemorrhagic Fever,1
+2022-W50,Malaria,1
+2022-W50,Chikungunya,1
+2022-W50,HFMD,0
+2022-W50,Diphtheria,0
+2022-W50,Measles,0
+2022-W50,Mumps,1
+2022-W50,Rubella,0
+2022-W50,SARS,0
+2022-W50,Nipah,0
+2022-W50,Acute Viral hepatitis B,0
+2022-W50,Encephalitis,0
+2022-W50,Legionellosis,0
+2022-W50,Campylobacter enteritis,6
+2022-W50,Acute Viral hepatitis C,1
+2022-W50,Leptospirosis,0
+2022-W50,Melioidosis,0
+2022-W50,Meningococcal Infection,0
+2022-W50,Pertussis,0
+2022-W50,Pneumococcal Disease (invasive),0
+2022-W50,Haemophilus influenzae type b,0
+2022-W50,Salmonellosis(non-enteric fevers),16
+2022-W50,Avian Influenza,0
+2022-W50,Zika,0
+2022-W50,Ebola Virus Disease,0
+2022-W50,Japanese Encephalitis,0
+2022-W50,Tetanus,0
+2022-W50,Botulism,0
+2022-W50,Murine Typhus,1
+2022-W50,Monkeypox,0
+2022-W51,Cholera,0
+2022-W51,Paratyphoid,0
+2022-W51,Typhoid,0
+2022-W51,Acute Viral Hepatitis A,3
+2022-W51,Acute Viral Hepatitis E,1
+2022-W51,Poliomyelitis,0
+2022-W51,Plague,0
+2022-W51,Yellow Fever,0
+2022-W51,Dengue Fever,270
+2022-W51,Dengue Haemorrhagic Fever,0
+2022-W51,Malaria,0
+2022-W51,Chikungunya,0
+2022-W51,HFMD,0
+2022-W51,Diphtheria,0
+2022-W51,Measles,0
+2022-W51,Mumps,3
+2022-W51,Rubella,0
+2022-W51,SARS,0
+2022-W51,Nipah,0
+2022-W51,Acute Viral hepatitis B,1
+2022-W51,Encephalitis,0
+2022-W51,Legionellosis,0
+2022-W51,Campylobacter enteritis,11
+2022-W51,Acute Viral hepatitis C,1
+2022-W51,Leptospirosis,0
+2022-W51,Melioidosis,1
+2022-W51,Meningococcal Infection,0
+2022-W51,Pertussis,1
+2022-W51,Pneumococcal Disease (invasive),3
+2022-W51,Haemophilus influenzae type b,0
+2022-W51,Salmonellosis(non-enteric fevers),23
+2022-W51,Avian Influenza,0
+2022-W51,Zika,0
+2022-W51,Ebola Virus Disease,0
+2022-W51,Japanese Encephalitis,0
+2022-W51,Tetanus,0
+2022-W51,Botulism,0
+2022-W51,Murine Typhus,0
+2022-W51,Monkeypox,0
+2022-W52,Cholera,0
+2022-W52,Paratyphoid,2
+2022-W52,Typhoid,1
+2022-W52,Acute Viral Hepatitis A,1
+2022-W52,Acute Viral Hepatitis E,1
+2022-W52,Poliomyelitis,0
+2022-W52,Plague,0
+2022-W52,Yellow Fever,0
+2022-W52,Dengue Fever,285
+2022-W52,Dengue Haemorrhagic Fever,0
+2022-W52,Malaria,1
+2022-W52,Chikungunya,2
+2022-W52,HFMD,0
+2022-W52,Diphtheria,0
+2022-W52,Measles,0
+2022-W52,Mumps,3
+2022-W52,Rubella,0
+2022-W52,SARS,0
+2022-W52,Nipah,0
+2022-W52,Acute Viral hepatitis B,0
+2022-W52,Encephalitis,0
+2022-W52,Legionellosis,0
+2022-W52,Campylobacter enteritis,7
+2022-W52,Acute Viral hepatitis C,1
+2022-W52,Leptospirosis,1
+2022-W52,Melioidosis,1
+2022-W52,Meningococcal Infection,0
+2022-W52,Pertussis,0
+2022-W52,Pneumococcal Disease (invasive),4
+2022-W52,Haemophilus influenzae type b,0
+2022-W52,Salmonellosis(non-enteric fevers),28
+2022-W52,Avian Influenza,0
+2022-W52,Zika,0
+2022-W52,Ebola Virus Disease,0
+2022-W52,Japanese Encephalitis,0
+2022-W52,Tetanus,0
+2022-W52,Botulism,0
+2022-W52,Murine Typhus,0
+2022-W52,Monkeypox,0

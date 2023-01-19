@@ -30,16 +30,16 @@ Sources:
 Source Url: 'http://www.moh.gov.sg/content/dam/moh_web/Statistics/Healthcare_Institution_Statistics/More_Statistics.../Weekly%20infectious%20bulletin_cases.xls'
 License: 'https://data.gov.sg/open-data-licence'
 Frequency: 'Weekly'
-Coverage: '2012-01-01 to 2021-12-31'
-Last Updated: '2022-01-13T09:01:29.982292'
+Coverage: '2012-01-01 to 2022-12-31'
+Last Updated: '2023-01-17T02:27:00.390183'
 Resources:
   -
     Identifier: 'ef7e44f1-9b14-4680-a60a-37d2c9dda390'
     Title: 'Weekly Infectious Disease Bulletin Cases'
-    Url: 'https://storage.data.gov.sg/weekly-infectious-disease-bulletin-cases/resources/weekly-infectious-disease-bulletin-cases-2022-01-13T09-01-29Z.csv'
+    Url: 'https://storage.data.gov.sg/weekly-infectious-disease-bulletin-cases/resources/weekly-infectious-disease-bulletin-cases-2023-01-17T02-26-59Z.csv'
     Format: 'CSV'
-    Coverage: '2012-01-01 to 2021-12-31'
-    Last Updated: '2022-01-13T09:01:29.355982'
+    Coverage: '2012-01-01 to 2022-12-31'
+    Last Updated: '2023-01-17T02:26:59.841111'
     Schema:
       -
         Name: 'epi_week'
