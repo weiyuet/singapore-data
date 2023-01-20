@@ -26,8 +26,8 @@ container_throughput_monthly %>%
              y = container_throughput)) +
   geom_col() +
   facet_wrap(vars(year)) +
-  scale_x_continuous(breaks = seq(1, 12, 3),
-                     labels = month.abb[seq(1, 12, 3)]) +
+  scale_x_continuous(breaks = seq(1:12),
+                     labels = month.abb[seq(1:12)]) +
   scale_y_continuous(expand = c(0, 0)) +
   labs(x = "",
        y = "",
@@ -39,4 +39,4 @@ container_throughput_monthly %>%
                                    hjust = 1))
 
 #### Save image ####
-ggsave("figures/container-throughput-monthly.png", width = 8, height = 8)
+ggsave("figures/container-throughput-monthly.png", width = 8.5, height = 7)
