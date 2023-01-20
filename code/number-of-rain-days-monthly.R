@@ -15,9 +15,9 @@ number_of_rain_days_monthly <- number_of_rain_days_monthly %>%
   separate(month, c("year", "month"))
 
 # Convert year and month into numeric
-number_of_rain_days_monthly = transform(number_of_rain_days_monthly,
-                                        year = as.numeric(year),
-                                        month = as.numeric(month))
+number_of_rain_days_monthly <- number_of_rain_days_monthly %>% 
+  mutate(year = as.numeric(year),
+         month = as.numeric(month))
 
 #### Visualize ####
 # How many rain days are there in a month?
