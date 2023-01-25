@@ -24,7 +24,7 @@ container_throughput_monthly <- container_throughput_monthly %>%
 container_throughput_monthly %>% 
   ggplot(aes(x = month,
              y = container_throughput)) +
-  geom_col() +
+  geom_step() +
   facet_wrap(vars(year)) +
   scale_x_continuous(breaks = seq(1:12),
                      labels = month.abb[seq(1:12)]) +
