@@ -35,7 +35,7 @@ number_of_rain_days_monthly %>%
   scale_y_continuous(breaks = seq(0, 30, 5)) +
   labs(x = "",
        y = "",
-       title = "Number of Rain Days per Month",
+       title = "Number of Rain Days per Month in Singapore",
        subtitle = "Recorded at Changi Climate Station (1.3667, 103.9833)",
        caption = "Data: National Environment Agency (data.gov.sg) | Graphic: @weiyuet") +
   theme_classic() +
