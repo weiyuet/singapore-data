@@ -4,7 +4,7 @@
 
 #### Setup ####
 library(tidyverse)
-library(scales)
+library(glue)
 
 #### Load data ####
 number_of_rain_days_monthly <- read_csv("data/rainfall-monthly-number-of-rain-days/rainfall-monthly-number-of-rain-days.csv")
@@ -35,7 +35,7 @@ number_of_rain_days_monthly %>%
   scale_y_continuous(breaks = seq(0, 30, 5)) +
   labs(x = "",
        y = "",
-       title = "Number of Rain Days per Month in Singapore",
+       title = glue("Number of Rain Days per Month in Singapore ({min(number_of_rain_days_monthly$year)}-{max(number_of_rain_days_monthly$year)})"),
        subtitle = "Recorded at Changi Climate Station (1.3667, 103.9833)",
        caption = "Data: National Environment Agency (data.gov.sg) | Graphic: @weiyuet") +
   theme_classic() +
