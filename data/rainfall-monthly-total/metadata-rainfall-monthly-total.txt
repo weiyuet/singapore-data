@@ -1,0 +1,51 @@
+# Metadata for Rainfall - Monthly Total
+---
+Identifier: '5942f8bd-4240-4f68-acd2-a5a276958237'
+Name: 'rainfall-monthly-total'
+Title: 'Rainfall - Monthly Total'
+Description: 'The total monthly rainfall recorded at the Changi Climate Station.'
+Topics:
+  - 'Environment'
+Keywords:
+  - 'Climate'
+  - 'NEA'
+  - 'Precipitation'
+  - 'Rainfall'
+  - 'Weather'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Ong Chin Hong'
+    Department: 'CCRS'
+    Email: 'ong_chin_hong@nea.gov.sg'
+  Admin 2:
+    Name: 'Ang Chieng Hai'
+    Department: 'CCRS'
+    Email: 'ang_chieng_hai@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Monthly'
+Coverage: '1982-01-01 to 2022-12-31'
+Last Updated: '2023-01-16T10:07:57.940278'
+Resources:
+  -
+    Identifier: '778814b8-1b96-404b-9ac9-68d6c00e637b'
+    Title: 'Rainfall - Monthly Total'
+    Url: 'https://storage.data.gov.sg/rainfall-monthly-total/resources/rainfall-monthly-total-2023-01-16T10-07-57Z.csv'
+    Format: 'CSV'
+    Coverage: '1982-01-01 to 2022-12-31'
+    Last Updated: '2023-01-16T10:07:57.582437'
+    Schema:
+      -
+        Name: 'month'
+        Title: 'Month'
+        Type: 'datetime'
+        Sub Type: 'month'
+        Format: 'YYYY-MM'
+      -
+        Name: 'total_rainfall'
+        Title: 'Monthly Total Rainfall'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Millimetre'
