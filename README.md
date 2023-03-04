@@ -9,7 +9,7 @@ Data:
   
 The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
 
-Updated: 2023-02-04
+Updated: 2023-03-04
 
 ## CPI Indicators and Household Expenditure
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/cpi-indicators.png)
@@ -41,7 +41,8 @@ Updated: 2023-02-04
 ## Container Throughput Monthly
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/container-throughput-monthly.png)
 
-## Number of Rain Days Monthly
+## Rainfall Monthly
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/number-of-rain-days-monthly.png)
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/rainfall-monthly-total.png)
 
 EOL
