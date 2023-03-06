@@ -14,6 +14,14 @@ live_births <- read_csv("data/births-and-fertility-annual/live-births.csv")
 # Convert value to numeric
 live_births$value <- as.numeric(as.character(live_births$value))
 
+# Calculate long term mean
+live_births %>%
+  group_by(level_1) %>% 
+  summarize(across(value,
+                   mean,
+                   na.rm = TRUE)) %>% 
+  ungroup()
+
 #### Visualize ####
 # Plot number of live births
 live_births %>% 
@@ -65,7 +73,7 @@ total_fertility_rate_by_ethnic_group %>%
                                            accuracy = 0.1)) +
   scale_colour_paletteer_d("ggsci::default_jco") +
   labs(x = "",
-       y ="",
+       y = "",
        title = "Total Fertility Rate by Ethnic Groups",
        subtitle = "Dashed line at 2.1 represents the population replacement rate",
        caption = "Data: Department of Statistics (data.gov.sg) | Graphic: @weiyuet")
