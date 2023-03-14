@@ -4,7 +4,6 @@
 
 #### Setup ####
 library(tidyverse)
-library(scales)
 library(glue)
 
 #### Load data ####

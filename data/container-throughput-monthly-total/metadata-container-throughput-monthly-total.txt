@@ -20,16 +20,16 @@ Sources:
 Source Url: 'https://www.mpa.gov.sg/web/portal/home/maritime-singapore/port-statistics'
 License: 'https://data.gov.sg/open-data-licence'
 Frequency: 'Monthly'
-Coverage: '1995-01-01 to 2022-12-31'
-Last Updated: '2023-01-16T04:55:31.566766'
+Coverage: '1995-01-01 to 2023-02-28'
+Last Updated: '2023-03-14T06:37:51.698499'
 Resources:
   -
     Identifier: 'cd119524-9f43-44df-a5f9-f6f6b207a72b'
     Title: 'Container Throughput, Monthly'
-    Url: 'https://storage.data.gov.sg/container-throughput-monthly-total/resources/container-throughput-monthly-2023-01-16T04-55-30Z.csv'
+    Url: 'https://storage.data.gov.sg/container-throughput-monthly-total/resources/container-throughput-monthly-2023-03-14T06-37-50Z.csv'
     Format: 'CSV'
-    Coverage: '1995-01-01 to 2022-12-31'
-    Last Updated: '2023-01-16T04:55:30.703527'
+    Coverage: '1995-01-01 to 2023-02-28'
+    Last Updated: '2023-03-14T06:37:50.696276'
     Schema:
       -
         Name: 'month'
