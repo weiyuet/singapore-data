@@ -4,7 +4,6 @@
 
 #### Setup ####
 library(tidyverse)
-library(scales)
 library(glue)
 
 #### Load data ####
@@ -33,29 +32,41 @@ weekly_infectious_disease$week <- as.numeric(str_extract(weekly_infectious_disea
 weekly_infectious_disease <- weekly_infectious_disease %>% 
   mutate(year = as.numeric(year))
 
-# Clean HFMD and Hand, Foot Mouth Disease names
+# Clean disease names
 weekly_infectious_disease <- weekly_infectious_disease %>% 
   mutate(disease = case_when(disease == "HFMD" ~ "Hand, Foot Mouth Disease",
+                             disease == "Zika Virus Infection" ~ "Zika",
                              TRUE ~ disease))
 
 #### Visualize ####
 # Plot weekly case numbers of Dengue Fever
+disease_selected <- c("Dengue Fever")
+
+# Calculate mean from sample period
+weekly_infectious_disease %>% 
+  filter(disease %in% disease_selected) %>% 
+  group_by(disease) %>% 
+  summarize(across(cases, mean, na.rm = TRUE)) %>% 
+  ungroup()
+
 weekly_infectious_disease %>%
-  filter(disease == "Dengue Fever") %>%
+  filter(disease %in% disease_selected) %>%
   ggplot(aes(x = week,
              y = cases)) +
   geom_col() +
   facet_wrap(vars(year)) +
+  geom_hline(yintercept = 286,
+             linetype = "dashed",
+             colour = "red") +
   scale_x_continuous(expand = c(0, 0)) +
   scale_y_continuous(expand = c(0, 0)) +
   labs(x = "Week#",
        y = "",
        title = glue("Weekly Case Numbers of Dengue Fever ({min(weekly_infectious_disease$year)}-{max(weekly_infectious_disease$year)}) in Singapore"),
-       subtitle = "June seems to be the peak month; 2020 and 2022 being very bad years",
+       subtitle = "Horizontal dashed line represents the mean of the entire data sample",
        caption = "Data: Ministry of Health (data.gov.sg) | Graphic: @weiyuet") +
   theme_classic() +
-  theme(axis.text.x = element_text(),
-        axis.ticks.x = element_blank())
+  theme(axis.ticks.x = element_blank())
 
 #### Save image ####
 ggsave("figures/weekly-cases-dengue-fever.png", width = 8, height = 5)
