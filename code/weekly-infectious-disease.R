@@ -63,7 +63,7 @@ weekly_infectious_disease %>%
   labs(x = "Week#",
        y = "",
        title = glue("Weekly Case Numbers of Dengue Fever ({min(weekly_infectious_disease$year)}-{max(weekly_infectious_disease$year)}) in Singapore"),
-       subtitle = "Horizontal dashed line represents the mean of the entire data sample",
+       subtitle = "Horizontal dashed line represents the mean of the entire data sample (mean = 286)",
        caption = "Data: Ministry of Health (data.gov.sg) | Graphic: @weiyuet") +
   theme_classic() +
   theme(axis.ticks.x = element_blank())
