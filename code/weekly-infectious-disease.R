@@ -10,6 +10,7 @@ library(glue)
 weekly_infectious_disease <- read_csv('data/weekly-infectious-disease-bulletin-cases/weekly-infectious-disease-bulletin-cases.csv')
 
 #### Wrangle ####
+# Create new empty columns
 col <- paste("col", 1:2)
 
 # Split year and week column
