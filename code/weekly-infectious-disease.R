@@ -63,7 +63,7 @@ weekly_infectious_disease %>%
   scale_y_continuous(expand = c(0, 0)) +
   labs(x = "Week#",
        y = "",
-       title = glue("Weekly Case Numbers of Dengue Fever ({min(weekly_infectious_disease$year)}-{max(weekly_infectious_disease$year)}) in Singapore"),
+       title = glue("Weekly Case Numbers of Dengue Fever in Singapore ({min(weekly_infectious_disease$year)}-{max(weekly_infectious_disease$year)})"),
        subtitle = "Horizontal dashed line represents the mean of the entire data sample (mean = 286)",
        caption = "Data: Ministry of Health (data.gov.sg) | Graphic: @weiyuet") +
   theme_classic() +
