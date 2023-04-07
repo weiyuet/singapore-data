@@ -26,16 +26,16 @@ Sources:
   - 'National Environment Agency'
 License: 'https://data.gov.sg/open-data-licence'
 Frequency: 'Monthly'
-Coverage: '1982-01-01 to 2023-01-31'
-Last Updated: '2023-02-13T09:12:10.094242'
+Coverage: '1982-01-01 to 2023-02-28'
+Last Updated: '2023-03-13T09:50:43.152468'
 Resources:
   -
     Identifier: '778814b8-1b96-404b-9ac9-68d6c00e637b'
     Title: 'Rainfall - Monthly Total'
-    Url: 'https://storage.data.gov.sg/rainfall-monthly-total/resources/rainfall-monthly-total-2023-02-13T09-12-09Z.csv'
+    Url: 'https://storage.data.gov.sg/rainfall-monthly-total/resources/rainfall-monthly-total-2023-03-13T09-50-41Z.csv'
     Format: 'CSV'
-    Coverage: '1982-01-01 to 2023-01-31'
-    Last Updated: '2023-02-13T09:12:09.719241'
+    Coverage: '1982-01-01 to 2023-02-28'
+    Last Updated: '2023-03-13T09:50:41.919662'
     Schema:
       -
         Name: 'month'
