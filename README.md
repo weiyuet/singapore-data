@@ -9,7 +9,7 @@ Data:
   
 The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
 
-Updated: 2023-04-07
+Updated: 2023-04-15
 
 ## CPI Indicators and Household Expenditure
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/cpi-indicators.png)
