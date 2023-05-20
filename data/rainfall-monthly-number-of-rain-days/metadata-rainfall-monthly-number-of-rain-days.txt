@@ -27,16 +27,16 @@ Sources:
   - 'National Environment Agency'
 License: 'https://data.gov.sg/open-data-licence'
 Frequency: 'Monthly'
-Coverage: '1982-01-01 to 2023-02-28'
-Last Updated: '2023-03-13T09:47:29.273842'
+Coverage: '1982-01-01 to 2023-04-30'
+Last Updated: '2023-05-15T03:06:02.915792'
 Resources:
   -
     Identifier: '8b94f596-91fd-4545-bf9e-7a426493b674'
     Title: 'Rainfall - Monthly Number of Rain Days'
-    Url: 'https://storage.data.gov.sg/rainfall-monthly-number-of-rain-days/resources/rainfall-monthly-number-of-rain-days-2023-03-13T09-47-28Z.csv'
+    Url: 'https://storage.data.gov.sg/rainfall-monthly-number-of-rain-days/resources/rainfall-monthly-number-of-rain-days-2023-05-15T03-06-02Z.csv'
     Format: 'CSV'
-    Coverage: '1982-01-01 to 2023-02-28'
-    Last Updated: '2023-03-13T09:47:28.155803'
+    Coverage: '1982-01-01 to 2023-04-30'
+    Last Updated: '2023-05-15T03:06:02.383103'
     Schema:
       -
         Name: 'month'

@@ -6,7 +6,7 @@
 library(tidyverse)
 library(glue)
 
-#### Load data ####
+#### Load Data ####
 number_of_rain_days_monthly <- read_csv("data/rainfall-monthly-number-of-rain-days/rainfall-monthly-number-of-rain-days.csv")
 
 #### Wrangle ####
@@ -44,5 +44,7 @@ number_of_rain_days_monthly %>%
                                    hjust = 1,
                                    size = 7))
 
-#### Save image ####
-ggsave("figures/number-of-rain-days-monthly.png", width = 8, height = 8)
+#### Save Image ####
+ggsave("figures/number-of-rain-days-monthly.png",
+       width = 8,
+       height = 8)

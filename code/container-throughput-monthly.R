@@ -41,4 +41,6 @@ container_throughput_monthly %>%
                                    hjust = 1))
 
 #### Save Image ####
-ggsave("figures/container-throughput-monthly.png", width = 8.5, height = 7)
+ggsave("figures/container-throughput-monthly.png",
+       width = 8.5,
+       height = 7)
