@@ -47,7 +47,9 @@ disease_selected <- c("Dengue Fever")
 weekly_infectious_disease %>% 
   filter(disease %in% disease_selected) %>% 
   group_by(disease) %>% 
-  summarize(across(cases, mean, na.rm = TRUE)) %>% 
+  summarize(across(cases,
+                   mean,
+                   na.rm = TRUE)) %>% 
   ungroup()
 
 weekly_infectious_disease %>%

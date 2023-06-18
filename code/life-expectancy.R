@@ -1,9 +1,12 @@
+###################
+# Life Expectancy #
+###################
+
 # Setup
 library(tidyverse)
 library(scales)
-library(ggalt)
-library(ggsci)
 library(glue)
+library(paletteer)
 
 # Load data
 life_expectancy <- read_csv("data/life-expectancy-by-sex-annual/life-expectancy-at-birth-and-age-65-years.csv")
@@ -11,21 +14,21 @@ life_expectancy <- read_csv("data/life-expectancy-by-sex-annual/life-expectancy-
 # Plot data
 # Line plot of life expectancy
 life_expectancy %>%
-       ggplot(aes(x = year, y = value, colour = level_1)) +
-       geom_line(size = 1) +
-       facet_wrap(~level_1, scales = "free_y") +
+       ggplot(aes(x = year,
+                  y = value,
+                  colour = level_1)) +
+       geom_line(linewidth = 1) +
+       facet_wrap(vars(level_1),
+                  scales = "free_y") +
        scale_x_continuous(breaks = seq(1960, 2020, 10)) +
-       scale_colour_jco() +
-       theme_classic() +
-       theme(
-              legend.title = element_blank(),
-              legend.position = "none"
-       ) +
-       labs(
-              x = "", y = "",
-              title = "Life Expectancy of Residents in Singapore",
-              caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg) | Graphic: @weiyuet"
-       )
+       scale_colour_paletteer_d("ggsci::default_jco") +
+       labs(x = "",
+            y = "",
+            title = "Life Expectancy of Residents in Singapore",
+            caption = "Data: Ministry of Trade and Industry - Department of Statistics (data.gov.sg) | Graphic: @weiyuet") +
+        theme_classic() +
+        theme(legend.title = element_blank(),
+              legend.position = "none")
 
 # Save image
 ggsave("figures/life-expectancy.png", width = 6.5, height = 4.5)

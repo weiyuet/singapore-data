@@ -22,10 +22,7 @@ students_and_teachers_primary_schools %>%
              y = students_pri,
              colour = school_type)) +
   geom_line(linewidth = 1) +
-  facet_wrap(~sex) +
-  theme_classic() +
-  theme(legend.position = "bottom",
-        legend.title = element_blank()) +
+  facet_wrap(vars(sex)) +
   guides(colour = guide_legend(nrow = 1)) +
   scale_colour_paletteer_d("ggsci::default_jco") +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
@@ -35,7 +32,10 @@ students_and_teachers_primary_schools %>%
        y = "",
        title = "Number of Students in Primary Schools",
        colour = "School Type",
-       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet") +
+  theme_classic() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank())
 
 #### Save image ####
 ggsave("figures/primary-school-students.png", width = 8, height = 6)
@@ -43,16 +43,19 @@ ggsave("figures/primary-school-students.png", width = 8, height = 6)
 # Plot student-teacher ratio
 students_and_teachers_primary_schools %>% 
   filter(sex == "MF") %>%
-  ggplot(aes( x = year, y = student_teacher_ratio, colour = school_type)) +
+  ggplot(aes(x = year,
+             y = student_teacher_ratio,
+             colour = school_type)) +
   geom_smooth() +
   geom_jitter() +
-  facet_wrap(~school_type) +
-  theme_classic() +
-  theme(legend.position = "none") +
+  facet_wrap(vars(school_type)) +
   scale_colour_paletteer_d("ggsci::default_jco") +
-  labs(x = "", y = "",
+  labs(x = "",
+       y = "",
        title = "Student-Teacher Ratio in Primary Schools",
-       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet") +
+  theme_classic() +
+  theme(legend.position = "none")
 
 #### Save image ####
 ggsave("figures/student-teacher-ratio-primary-schools.png", width = 8, height = 6)
@@ -78,10 +81,7 @@ students_and_teachers_secondary_schools %>%
              y = student_sec,
              colour = school_type)) +
   geom_line(linewidth = 1) +
-  facet_wrap(~sex) +
-  theme_classic() +
-  theme(legend.position = "bottom",
-        legend.title = element_blank()) +
+  facet_wrap(vars(sex)) +
   guides(colour = guide_legend(nrow = 1)) +
   scale_colour_paletteer_d("ggsci::default_jco") +
   scale_x_continuous(breaks = seq(1980, 2020, 5)) +
@@ -91,7 +91,10 @@ students_and_teachers_secondary_schools %>%
        y = "",
        title = "Number of Students in Secondary Schools",
        colour = "School Type",
-       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet") +
+  theme_classic() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank())
 
 #### Save image ####
 ggsave("figures/secondary-school-students.png", width = 8, height = 6)
@@ -104,14 +107,15 @@ students_and_teachers_secondary_schools %>%
              colour = school_type)) +
   geom_smooth() +
   geom_jitter() +
-  facet_wrap(~school_type, scales = "free") +
-  theme_classic() +
-  theme(legend.position = "none") +
+  facet_wrap(vars(school_type),
+             scales = "free") +
   scale_colour_paletteer_d("ggsci::default_jco") +
   labs(x = "",
        y = "",
        title = "Student-Teacher Ratio in Secondary Schools",
-       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet")
+       caption = "Data: Ministry of Education (data.gov.sg) | Graphic: @weiyuet") +
+  theme_classic() +
+  theme(legend.position = "none")
 
 #### Save image ####
 ggsave("figures/student-teacher-ratio-secondary-schools.png", width = 8, height = 6)
