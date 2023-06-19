@@ -1,18 +1,17 @@
 ---
 title: "Singapore Data Project"
-subtitle: "Exploring publicly available data"
 date: "Created: 26 May, 2022.\nUpdated: `r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document: 
     code_folding: hide
-    theme: journal
+    theme: cosmo
     highlight: tango
     fig_width: 8
     fig_height: 5
     toc: yes
     toc_depth: 2
     toc_float: yes
-    number_sections: true
+    number_sections: false
 ---
 
 ```{r Setup, include=FALSE}
@@ -23,14 +22,12 @@ library(scales)
 library(glue)
 library(paletteer)
 ```
-
-  - Data.gov.sg was launched in 2011 as a one-stop portal to its publicly-available data sets from 70 public agencies.
+# Exploring Publicly Available Data in Singapore
+Data.gov.sg was launched in 2011 as a one-stop portal to its publicly-available data sets from 70 public agencies. It recently underwent a revamp, and has a new-look website. Other than data from [data.gov.sg](https://data.gov.sg), I also use data from the [Department of Statistics Singapore.](https://www.singstat.gov.sg) This is a personal project to practice R programming, and in the process hope to learn some insights from the data sets.
   
-  - Data from [data.gov.sg](https://data.gov.sg) and [Department of Statistics Singapore.](https://www.singstat.gov.sg)
-  
-![](https://cdn.pixabay.com/photo/2018/09/27/11/43/singapore-3706832_960_720.jpg)
+![](https://cdn.pixabay.com/photo/2017/03/16/05/23/singapore-2148190_960_720.jpg)
 
-# Society
+# Demographics
 
 ## Live Births and Fertility
 
