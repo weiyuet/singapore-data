@@ -19,6 +19,12 @@ rainfall_monthly_total <- rainfall_monthly_total %>%
   mutate(year = as.numeric(year),
          month = as.numeric(month))
 
+# Calculate long term mean
+rainfall_monthly_total %>% 
+  summarize(across(total_rainfall,
+                   mean,
+                   na.rm = TRUE))
+
 #### Visualize ####
 # How much rain falls in a month in total?
 rainfall_monthly_total %>% 
@@ -26,6 +32,9 @@ rainfall_monthly_total %>%
              y = total_rainfall)) +
   geom_col() +
   facet_wrap(vars(year)) +
+  geom_hline(yintercept = 178,
+             linetype = "dotted",
+             colour = "red") +
   scale_x_continuous(breaks = 1:12,
                      labels = month.abb[1:12]) +
   labs(x = "",
