@@ -11,6 +11,9 @@ The `Singapore Open Data Licence` aims to promote and enable easy reuse of Publi
 
 Updated: 2023-10-28
 
+## Air Pollutant - Particulate Matter PM2.5
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/air-pollutant-pm25-mean.png)
+
 ## CPI Indicators and Household Expenditure
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/cpi-indicators.png)
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/average-household-expenditure.png)
