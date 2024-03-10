@@ -45,6 +45,6 @@ number_of_rain_days_monthly %>%
                                    size = 7))
 
 #### Save Image ####
-ggsave("figures/number-of-rain-days-monthly.png",
+ggsave("figures/rainfall-monthly-number-of-rain-days.png",
        width = 8,
        height = 8)
