@@ -9,7 +9,7 @@ Data:
   
 The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
 
-Updated: 2024-01-21
+Updated: 2024-03-10
 
 ## Air Pollutant - Particulate Matter PM2.5
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/air-pollutant-pm25-mean.png)
@@ -45,7 +45,7 @@ Updated: 2024-01-21
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/container-throughput-monthly.png)
 
 ## Rainfall Monthly
-![](https://github.com/weiyuet/singapore-data/blob/main/figures/number-of-rain-days-monthly.png)
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/rainfall-monthly-number-of-rain-days.png)
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/rainfall-monthly-total.png)
 
 EOL
