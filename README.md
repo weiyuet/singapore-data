@@ -9,7 +9,7 @@ Data:
   
 The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
 
-Updated: 2024-03-23
+Updated: 2025-06-05
 
 ## Air Pollutant - Particulate Matter PM2.5
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/air-pollutant-pm25-mean.png)
