@@ -1,15 +1,15 @@
-# singapore-data
+# Singapore Data
 
-Wong Wei Yuet 2022-05-26
+Created: 2022-05-26
 
-Data:
+Updated: 2026-01-19
+
+Data sources:
   - [`data.gov.sg`](https://data.gov.sg/)
   
   - [`Department of Statistics Singapore`](https://www.singstat.gov.sg/)
   
-The `Singapore Open Data Licence` aims to promote and enable easy reuse of Public Sector data...
-
-Updated: 2025-12-31
+Exploring data available under the `Singapore Open Data Licence`.
 
 ## Air Pollutant - Particulate Matter PM2.5
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/air-pollutant-pm25-mean.png)
@@ -48,4 +48,4 @@ Updated: 2025-12-31
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/rainfall-monthly-number-of-rain-days.png)
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/rainfall-monthly-total.png)
 
-EOL
+End
