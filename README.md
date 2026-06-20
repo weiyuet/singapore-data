@@ -2,7 +2,7 @@
 
 Created: 2022-05-26
 
-Updated: 2026-01-19
+Updated: 2026-06-20
 
 Data sources:
   - [`data.gov.sg`](https://data.gov.sg/)
@@ -11,12 +11,17 @@ Data sources:
   
 Exploring data available under the `Singapore Open Data Licence`.
 
+## Price Trends in HDB Flats
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/resale-flats-prices-summary-table.png)
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/resale-flat-prices-town-absolute.png)
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/resale-flat-prices-multivariate-sqm.png)
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/resale-flat-prices-lease_decay.png)
+
+## Number of Flats Constructed by HDB
+![](https://github.com/weiyuet/singapore-data/blob/main/figures/flats-constructed.png)
+
 ## Air Pollutant - Particulate Matter PM2.5
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/air-pollutant-pm25-mean.png)
-
-## CPI Indicators and Household Expenditure
-![](https://github.com/weiyuet/singapore-data/blob/main/figures/cpi-indicators.png)
-![](https://github.com/weiyuet/singapore-data/blob/main/figures/average-household-expenditure.png)
 
 ## Retail Prices of Consumer Items
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/price-household-groceries.png)
@@ -37,9 +42,6 @@ Exploring data available under the `Singapore Open Data Licence`.
 
 ## Weekly Cases of Dengue Fever
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/weekly-cases-dengue-fever.png)
-
-## Number of Flats Constructed by HDB
-![](https://github.com/weiyuet/singapore-data/blob/main/figures/flats-constructed.png)
 
 ## Container Throughput Monthly
 ![](https://github.com/weiyuet/singapore-data/blob/main/figures/container-throughput-monthly.png)
