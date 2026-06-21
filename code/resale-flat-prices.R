@@ -42,13 +42,13 @@ resale_flat_prices_clean <- resale_flat_prices_raw %>%
   select(-lease_years, -lease_months)
 
 #### 4.0 Shared Plot Configurations ####
-# 4.1 Define a standardized plot style
-plot_style <- list(
-  geom_point(color = "gray75", size = 0.3, alpha = 0.4),
+# 4.1 Define a standardized base theme
+base_theme <- list(
   theme_minimal(base_size = 11),
   theme(
-    plot.caption = element_text(hjust = 0),
-    panel.grid.minor = element_blank()
+    plot.caption = element_text(hjust = 0, color = "gray40"),
+    panel.grid.minor = element_blank(),
+    strip.text = element_text(face = "bold")
   )
 )
 
@@ -69,11 +69,11 @@ date_scale <- scale_x_yearmon(
 
 # 4.3 Price scale configuration (Millions)
 price_scale_m <- scale_y_continuous(
-  labels = label_dollar(scale = 1 / 1000000, suffix = "M")
+  labels = label_dollar(scale = 1 / 1e+06, suffix = "M")
 )
 
 # 4.4 Dynamic update time-stamp
-update_time <- format(Sys.time(), "%Y-%m-%d %H:%MH")
+update_time <- format(Sys.time(), "%Y-%m-%d %H:%M")
 shared_caption <- paste0(
   "Data: Housing & Development Board (HDB) | Updated: ",
   update_time,
@@ -85,7 +85,7 @@ shared_caption <- paste0(
 plot_1 <- resale_flat_prices_clean %>%
   filter(town != "CENTRAL AREA") %>%
   ggplot(aes(x = month, y = resale_price)) +
-  geom_point(aes(color = resale_price >= 1000000), size = 0.3, alpha = 0.4) +
+  geom_point(aes(color = resale_price >= 1e+06), size = 0.3, alpha = 0.4, show.legend = FALSE) +
   scale_color_manual(values = c("TRUE" = "coral1", "FALSE" = "gray75")) +
   geom_smooth(
     color = "royalblue",
@@ -93,16 +93,11 @@ plot_1 <- resale_flat_prices_clean %>%
     linewidth = 0.8,
     method = "gam"
   ) +
-  geom_hline(yintercept = 1000000, linetype = "dotted", color = "black") +
+  geom_hline(yintercept = 1e+06, linetype = "dotted", color = "black") +
   date_scale +
   price_scale_m +
   facet_wrap(~town) +
-  theme_minimal(base_size = 11) +
-  theme(
-    plot.caption = element_text(hjust = 0),
-    panel.grid.minor = element_blank(),
-    legend.position = "none"
-  ) +
+  base_theme +
   labs(
     title = "Million-dollar flats are not evenly distributed across towns",
     x = NULL,
@@ -125,12 +120,12 @@ plot_2 <- resale_flat_prices_clean %>%
   ) %>%
   filter(flat_type %in% c("3 ROOM", "4 ROOM", "5 ROOM")) %>%
   ggplot(aes(x = month, y = price_per_sqm, color = flat_type)) +
-  theme_minimal(base_size = 11) +
   geom_smooth(se = FALSE, linewidth = 0.8, method = "gam") +
   date_scale +
   scale_y_continuous(labels = label_dollar()) +
   scale_color_viridis_d(option = "plasma", end = 0.8) +
   facet_wrap(~town, ncol = 3) +
+  base_theme +
   labs(
     title = "Value Trends by Flat Size and Region",
     subtitle = "Price per sq meter growth across sample towns",
@@ -138,21 +133,21 @@ plot_2 <- resale_flat_prices_clean %>%
     y = "Price per Sqm ($)",
     color = "Flat Type",
     caption = shared_caption
-  ) +
-  theme(plot.caption = element_text(hjust = 0))
+  )
 
 # 5.3 Lease Depreciation Impact
 plot_3 <- resale_flat_prices_clean %>%
   ggplot(aes(x = remaining_lease_numeric, y = price_per_sqm)) +
-  plot_style +
+  geom_point(color = "gray75", size = 0.3, alpha = 0.4) +
   geom_smooth(
     color = "royalblue",
     se = FALSE,
-    linewidth = 0.8,
+    linewidth = 1.0,
     method = "gam"
   ) +
   scale_x_reverse(limits = c(99, 40), breaks = seq(100, 40, -10)) +
   scale_y_continuous(labels = label_dollar()) +
+  base_theme +
   labs(
     title = "How does an aging HDB lease affect its value?",
     subtitle = "Price per square meter vs. Remaining lease (years)",
@@ -164,7 +159,7 @@ plot_3 <- resale_flat_prices_clean %>%
 #### 6.0 Summary Table ####
 # Compute total and highest transacted price for million-dollar transactions
 million_dollar_flat_summary <- resale_flat_prices_clean %>%
-  filter(resale_price >= 1000000) %>%
+  filter(resale_price >= 1e+06) %>%
   group_by(Town = town) %>%
   summarise(
     `Total Million-Dollar Flats` = n(),
@@ -176,7 +171,12 @@ million_dollar_flat_summary <- resale_flat_prices_clean %>%
 table_image <- million_dollar_flat_summary %>%
   flextable() %>%
   theme_vanilla() %>%
-  colformat_double(big.mark = ",", digits = 0, prefix = "$") %>%
+  colformat_double(
+    j = "Highest Record Price",
+    big.mark = ",",
+    digits = 0,
+    prefix = "$"
+  ) %>%
   add_footer_lines(shared_caption) %>%
   bg(bg = "white", part = "all") %>%
   autofit()
